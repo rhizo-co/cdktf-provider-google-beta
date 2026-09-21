@@ -1,0 +1,10634 @@
+// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface GoogleCloudSecurityComplianceCloudControlConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * The categories of the cloud control.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#categories GoogleCloudSecurityComplianceCloudControl#categories}
+  */
+  readonly categories?: string[];
+  /**
+  * ID of the CloudControl.
+  * This is the last segment of the CloudControl resource name.
+  * Format: '^a-zA-Z{0,61}[a-zA-Z0-9]$'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#cloud_control_id GoogleCloudSecurityComplianceCloudControl#cloud_control_id}
+  */
+  readonly cloudControlId: string;
+  /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#deletion_policy GoogleCloudSecurityComplianceCloudControl#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * A description of the cloud control. The maximum length is 2000 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#description GoogleCloudSecurityComplianceCloudControl#description}
+  */
+  readonly description?: string;
+  /**
+  * The display name of the cloud control. The maximum length is 200
+  * characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#display_name GoogleCloudSecurityComplianceCloudControl#display_name}
+  */
+  readonly displayName?: string;
+  /**
+  * The finding_category of the cloud control. The maximum length is 255
+  * characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#finding_category GoogleCloudSecurityComplianceCloudControl#finding_category}
+  */
+  readonly findingCategory?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#id GoogleCloudSecurityComplianceCloudControl#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. Currently, only "global" is supported as a location.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#location GoogleCloudSecurityComplianceCloudControl#location}
+  */
+  readonly location: string;
+  /**
+  * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#organization GoogleCloudSecurityComplianceCloudControl#organization}
+  */
+  readonly organization?: string;
+  /**
+  * The parent resource in which to create the resource.
+  * Must be in one of the following formats:
+  * * 'projects/{{project}}'
+  * * 'organizations/{{organization}}'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parent GoogleCloudSecurityComplianceCloudControl#parent}
+  */
+  readonly parent?: string;
+  /**
+  * The remediation steps for the findings generated by the cloud control. The
+  * maximum length is 400 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#remediation_steps GoogleCloudSecurityComplianceCloudControl#remediation_steps}
+  */
+  readonly remediationSteps?: string;
+  /**
+  * Possible values:
+  * CRITICAL
+  * HIGH
+  * MEDIUM
+  * LOW
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#severity GoogleCloudSecurityComplianceCloudControl#severity}
+  */
+  readonly severity?: string;
+  /**
+  * cloud providers supported
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#supported_cloud_providers GoogleCloudSecurityComplianceCloudControl#supported_cloud_providers}
+  */
+  readonly supportedCloudProviders?: string[];
+  /**
+  * parameter_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_spec GoogleCloudSecurityComplianceCloudControl#parameter_spec}
+  */
+  readonly parameterSpec?: GoogleCloudSecurityComplianceCloudControlParameterSpec[] | cdktf.IResolvable;
+  /**
+  * rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#rules GoogleCloudSecurityComplianceCloudControl#rules}
+  */
+  readonly rules?: GoogleCloudSecurityComplianceCloudControlRules[] | cdktf.IResolvable;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#timeouts GoogleCloudSecurityComplianceCloudControl#timeouts}
+  */
+  readonly timeouts?: GoogleCloudSecurityComplianceCloudControlTimeouts;
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRule {
+  /**
+  * Fully qualified proto attribute path (in dot notation).
+  * Example: rules[0].cel_expression.resource_types_values
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#attribute GoogleCloudSecurityComplianceCloudControl#attribute}
+  */
+  readonly attribute?: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute: cdktf.stringToTerraform(struct!.attribute),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRuleToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attribute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attribute = this._attribute;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._attribute = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._attribute = value.attribute;
+    }
+  }
+
+  // attribute - computed: false, optional: true, required: false
+  private _attribute?: string; 
+  public get attribute() {
+    return this.getStringAttribute('attribute');
+  }
+  public set attribute(value: string) {
+    this._attribute = value;
+  }
+  public resetAttribute() {
+    this._attribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRule {
+  /**
+  * Fully qualified proto attribute path (e.g., dot notation)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#attribute GoogleCloudSecurityComplianceCloudControl#attribute}
+  */
+  readonly attribute?: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute: cdktf.stringToTerraform(struct!.attribute),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attribute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attribute = this._attribute;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._attribute = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._attribute = value.attribute;
+    }
+  }
+
+  // attribute - computed: false, optional: true, required: false
+  private _attribute?: string; 
+  public get attribute() {
+    return this.getStringAttribute('attribute');
+  }
+  public set attribute(value: string) {
+    this._attribute = value;
+  }
+  public resetAttribute() {
+    this._attribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRules {
+  /**
+  * attribute_substitution_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#attribute_substitution_rule GoogleCloudSecurityComplianceCloudControl#attribute_substitution_rule}
+  */
+  readonly attributeSubstitutionRule?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRule;
+  /**
+  * placeholder_substitution_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#placeholder_substitution_rule GoogleCloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+  */
+  readonly placeholderSubstitutionRule?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRule;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute_substitution_rule: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct!.attributeSubstitutionRule),
+    placeholder_substitution_rule: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToTerraform(struct!.placeholderSubstitutionRule),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute_substitution_rule: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRuleToHclTerraform(struct!.attributeSubstitutionRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRuleList",
+    },
+    placeholder_substitution_rule: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToHclTerraform(struct!.placeholderSubstitutionRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributeSubstitutionRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeSubstitutionRule = this._attributeSubstitutionRule?.internalValue;
+    }
+    if (this._placeholderSubstitutionRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.placeholderSubstitutionRule = this._placeholderSubstitutionRule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._attributeSubstitutionRule.internalValue = undefined;
+      this._placeholderSubstitutionRule.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._attributeSubstitutionRule.internalValue = value.attributeSubstitutionRule;
+      this._placeholderSubstitutionRule.internalValue = value.placeholderSubstitutionRule;
+    }
+  }
+
+  // attribute_substitution_rule - computed: false, optional: true, required: false
+  private _attributeSubstitutionRule = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference(this, "attribute_substitution_rule");
+  public get attributeSubstitutionRule() {
+    return this._attributeSubstitutionRule;
+  }
+  public putAttributeSubstitutionRule(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRule) {
+    this._attributeSubstitutionRule.internalValue = value;
+  }
+  public resetAttributeSubstitutionRule() {
+    this._attributeSubstitutionRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeSubstitutionRuleInput() {
+    return this._attributeSubstitutionRule.internalValue;
+  }
+
+  // placeholder_substitution_rule - computed: false, optional: true, required: false
+  private _placeholderSubstitutionRule = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference(this, "placeholder_substitution_rule");
+  public get placeholderSubstitutionRule() {
+    return this._placeholderSubstitutionRule;
+  }
+  public putPlaceholderSubstitutionRule(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRule) {
+    this._placeholderSubstitutionRule.internalValue = value;
+  }
+  public resetPlaceholderSubstitutionRule() {
+    this._placeholderSubstitutionRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placeholderSubstitutionRuleInput() {
+    return this._placeholderSubstitutionRule.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValues {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValues | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValues | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValues[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValues {
+  /**
+  * values block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValues[] | cdktf.IResolvable;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesToTerraform, true)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesToHclTerraform, true)(struct!.values),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValues | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValues | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values.internalValue = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesList(this, "values", false);
+  public get values() {
+    return this._values;
+  }
+  public putValues(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValues[] | cdktf.IResolvable) {
+    this._values.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRange {
+  /**
+  * Maximum allowed value for the numeric parameter (inclusive).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#max GoogleCloudSecurityComplianceCloudControl#max}
+  */
+  readonly max: string;
+  /**
+  * Minimum allowed value for the numeric parameter (inclusive).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#min GoogleCloudSecurityComplianceCloudControl#min}
+  */
+  readonly min: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRangeToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRangeOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.stringToTerraform(struct!.max),
+    min: cdktf.stringToTerraform(struct!.min),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRangeToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRangeOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max: {
+      value: cdktf.stringToHclTerraform(struct!.max),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min: {
+      value: cdktf.stringToHclTerraform(struct!.min),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: false, required: true
+  private _max?: string; 
+  public get max() {
+    return this.getStringAttribute('max');
+  }
+  public set max(value: string) {
+    this._max = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: false, required: true
+  private _min?: string; 
+  public get min() {
+    return this.getStringAttribute('min');
+  }
+  public set min(value: string) {
+    this._min = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPattern {
+  /**
+  * Regex Pattern to match the value(s) of parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#pattern GoogleCloudSecurityComplianceCloudControl#pattern}
+  */
+  readonly pattern: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPatternToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPatternOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    pattern: cdktf.stringToTerraform(struct!.pattern),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPatternToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPatternOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPatternOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPattern | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._pattern !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pattern = this._pattern;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPattern | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._pattern = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._pattern = value.pattern;
+    }
+  }
+
+  // pattern - computed: false, optional: false, required: true
+  private _pattern?: string; 
+  public get pattern() {
+    return this.getStringAttribute('pattern');
+  }
+  public set pattern(value: string) {
+    this._pattern = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get patternInput() {
+    return this._pattern;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidation {
+  /**
+  * allowed_values block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#allowed_values GoogleCloudSecurityComplianceCloudControl#allowed_values}
+  */
+  readonly allowedValues?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValues;
+  /**
+  * int_range block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#int_range GoogleCloudSecurityComplianceCloudControl#int_range}
+  */
+  readonly intRange?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRange;
+  /**
+  * regexp_pattern block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#regexp_pattern GoogleCloudSecurityComplianceCloudControl#regexp_pattern}
+  */
+  readonly regexpPattern?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPattern;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_values: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesToTerraform(struct!.allowedValues),
+    int_range: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRangeToTerraform(struct!.intRange),
+    regexp_pattern: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPatternToTerraform(struct!.regexpPattern),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_values: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesToHclTerraform(struct!.allowedValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesList",
+    },
+    int_range: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRangeToHclTerraform(struct!.intRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRangeList",
+    },
+    regexp_pattern: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPatternToHclTerraform(struct!.regexpPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedValues?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedValues = this._allowedValues?.internalValue;
+    }
+    if (this._intRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.intRange = this._intRange?.internalValue;
+    }
+    if (this._regexpPattern?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regexpPattern = this._regexpPattern?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedValues.internalValue = undefined;
+      this._intRange.internalValue = undefined;
+      this._regexpPattern.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedValues.internalValue = value.allowedValues;
+      this._intRange.internalValue = value.intRange;
+      this._regexpPattern.internalValue = value.regexpPattern;
+    }
+  }
+
+  // allowed_values - computed: false, optional: true, required: false
+  private _allowedValues = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesOutputReference(this, "allowed_values");
+  public get allowedValues() {
+    return this._allowedValues;
+  }
+  public putAllowedValues(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValues) {
+    this._allowedValues.internalValue = value;
+  }
+  public resetAllowedValues() {
+    this._allowedValues.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedValuesInput() {
+    return this._allowedValues.internalValue;
+  }
+
+  // int_range - computed: false, optional: true, required: false
+  private _intRange = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRangeOutputReference(this, "int_range");
+  public get intRange() {
+    return this._intRange;
+  }
+  public putIntRange(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRange) {
+    this._intRange.internalValue = value;
+  }
+  public resetIntRange() {
+    this._intRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intRangeInput() {
+    return this._intRange.internalValue;
+  }
+
+  // regexp_pattern - computed: false, optional: true, required: false
+  private _regexpPattern = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPatternOutputReference(this, "regexp_pattern");
+  public get regexpPattern() {
+    return this._regexpPattern;
+  }
+  public putRegexpPattern(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPattern) {
+    this._regexpPattern.internalValue = value;
+  }
+  public resetRegexpPattern() {
+    this._regexpPattern.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexpPatternInput() {
+    return this._regexpPattern.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParameters {
+  /**
+  * The description of the parameter. The maximum length is 2000 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#description GoogleCloudSecurityComplianceCloudControl#description}
+  */
+  readonly description?: string;
+  /**
+  * The display name of the parameter. The maximum length is 200 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#display_name GoogleCloudSecurityComplianceCloudControl#display_name}
+  */
+  readonly displayName?: string;
+  /**
+  * if the parameter is required
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#is_required GoogleCloudSecurityComplianceCloudControl#is_required}
+  */
+  readonly isRequired: boolean | cdktf.IResolvable;
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name: string;
+  /**
+  * Parameter value type.
+  * Possible values:
+  * STRING
+  * BOOLEAN
+  * STRINGLIST
+  * NUMBER
+  * ONEOF
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#value_type GoogleCloudSecurityComplianceCloudControl#value_type}
+  */
+  readonly valueType: string;
+  /**
+  * default_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#default_value GoogleCloudSecurityComplianceCloudControl#default_value}
+  */
+  readonly defaultValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValue;
+  /**
+  * substitution_rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#substitution_rules GoogleCloudSecurityComplianceCloudControl#substitution_rules}
+  */
+  readonly substitutionRules?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRules[] | cdktf.IResolvable;
+  /**
+  * validation block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#validation GoogleCloudSecurityComplianceCloudControl#validation}
+  */
+  readonly validation?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidation;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    display_name: cdktf.stringToTerraform(struct!.displayName),
+    is_required: cdktf.booleanToTerraform(struct!.isRequired),
+    name: cdktf.stringToTerraform(struct!.name),
+    value_type: cdktf.stringToTerraform(struct!.valueType),
+    default_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueToTerraform(struct!.defaultValue),
+    substitution_rules: cdktf.listMapper(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesToTerraform, true)(struct!.substitutionRules),
+    validation: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationToTerraform(struct!.validation),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_required: {
+      value: cdktf.booleanToHclTerraform(struct!.isRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_type: {
+      value: cdktf.stringToHclTerraform(struct!.valueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueToHclTerraform(struct!.defaultValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueList",
+    },
+    substitution_rules: {
+      value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesToHclTerraform, true)(struct!.substitutionRules),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesList",
+    },
+    validation: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationToHclTerraform(struct!.validation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._displayName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.displayName = this._displayName;
+    }
+    if (this._isRequired !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isRequired = this._isRequired;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._valueType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.valueType = this._valueType;
+    }
+    if (this._defaultValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultValue = this._defaultValue?.internalValue;
+    }
+    if (this._substitutionRules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.substitutionRules = this._substitutionRules?.internalValue;
+    }
+    if (this._validation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.validation = this._validation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._displayName = undefined;
+      this._isRequired = undefined;
+      this._name = undefined;
+      this._valueType = undefined;
+      this._defaultValue.internalValue = undefined;
+      this._substitutionRules.internalValue = undefined;
+      this._validation.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._displayName = value.displayName;
+      this._isRequired = value.isRequired;
+      this._name = value.name;
+      this._valueType = value.valueType;
+      this._defaultValue.internalValue = value.defaultValue;
+      this._substitutionRules.internalValue = value.substitutionRules;
+      this._validation.internalValue = value.validation;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // display_name - computed: false, optional: true, required: false
+  private _displayName?: string; 
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName;
+  }
+
+  // is_required - computed: false, optional: false, required: true
+  private _isRequired?: boolean | cdktf.IResolvable; 
+  public get isRequired() {
+    return this.getBooleanAttribute('is_required');
+  }
+  public set isRequired(value: boolean | cdktf.IResolvable) {
+    this._isRequired = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isRequiredInput() {
+    return this._isRequired;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value_type - computed: false, optional: false, required: true
+  private _valueType?: string; 
+  public get valueType() {
+    return this.getStringAttribute('value_type');
+  }
+  public set valueType(value: string) {
+    this._valueType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueTypeInput() {
+    return this._valueType;
+  }
+
+  // default_value - computed: false, optional: true, required: false
+  private _defaultValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOutputReference(this, "default_value");
+  public get defaultValue() {
+    return this._defaultValue;
+  }
+  public putDefaultValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValue) {
+    this._defaultValue.internalValue = value;
+  }
+  public resetDefaultValue() {
+    this._defaultValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultValueInput() {
+    return this._defaultValue.internalValue;
+  }
+
+  // substitution_rules - computed: false, optional: true, required: false
+  private _substitutionRules = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesList(this, "substitution_rules", false);
+  public get substitutionRules() {
+    return this._substitutionRules;
+  }
+  public putSubstitutionRules(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRules[] | cdktf.IResolvable) {
+    this._substitutionRules.internalValue = value;
+  }
+  public resetSubstitutionRules() {
+    this._substitutionRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get substitutionRulesInput() {
+    return this._substitutionRules.internalValue;
+  }
+
+  // validation - computed: false, optional: true, required: false
+  private _validation = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationOutputReference(this, "validation");
+  public get validation() {
+    return this._validation;
+  }
+  public putValidation(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidation) {
+    this._validation.internalValue = value;
+  }
+  public resetValidation() {
+    this._validation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validationInput() {
+    return this._validation.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule {
+  /**
+  * Fully qualified proto attribute path (in dot notation).
+  * Example: rules[0].cel_expression.resource_types_values
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#attribute GoogleCloudSecurityComplianceCloudControl#attribute}
+  */
+  readonly attribute?: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute: cdktf.stringToTerraform(struct!.attribute),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attribute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attribute = this._attribute;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._attribute = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._attribute = value.attribute;
+    }
+  }
+
+  // attribute - computed: false, optional: true, required: false
+  private _attribute?: string; 
+  public get attribute() {
+    return this.getStringAttribute('attribute');
+  }
+  public set attribute(value: string) {
+    this._attribute = value;
+  }
+  public resetAttribute() {
+    this._attribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule {
+  /**
+  * Fully qualified proto attribute path (e.g., dot notation)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#attribute GoogleCloudSecurityComplianceCloudControl#attribute}
+  */
+  readonly attribute?: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute: cdktf.stringToTerraform(struct!.attribute),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attribute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attribute = this._attribute;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._attribute = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._attribute = value.attribute;
+    }
+  }
+
+  // attribute - computed: false, optional: true, required: false
+  private _attribute?: string; 
+  public get attribute() {
+    return this.getStringAttribute('attribute');
+  }
+  public set attribute(value: string) {
+    this._attribute = value;
+  }
+  public resetAttribute() {
+    this._attribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules {
+  /**
+  * attribute_substitution_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#attribute_substitution_rule GoogleCloudSecurityComplianceCloudControl#attribute_substitution_rule}
+  */
+  readonly attributeSubstitutionRule?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule;
+  /**
+  * placeholder_substitution_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#placeholder_substitution_rule GoogleCloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+  */
+  readonly placeholderSubstitutionRule?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute_substitution_rule: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct!.attributeSubstitutionRule),
+    placeholder_substitution_rule: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToTerraform(struct!.placeholderSubstitutionRule),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute_substitution_rule: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleToHclTerraform(struct!.attributeSubstitutionRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleList",
+    },
+    placeholder_substitution_rule: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleToHclTerraform(struct!.placeholderSubstitutionRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributeSubstitutionRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeSubstitutionRule = this._attributeSubstitutionRule?.internalValue;
+    }
+    if (this._placeholderSubstitutionRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.placeholderSubstitutionRule = this._placeholderSubstitutionRule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._attributeSubstitutionRule.internalValue = undefined;
+      this._placeholderSubstitutionRule.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._attributeSubstitutionRule.internalValue = value.attributeSubstitutionRule;
+      this._placeholderSubstitutionRule.internalValue = value.placeholderSubstitutionRule;
+    }
+  }
+
+  // attribute_substitution_rule - computed: false, optional: true, required: false
+  private _attributeSubstitutionRule = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRuleOutputReference(this, "attribute_substitution_rule");
+  public get attributeSubstitutionRule() {
+    return this._attributeSubstitutionRule;
+  }
+  public putAttributeSubstitutionRule(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule) {
+    this._attributeSubstitutionRule.internalValue = value;
+  }
+  public resetAttributeSubstitutionRule() {
+    this._attributeSubstitutionRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeSubstitutionRuleInput() {
+    return this._attributeSubstitutionRule.internalValue;
+  }
+
+  // placeholder_substitution_rule - computed: false, optional: true, required: false
+  private _placeholderSubstitutionRule = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRuleOutputReference(this, "placeholder_substitution_rule");
+  public get placeholderSubstitutionRule() {
+    return this._placeholderSubstitutionRule;
+  }
+  public putPlaceholderSubstitutionRule(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule) {
+    this._placeholderSubstitutionRule.internalValue = value;
+  }
+  public resetPlaceholderSubstitutionRule() {
+    this._placeholderSubstitutionRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placeholderSubstitutionRuleInput() {
+    return this._placeholderSubstitutionRule.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues {
+  /**
+  * values block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues[] | cdktf.IResolvable;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesToTerraform, true)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesToHclTerraform, true)(struct!.values),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values.internalValue = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesList(this, "values", false);
+  public get values() {
+    return this._values;
+  }
+  public putValues(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues[] | cdktf.IResolvable) {
+    this._values.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange {
+  /**
+  * Maximum allowed value for the numeric parameter (inclusive).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#max GoogleCloudSecurityComplianceCloudControl#max}
+  */
+  readonly max: string;
+  /**
+  * Minimum allowed value for the numeric parameter (inclusive).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#min GoogleCloudSecurityComplianceCloudControl#min}
+  */
+  readonly min: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.stringToTerraform(struct!.max),
+    min: cdktf.stringToTerraform(struct!.min),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max: {
+      value: cdktf.stringToHclTerraform(struct!.max),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min: {
+      value: cdktf.stringToHclTerraform(struct!.min),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: false, required: true
+  private _max?: string; 
+  public get max() {
+    return this.getStringAttribute('max');
+  }
+  public set max(value: string) {
+    this._max = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: false, required: true
+  private _min?: string; 
+  public get min() {
+    return this.getStringAttribute('min');
+  }
+  public set min(value: string) {
+    this._min = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern {
+  /**
+  * Regex Pattern to match the value(s) of parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#pattern GoogleCloudSecurityComplianceCloudControl#pattern}
+  */
+  readonly pattern: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    pattern: cdktf.stringToTerraform(struct!.pattern),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._pattern !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pattern = this._pattern;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._pattern = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._pattern = value.pattern;
+    }
+  }
+
+  // pattern - computed: false, optional: false, required: true
+  private _pattern?: string; 
+  public get pattern() {
+    return this.getStringAttribute('pattern');
+  }
+  public set pattern(value: string) {
+    this._pattern = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get patternInput() {
+    return this._pattern;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidation {
+  /**
+  * allowed_values block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#allowed_values GoogleCloudSecurityComplianceCloudControl#allowed_values}
+  */
+  readonly allowedValues?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues;
+  /**
+  * int_range block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#int_range GoogleCloudSecurityComplianceCloudControl#int_range}
+  */
+  readonly intRange?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange;
+  /**
+  * regexp_pattern block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#regexp_pattern GoogleCloudSecurityComplianceCloudControl#regexp_pattern}
+  */
+  readonly regexpPattern?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_values: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesToTerraform(struct!.allowedValues),
+    int_range: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeToTerraform(struct!.intRange),
+    regexp_pattern: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternToTerraform(struct!.regexpPattern),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_values: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesToHclTerraform(struct!.allowedValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesList",
+    },
+    int_range: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeToHclTerraform(struct!.intRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeList",
+    },
+    regexp_pattern: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternToHclTerraform(struct!.regexpPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedValues?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedValues = this._allowedValues?.internalValue;
+    }
+    if (this._intRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.intRange = this._intRange?.internalValue;
+    }
+    if (this._regexpPattern?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regexpPattern = this._regexpPattern?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedValues.internalValue = undefined;
+      this._intRange.internalValue = undefined;
+      this._regexpPattern.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedValues.internalValue = value.allowedValues;
+      this._intRange.internalValue = value.intRange;
+      this._regexpPattern.internalValue = value.regexpPattern;
+    }
+  }
+
+  // allowed_values - computed: false, optional: true, required: false
+  private _allowedValues = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesOutputReference(this, "allowed_values");
+  public get allowedValues() {
+    return this._allowedValues;
+  }
+  public putAllowedValues(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues) {
+    this._allowedValues.internalValue = value;
+  }
+  public resetAllowedValues() {
+    this._allowedValues.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedValuesInput() {
+    return this._allowedValues.internalValue;
+  }
+
+  // int_range - computed: false, optional: true, required: false
+  private _intRange = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRangeOutputReference(this, "int_range");
+  public get intRange() {
+    return this._intRange;
+  }
+  public putIntRange(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange) {
+    this._intRange.internalValue = value;
+  }
+  public resetIntRange() {
+    this._intRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intRangeInput() {
+    return this._intRange.internalValue;
+  }
+
+  // regexp_pattern - computed: false, optional: true, required: false
+  private _regexpPattern = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPatternOutputReference(this, "regexp_pattern");
+  public get regexpPattern() {
+    return this._regexpPattern;
+  }
+  public putRegexpPattern(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern) {
+    this._regexpPattern.internalValue = value;
+  }
+  public resetRegexpPattern() {
+    this._regexpPattern.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexpPatternInput() {
+    return this._regexpPattern.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubParameters {
+  /**
+  * The description of the parameter. The maximum length is 2000 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#description GoogleCloudSecurityComplianceCloudControl#description}
+  */
+  readonly description?: string;
+  /**
+  * The display name of the parameter. The maximum length is 200 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#display_name GoogleCloudSecurityComplianceCloudControl#display_name}
+  */
+  readonly displayName?: string;
+  /**
+  * if the parameter is required
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#is_required GoogleCloudSecurityComplianceCloudControl#is_required}
+  */
+  readonly isRequired: boolean | cdktf.IResolvable;
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name: string;
+  /**
+  * Parameter value type.
+  * Possible values:
+  * STRING
+  * BOOLEAN
+  * STRINGLIST
+  * NUMBER
+  * ONEOF
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#value_type GoogleCloudSecurityComplianceCloudControl#value_type}
+  */
+  readonly valueType: string;
+  /**
+  * default_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#default_value GoogleCloudSecurityComplianceCloudControl#default_value}
+  */
+  readonly defaultValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue;
+  /**
+  * sub_parameters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#sub_parameters GoogleCloudSecurityComplianceCloudControl#sub_parameters}
+  */
+  readonly subParameters?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParameters[] | cdktf.IResolvable;
+  /**
+  * substitution_rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#substitution_rules GoogleCloudSecurityComplianceCloudControl#substitution_rules}
+  */
+  readonly substitutionRules?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules[] | cdktf.IResolvable;
+  /**
+  * validation block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#validation GoogleCloudSecurityComplianceCloudControl#validation}
+  */
+  readonly validation?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidation;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    display_name: cdktf.stringToTerraform(struct!.displayName),
+    is_required: cdktf.booleanToTerraform(struct!.isRequired),
+    name: cdktf.stringToTerraform(struct!.name),
+    value_type: cdktf.stringToTerraform(struct!.valueType),
+    default_value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueToTerraform(struct!.defaultValue),
+    sub_parameters: cdktf.listMapper(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersToTerraform, true)(struct!.subParameters),
+    substitution_rules: cdktf.listMapper(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesToTerraform, true)(struct!.substitutionRules),
+    validation: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationToTerraform(struct!.validation),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubParametersToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_required: {
+      value: cdktf.booleanToHclTerraform(struct!.isRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_type: {
+      value: cdktf.stringToHclTerraform(struct!.valueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueToHclTerraform(struct!.defaultValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueList",
+    },
+    sub_parameters: {
+      value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersToHclTerraform, true)(struct!.subParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersList",
+    },
+    substitution_rules: {
+      value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesToHclTerraform, true)(struct!.substitutionRules),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesList",
+    },
+    validation: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationToHclTerraform(struct!.validation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._displayName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.displayName = this._displayName;
+    }
+    if (this._isRequired !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isRequired = this._isRequired;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._valueType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.valueType = this._valueType;
+    }
+    if (this._defaultValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultValue = this._defaultValue?.internalValue;
+    }
+    if (this._subParameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subParameters = this._subParameters?.internalValue;
+    }
+    if (this._substitutionRules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.substitutionRules = this._substitutionRules?.internalValue;
+    }
+    if (this._validation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.validation = this._validation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._displayName = undefined;
+      this._isRequired = undefined;
+      this._name = undefined;
+      this._valueType = undefined;
+      this._defaultValue.internalValue = undefined;
+      this._subParameters.internalValue = undefined;
+      this._substitutionRules.internalValue = undefined;
+      this._validation.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._displayName = value.displayName;
+      this._isRequired = value.isRequired;
+      this._name = value.name;
+      this._valueType = value.valueType;
+      this._defaultValue.internalValue = value.defaultValue;
+      this._subParameters.internalValue = value.subParameters;
+      this._substitutionRules.internalValue = value.substitutionRules;
+      this._validation.internalValue = value.validation;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // display_name - computed: false, optional: true, required: false
+  private _displayName?: string; 
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName;
+  }
+
+  // is_required - computed: false, optional: false, required: true
+  private _isRequired?: boolean | cdktf.IResolvable; 
+  public get isRequired() {
+    return this.getBooleanAttribute('is_required');
+  }
+  public set isRequired(value: boolean | cdktf.IResolvable) {
+    this._isRequired = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isRequiredInput() {
+    return this._isRequired;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value_type - computed: false, optional: false, required: true
+  private _valueType?: string; 
+  public get valueType() {
+    return this.getStringAttribute('value_type');
+  }
+  public set valueType(value: string) {
+    this._valueType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueTypeInput() {
+    return this._valueType;
+  }
+
+  // default_value - computed: false, optional: true, required: false
+  private _defaultValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference(this, "default_value");
+  public get defaultValue() {
+    return this._defaultValue;
+  }
+  public putDefaultValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue) {
+    this._defaultValue.internalValue = value;
+  }
+  public resetDefaultValue() {
+    this._defaultValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultValueInput() {
+    return this._defaultValue.internalValue;
+  }
+
+  // sub_parameters - computed: false, optional: true, required: false
+  private _subParameters = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersList(this, "sub_parameters", false);
+  public get subParameters() {
+    return this._subParameters;
+  }
+  public putSubParameters(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubParameters[] | cdktf.IResolvable) {
+    this._subParameters.internalValue = value;
+  }
+  public resetSubParameters() {
+    this._subParameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subParametersInput() {
+    return this._subParameters.internalValue;
+  }
+
+  // substitution_rules - computed: false, optional: true, required: false
+  private _substitutionRules = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesList(this, "substitution_rules", false);
+  public get substitutionRules() {
+    return this._substitutionRules;
+  }
+  public putSubstitutionRules(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules[] | cdktf.IResolvable) {
+    this._substitutionRules.internalValue = value;
+  }
+  public resetSubstitutionRules() {
+    this._substitutionRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get substitutionRulesInput() {
+    return this._substitutionRules.internalValue;
+  }
+
+  // validation - computed: false, optional: true, required: false
+  private _validation = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidationOutputReference(this, "validation");
+  public get validation() {
+    return this._validation;
+  }
+  public putValidation(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersValidation) {
+    this._validation.internalValue = value;
+  }
+  public resetValidation() {
+    this._validation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validationInput() {
+    return this._validation.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlParameterSpecSubParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule {
+  /**
+  * Fully qualified proto attribute path (in dot notation).
+  * Example: rules[0].cel_expression.resource_types_values
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#attribute GoogleCloudSecurityComplianceCloudControl#attribute}
+  */
+  readonly attribute?: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute: cdktf.stringToTerraform(struct!.attribute),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attribute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attribute = this._attribute;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._attribute = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._attribute = value.attribute;
+    }
+  }
+
+  // attribute - computed: false, optional: true, required: false
+  private _attribute?: string; 
+  public get attribute() {
+    return this.getStringAttribute('attribute');
+  }
+  public set attribute(value: string) {
+    this._attribute = value;
+  }
+  public resetAttribute() {
+    this._attribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule {
+  /**
+  * Fully qualified proto attribute path (e.g., dot notation)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#attribute GoogleCloudSecurityComplianceCloudControl#attribute}
+  */
+  readonly attribute?: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute: cdktf.stringToTerraform(struct!.attribute),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attribute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attribute = this._attribute;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._attribute = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._attribute = value.attribute;
+    }
+  }
+
+  // attribute - computed: false, optional: true, required: false
+  private _attribute?: string; 
+  public get attribute() {
+    return this.getStringAttribute('attribute');
+  }
+  public set attribute(value: string) {
+    this._attribute = value;
+  }
+  public resetAttribute() {
+    this._attribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRules {
+  /**
+  * attribute_substitution_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#attribute_substitution_rule GoogleCloudSecurityComplianceCloudControl#attribute_substitution_rule}
+  */
+  readonly attributeSubstitutionRule?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule;
+  /**
+  * placeholder_substitution_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#placeholder_substitution_rule GoogleCloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+  */
+  readonly placeholderSubstitutionRule?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute_substitution_rule: googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleToTerraform(struct!.attributeSubstitutionRule),
+    placeholder_substitution_rule: googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleToTerraform(struct!.placeholderSubstitutionRule),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute_substitution_rule: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleToHclTerraform(struct!.attributeSubstitutionRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleList",
+    },
+    placeholder_substitution_rule: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleToHclTerraform(struct!.placeholderSubstitutionRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributeSubstitutionRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeSubstitutionRule = this._attributeSubstitutionRule?.internalValue;
+    }
+    if (this._placeholderSubstitutionRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.placeholderSubstitutionRule = this._placeholderSubstitutionRule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._attributeSubstitutionRule.internalValue = undefined;
+      this._placeholderSubstitutionRule.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._attributeSubstitutionRule.internalValue = value.attributeSubstitutionRule;
+      this._placeholderSubstitutionRule.internalValue = value.placeholderSubstitutionRule;
+    }
+  }
+
+  // attribute_substitution_rule - computed: false, optional: true, required: false
+  private _attributeSubstitutionRule = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRuleOutputReference(this, "attribute_substitution_rule");
+  public get attributeSubstitutionRule() {
+    return this._attributeSubstitutionRule;
+  }
+  public putAttributeSubstitutionRule(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule) {
+    this._attributeSubstitutionRule.internalValue = value;
+  }
+  public resetAttributeSubstitutionRule() {
+    this._attributeSubstitutionRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeSubstitutionRuleInput() {
+    return this._attributeSubstitutionRule.internalValue;
+  }
+
+  // placeholder_substitution_rule - computed: false, optional: true, required: false
+  private _placeholderSubstitutionRule = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRuleOutputReference(this, "placeholder_substitution_rule");
+  public get placeholderSubstitutionRule() {
+    return this._placeholderSubstitutionRule;
+  }
+  public putPlaceholderSubstitutionRule(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule) {
+    this._placeholderSubstitutionRule.internalValue = value;
+  }
+  public resetPlaceholderSubstitutionRule() {
+    this._placeholderSubstitutionRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placeholderSubstitutionRuleInput() {
+    return this._placeholderSubstitutionRule.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue {
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name?: string;
+  /**
+  * parameter_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#parameter_value GoogleCloudSecurityComplianceCloudControl#parameter_value}
+  */
+  readonly parameterValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameter_value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueToTerraform(struct!.parameterValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueToHclTerraform(struct!.parameterValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._parameterValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._parameterValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._parameterValue.internalValue = value.parameterValue;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parameter_value - computed: false, optional: true, required: false
+  private _parameterValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOutputReference(this, "parameter_value");
+  public get parameterValue() {
+    return this._parameterValue;
+  }
+  public putParameterValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue) {
+    this._parameterValue.internalValue = value;
+  }
+  public resetParameterValue() {
+    this._parameterValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues {
+  /**
+  * Represents a boolean value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#bool_value GoogleCloudSecurityComplianceCloudControl#bool_value}
+  */
+  readonly boolValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a double value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#number_value GoogleCloudSecurityComplianceCloudControl#number_value}
+  */
+  readonly numberValue?: number;
+  /**
+  * Represents a string value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_value GoogleCloudSecurityComplianceCloudControl#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * oneof_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#oneof_value GoogleCloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue;
+  /**
+  * string_list_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#string_list_value GoogleCloudSecurityComplianceCloudControl#string_list_value}
+  */
+  readonly stringListValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
+    number_value: cdktf.numberToTerraform(struct!.numberValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    oneof_value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueToTerraform(struct!.oneofValue),
+    string_list_value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueToTerraform(struct!.stringListValue),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bool_value: {
+      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_value: {
+      value: cdktf.numberToHclTerraform(struct!.numberValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_value: {
+      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oneof_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueToHclTerraform(struct!.oneofValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueList",
+    },
+    string_list_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueToHclTerraform(struct!.stringListValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._boolValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.boolValue = this._boolValue;
+    }
+    if (this._numberValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberValue = this._numberValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._oneofValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue?.internalValue;
+    }
+    if (this._stringListValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringListValue = this._stringListValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._boolValue = undefined;
+      this._numberValue = undefined;
+      this._stringValue = undefined;
+      this._oneofValue.internalValue = undefined;
+      this._stringListValue.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._boolValue = value.boolValue;
+      this._numberValue = value.numberValue;
+      this._stringValue = value.stringValue;
+      this._oneofValue.internalValue = value.oneofValue;
+      this._stringListValue.internalValue = value.stringListValue;
+    }
+  }
+
+  // bool_value - computed: false, optional: true, required: false
+  private _boolValue?: boolean | cdktf.IResolvable; 
+  public get boolValue() {
+    return this.getBooleanAttribute('bool_value');
+  }
+  public set boolValue(value: boolean | cdktf.IResolvable) {
+    this._boolValue = value;
+  }
+  public resetBoolValue() {
+    this._boolValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get boolValueInput() {
+    return this._boolValue;
+  }
+
+  // number_value - computed: false, optional: true, required: false
+  private _numberValue?: number; 
+  public get numberValue() {
+    return this.getNumberAttribute('number_value');
+  }
+  public set numberValue(value: number) {
+    this._numberValue = value;
+  }
+  public resetNumberValue() {
+    this._numberValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberValueInput() {
+    return this._numberValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueOutputReference(this, "oneof_value");
+  public get oneofValue() {
+    return this._oneofValue;
+  }
+  public putOneofValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue) {
+    this._oneofValue.internalValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue.internalValue;
+  }
+
+  // string_list_value - computed: false, optional: true, required: false
+  private _stringListValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValueOutputReference(this, "string_list_value");
+  public get stringListValue() {
+    return this._stringListValue;
+  }
+  public putStringListValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue) {
+    this._stringListValue.internalValue = value;
+  }
+  public resetStringListValue() {
+    this._stringListValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringListValueInput() {
+    return this._stringListValue.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues {
+  /**
+  * values block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues[] | cdktf.IResolvable;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesToTerraform, true)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesToHclTerraform, true)(struct!.values),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values.internalValue = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesList(this, "values", false);
+  public get values() {
+    return this._values;
+  }
+  public putValues(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues[] | cdktf.IResolvable) {
+    this._values.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRange {
+  /**
+  * Maximum allowed value for the numeric parameter (inclusive).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#max GoogleCloudSecurityComplianceCloudControl#max}
+  */
+  readonly max: string;
+  /**
+  * Minimum allowed value for the numeric parameter (inclusive).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#min GoogleCloudSecurityComplianceCloudControl#min}
+  */
+  readonly min: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationIntRangeToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRangeOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.stringToTerraform(struct!.max),
+    min: cdktf.stringToTerraform(struct!.min),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationIntRangeToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRangeOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max: {
+      value: cdktf.stringToHclTerraform(struct!.max),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min: {
+      value: cdktf.stringToHclTerraform(struct!.min),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: false, required: true
+  private _max?: string; 
+  public get max() {
+    return this.getStringAttribute('max');
+  }
+  public set max(value: string) {
+    this._max = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: false, required: true
+  private _min?: string; 
+  public get min() {
+    return this.getStringAttribute('min');
+  }
+  public set min(value: string) {
+    this._min = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern {
+  /**
+  * Regex Pattern to match the value(s) of parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#pattern GoogleCloudSecurityComplianceCloudControl#pattern}
+  */
+  readonly pattern: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    pattern: cdktf.stringToTerraform(struct!.pattern),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._pattern !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pattern = this._pattern;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._pattern = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._pattern = value.pattern;
+    }
+  }
+
+  // pattern - computed: false, optional: false, required: true
+  private _pattern?: string; 
+  public get pattern() {
+    return this.getStringAttribute('pattern');
+  }
+  public set pattern(value: string) {
+    this._pattern = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get patternInput() {
+    return this._pattern;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpecValidation {
+  /**
+  * allowed_values block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#allowed_values GoogleCloudSecurityComplianceCloudControl#allowed_values}
+  */
+  readonly allowedValues?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues;
+  /**
+  * int_range block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#int_range GoogleCloudSecurityComplianceCloudControl#int_range}
+  */
+  readonly intRange?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRange;
+  /**
+  * regexp_pattern block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#regexp_pattern GoogleCloudSecurityComplianceCloudControl#regexp_pattern}
+  */
+  readonly regexpPattern?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_values: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesToTerraform(struct!.allowedValues),
+    int_range: googleCloudSecurityComplianceCloudControlParameterSpecValidationIntRangeToTerraform(struct!.intRange),
+    regexp_pattern: googleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternToTerraform(struct!.regexpPattern),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecValidationToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationOutputReference | GoogleCloudSecurityComplianceCloudControlParameterSpecValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_values: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesToHclTerraform(struct!.allowedValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesList",
+    },
+    int_range: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationIntRangeToHclTerraform(struct!.intRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRangeList",
+    },
+    regexp_pattern: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternToHclTerraform(struct!.regexpPattern),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecValidationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpecValidation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedValues?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedValues = this._allowedValues?.internalValue;
+    }
+    if (this._intRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.intRange = this._intRange?.internalValue;
+    }
+    if (this._regexpPattern?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regexpPattern = this._regexpPattern?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedValues.internalValue = undefined;
+      this._intRange.internalValue = undefined;
+      this._regexpPattern.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedValues.internalValue = value.allowedValues;
+      this._intRange.internalValue = value.intRange;
+      this._regexpPattern.internalValue = value.regexpPattern;
+    }
+  }
+
+  // allowed_values - computed: false, optional: true, required: false
+  private _allowedValues = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesOutputReference(this, "allowed_values");
+  public get allowedValues() {
+    return this._allowedValues;
+  }
+  public putAllowedValues(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues) {
+    this._allowedValues.internalValue = value;
+  }
+  public resetAllowedValues() {
+    this._allowedValues.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedValuesInput() {
+    return this._allowedValues.internalValue;
+  }
+
+  // int_range - computed: false, optional: true, required: false
+  private _intRange = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRangeOutputReference(this, "int_range");
+  public get intRange() {
+    return this._intRange;
+  }
+  public putIntRange(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationIntRange) {
+    this._intRange.internalValue = value;
+  }
+  public resetIntRange() {
+    this._intRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intRangeInput() {
+    return this._intRange.internalValue;
+  }
+
+  // regexp_pattern - computed: false, optional: true, required: false
+  private _regexpPattern = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPatternOutputReference(this, "regexp_pattern");
+  public get regexpPattern() {
+    return this._regexpPattern;
+  }
+  public putRegexpPattern(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern) {
+    this._regexpPattern.internalValue = value;
+  }
+  public resetRegexpPattern() {
+    this._regexpPattern.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexpPatternInput() {
+    return this._regexpPattern.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlParameterSpec {
+  /**
+  * The description of the parameter. The maximum length is 2000 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#description GoogleCloudSecurityComplianceCloudControl#description}
+  */
+  readonly description?: string;
+  /**
+  * The display name of the parameter. The maximum length is 200 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#display_name GoogleCloudSecurityComplianceCloudControl#display_name}
+  */
+  readonly displayName?: string;
+  /**
+  * if the parameter is required
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#is_required GoogleCloudSecurityComplianceCloudControl#is_required}
+  */
+  readonly isRequired: boolean | cdktf.IResolvable;
+  /**
+  * The name of the parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#name GoogleCloudSecurityComplianceCloudControl#name}
+  */
+  readonly name: string;
+  /**
+  * Parameter value type.
+  * Possible values:
+  * STRING
+  * BOOLEAN
+  * STRINGLIST
+  * NUMBER
+  * ONEOF
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#value_type GoogleCloudSecurityComplianceCloudControl#value_type}
+  */
+  readonly valueType: string;
+  /**
+  * default_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#default_value GoogleCloudSecurityComplianceCloudControl#default_value}
+  */
+  readonly defaultValue?: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValue;
+  /**
+  * sub_parameters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#sub_parameters GoogleCloudSecurityComplianceCloudControl#sub_parameters}
+  */
+  readonly subParameters?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParameters[] | cdktf.IResolvable;
+  /**
+  * substitution_rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#substitution_rules GoogleCloudSecurityComplianceCloudControl#substitution_rules}
+  */
+  readonly substitutionRules?: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRules[] | cdktf.IResolvable;
+  /**
+  * validation block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#validation GoogleCloudSecurityComplianceCloudControl#validation}
+  */
+  readonly validation?: GoogleCloudSecurityComplianceCloudControlParameterSpecValidation;
+}
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpec | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    display_name: cdktf.stringToTerraform(struct!.displayName),
+    is_required: cdktf.booleanToTerraform(struct!.isRequired),
+    name: cdktf.stringToTerraform(struct!.name),
+    value_type: cdktf.stringToTerraform(struct!.valueType),
+    default_value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueToTerraform(struct!.defaultValue),
+    sub_parameters: cdktf.listMapper(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersToTerraform, true)(struct!.subParameters),
+    substitution_rules: cdktf.listMapper(googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesToTerraform, true)(struct!.substitutionRules),
+    validation: googleCloudSecurityComplianceCloudControlParameterSpecValidationToTerraform(struct!.validation),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlParameterSpecToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlParameterSpec | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_required: {
+      value: cdktf.booleanToHclTerraform(struct!.isRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_type: {
+      value: cdktf.stringToHclTerraform(struct!.valueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_value: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecDefaultValueToHclTerraform(struct!.defaultValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueList",
+    },
+    sub_parameters: {
+      value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlParameterSpecSubParametersToHclTerraform, true)(struct!.subParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersList",
+    },
+    substitution_rules: {
+      value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesToHclTerraform, true)(struct!.substitutionRules),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesList",
+    },
+    validation: {
+      value: googleCloudSecurityComplianceCloudControlParameterSpecValidationToHclTerraform(struct!.validation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecValidationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlParameterSpec | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._displayName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.displayName = this._displayName;
+    }
+    if (this._isRequired !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isRequired = this._isRequired;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._valueType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.valueType = this._valueType;
+    }
+    if (this._defaultValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultValue = this._defaultValue?.internalValue;
+    }
+    if (this._subParameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subParameters = this._subParameters?.internalValue;
+    }
+    if (this._substitutionRules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.substitutionRules = this._substitutionRules?.internalValue;
+    }
+    if (this._validation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.validation = this._validation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpec | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._displayName = undefined;
+      this._isRequired = undefined;
+      this._name = undefined;
+      this._valueType = undefined;
+      this._defaultValue.internalValue = undefined;
+      this._subParameters.internalValue = undefined;
+      this._substitutionRules.internalValue = undefined;
+      this._validation.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._displayName = value.displayName;
+      this._isRequired = value.isRequired;
+      this._name = value.name;
+      this._valueType = value.valueType;
+      this._defaultValue.internalValue = value.defaultValue;
+      this._subParameters.internalValue = value.subParameters;
+      this._substitutionRules.internalValue = value.substitutionRules;
+      this._validation.internalValue = value.validation;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // display_name - computed: false, optional: true, required: false
+  private _displayName?: string; 
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName;
+  }
+
+  // is_required - computed: false, optional: false, required: true
+  private _isRequired?: boolean | cdktf.IResolvable; 
+  public get isRequired() {
+    return this.getBooleanAttribute('is_required');
+  }
+  public set isRequired(value: boolean | cdktf.IResolvable) {
+    this._isRequired = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isRequiredInput() {
+    return this._isRequired;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value_type - computed: false, optional: false, required: true
+  private _valueType?: string; 
+  public get valueType() {
+    return this.getStringAttribute('value_type');
+  }
+  public set valueType(value: string) {
+    this._valueType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueTypeInput() {
+    return this._valueType;
+  }
+
+  // default_value - computed: false, optional: true, required: false
+  private _defaultValue = new GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValueOutputReference(this, "default_value");
+  public get defaultValue() {
+    return this._defaultValue;
+  }
+  public putDefaultValue(value: GoogleCloudSecurityComplianceCloudControlParameterSpecDefaultValue) {
+    this._defaultValue.internalValue = value;
+  }
+  public resetDefaultValue() {
+    this._defaultValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultValueInput() {
+    return this._defaultValue.internalValue;
+  }
+
+  // sub_parameters - computed: false, optional: true, required: false
+  private _subParameters = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubParametersList(this, "sub_parameters", false);
+  public get subParameters() {
+    return this._subParameters;
+  }
+  public putSubParameters(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubParameters[] | cdktf.IResolvable) {
+    this._subParameters.internalValue = value;
+  }
+  public resetSubParameters() {
+    this._subParameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subParametersInput() {
+    return this._subParameters.internalValue;
+  }
+
+  // substitution_rules - computed: false, optional: true, required: false
+  private _substitutionRules = new GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesList(this, "substitution_rules", false);
+  public get substitutionRules() {
+    return this._substitutionRules;
+  }
+  public putSubstitutionRules(value: GoogleCloudSecurityComplianceCloudControlParameterSpecSubstitutionRules[] | cdktf.IResolvable) {
+    this._substitutionRules.internalValue = value;
+  }
+  public resetSubstitutionRules() {
+    this._substitutionRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get substitutionRulesInput() {
+    return this._substitutionRules.internalValue;
+  }
+
+  // validation - computed: false, optional: true, required: false
+  private _validation = new GoogleCloudSecurityComplianceCloudControlParameterSpecValidationOutputReference(this, "validation");
+  public get validation() {
+    return this._validation;
+  }
+  public putValidation(value: GoogleCloudSecurityComplianceCloudControlParameterSpecValidation) {
+    this._validation.internalValue = value;
+  }
+  public resetValidation() {
+    this._validation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validationInput() {
+    return this._validation.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlParameterSpecList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlParameterSpec[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlParameterSpecOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlParameterSpecOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues {
+  /**
+  * The strings in the list.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#values GoogleCloudSecurityComplianceCloudControl#values}
+  */
+  readonly values: string[];
+}
+
+export function googleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesOutputReference | GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesOutputReference | GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._values = value.values;
+    }
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlRulesCelExpression {
+  /**
+  * Logic expression in CEL language.
+  * The max length of the condition is 1000 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#expression GoogleCloudSecurityComplianceCloudControl#expression}
+  */
+  readonly expression: string;
+  /**
+  * resource_types_values block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#resource_types_values GoogleCloudSecurityComplianceCloudControl#resource_types_values}
+  */
+  readonly resourceTypesValues?: GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues;
+}
+
+export function googleCloudSecurityComplianceCloudControlRulesCelExpressionToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlRulesCelExpressionOutputReference | GoogleCloudSecurityComplianceCloudControlRulesCelExpression): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    expression: cdktf.stringToTerraform(struct!.expression),
+    resource_types_values: googleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesToTerraform(struct!.resourceTypesValues),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlRulesCelExpressionToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlRulesCelExpressionOutputReference | GoogleCloudSecurityComplianceCloudControlRulesCelExpression): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_types_values: {
+      value: googleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesToHclTerraform(struct!.resourceTypesValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlRulesCelExpressionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlRulesCelExpression | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._resourceTypesValues?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceTypesValues = this._resourceTypesValues?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlRulesCelExpression | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._expression = undefined;
+      this._resourceTypesValues.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._expression = value.expression;
+      this._resourceTypesValues.internalValue = value.resourceTypesValues;
+    }
+  }
+
+  // expression - computed: false, optional: false, required: true
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // resource_types_values - computed: false, optional: true, required: false
+  private _resourceTypesValues = new GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValuesOutputReference(this, "resource_types_values");
+  public get resourceTypesValues() {
+    return this._resourceTypesValues;
+  }
+  public putResourceTypesValues(value: GoogleCloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues) {
+    this._resourceTypesValues.internalValue = value;
+  }
+  public resetResourceTypesValues() {
+    this._resourceTypesValues.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypesValuesInput() {
+    return this._resourceTypesValues.internalValue;
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlRules {
+  /**
+  * Description of the Rule. The maximum length is 2000 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#description GoogleCloudSecurityComplianceCloudControl#description}
+  */
+  readonly description?: string;
+  /**
+  * The functionality enabled by the Rule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#rule_action_types GoogleCloudSecurityComplianceCloudControl#rule_action_types}
+  */
+  readonly ruleActionTypes: string[];
+  /**
+  * cel_expression block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#cel_expression GoogleCloudSecurityComplianceCloudControl#cel_expression}
+  */
+  readonly celExpression?: GoogleCloudSecurityComplianceCloudControlRulesCelExpression;
+}
+
+export function googleCloudSecurityComplianceCloudControlRulesToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    rule_action_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ruleActionTypes),
+    cel_expression: googleCloudSecurityComplianceCloudControlRulesCelExpressionToTerraform(struct!.celExpression),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlRulesToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_action_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ruleActionTypes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    cel_expression: {
+      value: googleCloudSecurityComplianceCloudControlRulesCelExpressionToHclTerraform(struct!.celExpression),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudSecurityComplianceCloudControlRulesCelExpressionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._ruleActionTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ruleActionTypes = this._ruleActionTypes;
+    }
+    if (this._celExpression?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.celExpression = this._celExpression?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._ruleActionTypes = undefined;
+      this._celExpression.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._ruleActionTypes = value.ruleActionTypes;
+      this._celExpression.internalValue = value.celExpression;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // rule_action_types - computed: false, optional: false, required: true
+  private _ruleActionTypes?: string[]; 
+  public get ruleActionTypes() {
+    return this.getListAttribute('rule_action_types');
+  }
+  public set ruleActionTypes(value: string[]) {
+    this._ruleActionTypes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleActionTypesInput() {
+    return this._ruleActionTypes;
+  }
+
+  // cel_expression - computed: false, optional: true, required: false
+  private _celExpression = new GoogleCloudSecurityComplianceCloudControlRulesCelExpressionOutputReference(this, "cel_expression");
+  public get celExpression() {
+    return this._celExpression;
+  }
+  public putCelExpression(value: GoogleCloudSecurityComplianceCloudControlRulesCelExpression) {
+    this._celExpression.internalValue = value;
+  }
+  public resetCelExpression() {
+    this._celExpression.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get celExpressionInput() {
+    return this._celExpression.internalValue;
+  }
+}
+
+export class GoogleCloudSecurityComplianceCloudControlRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudSecurityComplianceCloudControlRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudSecurityComplianceCloudControlRulesOutputReference {
+    return new GoogleCloudSecurityComplianceCloudControlRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudSecurityComplianceCloudControlTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#create GoogleCloudSecurityComplianceCloudControl#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#delete GoogleCloudSecurityComplianceCloudControl#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#update GoogleCloudSecurityComplianceCloudControl#update}
+  */
+  readonly update?: string;
+}
+
+export function googleCloudSecurityComplianceCloudControlTimeoutsToTerraform(struct?: GoogleCloudSecurityComplianceCloudControlTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
+export function googleCloudSecurityComplianceCloudControlTimeoutsToHclTerraform(struct?: GoogleCloudSecurityComplianceCloudControlTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudSecurityComplianceCloudControlTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): GoogleCloudSecurityComplianceCloudControlTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudSecurityComplianceCloudControlTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control}
+*/
+export class GoogleCloudSecurityComplianceCloudControl extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "google_cloud_security_compliance_cloud_control";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GoogleCloudSecurityComplianceCloudControl resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GoogleCloudSecurityComplianceCloudControl to import
+  * @param importFromId The id of the existing GoogleCloudSecurityComplianceCloudControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GoogleCloudSecurityComplianceCloudControl to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_cloud_security_compliance_cloud_control", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GoogleCloudSecurityComplianceCloudControlConfig
+  */
+  public constructor(scope: Construct, id: string, config: GoogleCloudSecurityComplianceCloudControlConfig) {
+    super(scope, id, {
+      terraformResourceType: 'google_cloud_security_compliance_cloud_control',
+      terraformGeneratorMetadata: {
+        providerName: 'google-beta',
+        providerVersion: '8.3.0',
+        providerVersionConstraint: '~> 8.3.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._categories = config.categories;
+    this._cloudControlId = config.cloudControlId;
+    this._deletionPolicy = config.deletionPolicy;
+    this._description = config.description;
+    this._displayName = config.displayName;
+    this._findingCategory = config.findingCategory;
+    this._id = config.id;
+    this._location = config.location;
+    this._organization = config.organization;
+    this._parent = config.parent;
+    this._remediationSteps = config.remediationSteps;
+    this._severity = config.severity;
+    this._supportedCloudProviders = config.supportedCloudProviders;
+    this._parameterSpec.internalValue = config.parameterSpec;
+    this._rules.internalValue = config.rules;
+    this._timeouts.internalValue = config.timeouts;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // categories - computed: false, optional: true, required: false
+  private _categories?: string[]; 
+  public get categories() {
+    return this.getListAttribute('categories');
+  }
+  public set categories(value: string[]) {
+    this._categories = value;
+  }
+  public resetCategories() {
+    this._categories = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get categoriesInput() {
+    return this._categories;
+  }
+
+  // cloud_control_id - computed: false, optional: false, required: true
+  private _cloudControlId?: string; 
+  public get cloudControlId() {
+    return this.getStringAttribute('cloud_control_id');
+  }
+  public set cloudControlId(value: string) {
+    this._cloudControlId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudControlIdInput() {
+    return this._cloudControlId;
+  }
+
+  // create_time - computed: true, optional: false, required: false
+  public get createTime() {
+    return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // display_name - computed: false, optional: true, required: false
+  private _displayName?: string; 
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName;
+  }
+
+  // finding_category - computed: false, optional: true, required: false
+  private _findingCategory?: string; 
+  public get findingCategory() {
+    return this.getStringAttribute('finding_category');
+  }
+  public set findingCategory(value: string) {
+    this._findingCategory = value;
+  }
+  public resetFindingCategory() {
+    this._findingCategory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get findingCategoryInput() {
+    return this._findingCategory;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // location - computed: false, optional: false, required: true
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // major_revision_id - computed: true, optional: false, required: false
+  public get majorRevisionId() {
+    return this.getStringAttribute('major_revision_id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // organization - computed: true, optional: true, required: false
+  private _organization?: string; 
+  public get organization() {
+    return this.getStringAttribute('organization');
+  }
+  public set organization(value: string) {
+    this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationInput() {
+    return this._organization;
+  }
+
+  // parent - computed: true, optional: true, required: false
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  public resetParent() {
+    this._parent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
+  }
+
+  // related_frameworks - computed: true, optional: false, required: false
+  public get relatedFrameworks() {
+    return this.getListAttribute('related_frameworks');
+  }
+
+  // remediation_steps - computed: false, optional: true, required: false
+  private _remediationSteps?: string; 
+  public get remediationSteps() {
+    return this.getStringAttribute('remediation_steps');
+  }
+  public set remediationSteps(value: string) {
+    this._remediationSteps = value;
+  }
+  public resetRemediationSteps() {
+    this._remediationSteps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remediationStepsInput() {
+    return this._remediationSteps;
+  }
+
+  // severity - computed: false, optional: true, required: false
+  private _severity?: string; 
+  public get severity() {
+    return this.getStringAttribute('severity');
+  }
+  public set severity(value: string) {
+    this._severity = value;
+  }
+  public resetSeverity() {
+    this._severity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get severityInput() {
+    return this._severity;
+  }
+
+  // supported_cloud_providers - computed: false, optional: true, required: false
+  private _supportedCloudProviders?: string[]; 
+  public get supportedCloudProviders() {
+    return this.getListAttribute('supported_cloud_providers');
+  }
+  public set supportedCloudProviders(value: string[]) {
+    this._supportedCloudProviders = value;
+  }
+  public resetSupportedCloudProviders() {
+    this._supportedCloudProviders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportedCloudProvidersInput() {
+    return this._supportedCloudProviders;
+  }
+
+  // supported_enforcement_modes - computed: true, optional: false, required: false
+  public get supportedEnforcementModes() {
+    return this.getListAttribute('supported_enforcement_modes');
+  }
+
+  // supported_target_resource_types - computed: true, optional: false, required: false
+  public get supportedTargetResourceTypes() {
+    return this.getListAttribute('supported_target_resource_types');
+  }
+
+  // parameter_spec - computed: false, optional: true, required: false
+  private _parameterSpec = new GoogleCloudSecurityComplianceCloudControlParameterSpecList(this, "parameter_spec", false);
+  public get parameterSpec() {
+    return this._parameterSpec;
+  }
+  public putParameterSpec(value: GoogleCloudSecurityComplianceCloudControlParameterSpec[] | cdktf.IResolvable) {
+    this._parameterSpec.internalValue = value;
+  }
+  public resetParameterSpec() {
+    this._parameterSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterSpecInput() {
+    return this._parameterSpec.internalValue;
+  }
+
+  // rules - computed: false, optional: true, required: false
+  private _rules = new GoogleCloudSecurityComplianceCloudControlRulesList(this, "rules", false);
+  public get rules() {
+    return this._rules;
+  }
+  public putRules(value: GoogleCloudSecurityComplianceCloudControlRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
+  }
+  public resetRules() {
+    this._rules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rulesInput() {
+    return this._rules.internalValue;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new GoogleCloudSecurityComplianceCloudControlTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: GoogleCloudSecurityComplianceCloudControlTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      categories: cdktf.listMapper(cdktf.stringToTerraform, false)(this._categories),
+      cloud_control_id: cdktf.stringToTerraform(this._cloudControlId),
+      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
+      description: cdktf.stringToTerraform(this._description),
+      display_name: cdktf.stringToTerraform(this._displayName),
+      finding_category: cdktf.stringToTerraform(this._findingCategory),
+      id: cdktf.stringToTerraform(this._id),
+      location: cdktf.stringToTerraform(this._location),
+      organization: cdktf.stringToTerraform(this._organization),
+      parent: cdktf.stringToTerraform(this._parent),
+      remediation_steps: cdktf.stringToTerraform(this._remediationSteps),
+      severity: cdktf.stringToTerraform(this._severity),
+      supported_cloud_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedCloudProviders),
+      parameter_spec: cdktf.listMapper(googleCloudSecurityComplianceCloudControlParameterSpecToTerraform, true)(this._parameterSpec.internalValue),
+      rules: cdktf.listMapper(googleCloudSecurityComplianceCloudControlRulesToTerraform, true)(this._rules.internalValue),
+      timeouts: googleCloudSecurityComplianceCloudControlTimeoutsToTerraform(this._timeouts.internalValue),
+    };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      categories: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._categories),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      cloud_control_id: {
+        value: cdktf.stringToHclTerraform(this._cloudControlId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      finding_category: {
+        value: cdktf.stringToHclTerraform(this._findingCategory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remediation_steps: {
+        value: cdktf.stringToHclTerraform(this._remediationSteps),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      severity: {
+        value: cdktf.stringToHclTerraform(this._severity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      supported_cloud_providers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedCloudProviders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      parameter_spec: {
+        value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlParameterSpecToHclTerraform, true)(this._parameterSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudSecurityComplianceCloudControlParameterSpecList",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(googleCloudSecurityComplianceCloudControlRulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudSecurityComplianceCloudControlRulesList",
+      },
+      timeouts: {
+        value: googleCloudSecurityComplianceCloudControlTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleCloudSecurityComplianceCloudControlTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
+}

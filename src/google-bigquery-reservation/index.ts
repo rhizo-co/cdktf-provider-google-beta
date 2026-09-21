@@ -1,0 +1,1095 @@
+// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface GoogleBigqueryReservationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Maximum number of queries that are allowed to run concurrently in this reservation. This is a soft limit due to asynchronous nature of the system and various optimizations for small queries. Default value is 0 which means that concurrency will be automatically set based on the reservation size.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#concurrency GoogleBigqueryReservation#concurrency}
+  */
+  readonly concurrency?: number;
+  /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#deletion_policy GoogleBigqueryReservation#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#edition GoogleBigqueryReservation#edition}
+  */
+  readonly edition?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#id GoogleBigqueryReservation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * If false, any query using this reservation will use idle slots from other reservations within
+  * the same admin project. If true, a query using this reservation will execute with the slot
+  * capacity specified above at most.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#ignore_idle_slots GoogleBigqueryReservation#ignore_idle_slots}
+  */
+  readonly ignoreIdleSlots?: boolean | cdktf.IResolvable;
+  /**
+  * The labels associated with this reservation. You can use these to
+  * organize and group your reservations.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#labels GoogleBigqueryReservation#labels}
+  */
+  readonly labels?: { [key: string]: string };
+  /**
+  * The geographic location where the transfer config should reside.
+  * Examples: US, EU, asia-northeast1. The default value is US.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#location GoogleBigqueryReservation#location}
+  */
+  readonly location?: string;
+  /**
+  * The overall max slots for the reservation, covering slotCapacity (baseline), idle slots
+  * (if ignoreIdleSlots is false) and scaled slots. If present, the reservation won't use
+  * more than the specified number of slots, even if there is demand and supply (from idle
+  * slots). NOTE: capping a reservation's idle slot usage is best effort and its usage may
+  * exceed the maxSlots value. However, in terms of autoscale.current_slots (which accounts
+  * for the additional added slots), it will never exceed the maxSlots - baseline.
+  * 
+  * This field must be set together with the scalingMode enum value, otherwise the request
+  * will be rejected with error code google.rpc.Code.INVALID_ARGUMENT.
+  * 
+  * If the maxSlots and scalingMode are set, the autoscale or autoscale.max_slots field
+  * must be unset. Otherwise the request will be rejected with error code
+  * google.rpc.Code.INVALID_ARGUMENT. However, the autoscale field may still be in the
+  * output. The autopscale.max_slots will always show as 0 and the autoscaler.current_slots
+  * will represent the current slots from autoscaler excluding idle slots. For example,
+  * if the maxSlots is 1000 and scalingMode is AUTOSCALE_ONLY, then in the output, the
+  * autoscaler.max_slots will be 0 and the autoscaler.current_slots may be any value
+  * between 0 and 1000.
+  * 
+  * If the maxSlots is 1000, scalingMode is ALL_SLOTS, the baseline is 100 and idle slots
+  * usage is 200, then in the output, the autoscaler.max_slots will be 0 and the
+  * autoscaler.current_slots will not be higher than 700.
+  * 
+  * If the maxSlots is 1000, scalingMode is IDLE_SLOTS_ONLY, then in the output, the
+  * autoscaler field will be null.
+  * 
+  * If the maxSlots and scalingMode are set, then the ignoreIdleSlots field must be
+  * aligned with the scalingMode enum value.(See details in ScalingMode comments).
+  * Otherwise the request will be rejected with error code google.rpc.Code.INVALID_ARGUMENT.
+  * 
+  * Please note, the maxSlots is for user to manage the part of slots greater than the
+  * baseline. Therefore, we don't allow users to set maxSlots smaller or equal to the
+  * baseline as it will not be meaningful. If the field is present and
+  * slotCapacity>=maxSlots, requests will be rejected with error code
+  * google.rpc.Code.INVALID_ARGUMENT.
+  * 
+  * Please note that if maxSlots is set to 0, we will treat it as unset. Customers can set
+  * maxSlots to 0 and set scalingMode to SCALING_MODE_UNSPECIFIED to disable the maxSlots
+  * feature.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#max_slots GoogleBigqueryReservation#max_slots}
+  */
+  readonly maxSlots?: number;
+  /**
+  * The name of the reservation. This field must only contain alphanumeric characters or dash.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#name GoogleBigqueryReservation#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#project GoogleBigqueryReservation#project}
+  */
+  readonly project?: string;
+  /**
+  * The reservation group that this reservation belongs to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#reservation_group GoogleBigqueryReservation#reservation_group}
+  */
+  readonly reservationGroup?: string;
+  /**
+  * The scaling mode for the reservation. If the field is present but maxSlots is not present,
+  * requests will be rejected with error code google.rpc.Code.INVALID_ARGUMENT.
+  * 
+  * Enum values:
+  * 
+  * 'SCALING_MODE_UNSPECIFIED': Default value of ScalingMode.
+  * 
+  * 'AUTOSCALE_ONLY': The reservation will scale up only using slots from autoscaling. It will
+  * not use any idle slots even if there may be some available. The upper limit that autoscaling
+  * can scale up to will be maxSlots - baseline. For example, if maxSlots is 1000, baseline is 200
+  * and customer sets ScalingMode to AUTOSCALE_ONLY, then autoscalerg will scale up to 800 slots
+  * and no idle slots will be used. Please note, in this mode, the ignoreIdleSlots field must be
+  * set to true. Otherwise the request will be rejected with error code
+  * google.rpc.Code.INVALID_ARGUMENT.
+  * 
+  * 'IDLE_SLOTS_ONLY': The reservation will scale up using only idle slots contributed by other
+  * reservations or from unassigned commitments. If no idle slots are available it will not scale
+  * up further. If the idle slots which it is using are reclaimed by the contributing reservation(s)
+  * it may be forced to scale down. The max idle slots the reservation can be maxSlots - baseline
+  * capacity. For example, if maxSlots is 1000, baseline is 200 and customer sets ScalingMode to
+  * IDLE_SLOTS_ONLY, 1. if there are 1000 idle slots available in other reservations, the
+  * reservation will scale up to 1000 slots with 200 baseline and 800 idle slots. 2. if there are
+  * 500 idle slots available in other reservations, the reservation will scale up to 700 slots with
+  * 200 baseline and 300 idle slots. Please note, in this mode, the reservation might not be able to
+  * scale up to maxSlots. Please note, in this mode, the ignoreIdleSlots field must be set to false.
+  * Otherwise the request will be rejected with error code google.rpc.Code.INVALID_ARGUMENT
+  * 
+  * 'ALL_SLOTS': The reservation will scale up using all slots available to it. It will use idle slots
+  * contributed by other reservations or from unassigned commitments first. If no idle slots are
+  * available it will scale up using autoscaling. For example, if maxSlots is 1000, baseline is 200
+  * and customer sets ScalingMode to ALL_SLOTS, 1. if there are 800 idle slots available in other
+  * reservations, the reservation will scale up to 1000 slots with 200 baseline and 800 idle slots. 2.
+  * if there are 500 idle slots available in other reservations, the reservation will scale up to 1000
+  * slots with 200 baseline, 500 idle slots and 300 autoscaling slots. 3. if there are no idle slots
+  * available in other reservations, it will scale up to 1000 slots with 200 baseline and 800
+  * autoscaling slots. Please note, in this mode, the ignoreIdleSlots field must be set to false.
+  * Otherwise the request will be rejected with error code google.rpc.Code.INVALID_ARGUMENT. Possible values: ["SCALING_MODE_UNSPECIFIED", "AUTOSCALE_ONLY", "IDLE_SLOTS_ONLY", "ALL_SLOTS"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#scaling_mode GoogleBigqueryReservation#scaling_mode}
+  */
+  readonly scalingMode?: string;
+  /**
+  * The current location of the reservation's secondary replica. This field is only set for
+  * reservations using the managed disaster recovery feature. Users can set this in create
+  * reservation calls to create a failover reservation or in update reservation calls to convert
+  * a non-failover reservation to a failover reservation(or vice versa).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#secondary_location GoogleBigqueryReservation#secondary_location}
+  */
+  readonly secondaryLocation?: string;
+  /**
+  * Minimum slots available to this reservation. A slot is a unit of computational power in BigQuery, and serves as the
+  * unit of parallelism. Queries using this reservation might use more slots during runtime if ignoreIdleSlots is set to false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#slot_capacity GoogleBigqueryReservation#slot_capacity}
+  */
+  readonly slotCapacity: number;
+  /**
+  * autoscale block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#autoscale GoogleBigqueryReservation#autoscale}
+  */
+  readonly autoscale?: GoogleBigqueryReservationAutoscale;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#timeouts GoogleBigqueryReservation#timeouts}
+  */
+  readonly timeouts?: GoogleBigqueryReservationTimeouts;
+}
+export interface GoogleBigqueryReservationReplicationStatusError {
+}
+
+export function googleBigqueryReservationReplicationStatusErrorToTerraform(struct?: GoogleBigqueryReservationReplicationStatusError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleBigqueryReservationReplicationStatusErrorToHclTerraform(struct?: GoogleBigqueryReservationReplicationStatusError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleBigqueryReservationReplicationStatusErrorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleBigqueryReservationReplicationStatusError | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryReservationReplicationStatusError | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // code - computed: true, optional: false, required: false
+  public get code() {
+    return this.getNumberAttribute('code');
+  }
+
+  // message - computed: true, optional: false, required: false
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+}
+
+export class GoogleBigqueryReservationReplicationStatusErrorList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleBigqueryReservationReplicationStatusErrorOutputReference {
+    return new GoogleBigqueryReservationReplicationStatusErrorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleBigqueryReservationReplicationStatus {
+}
+
+export function googleBigqueryReservationReplicationStatusToTerraform(struct?: GoogleBigqueryReservationReplicationStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleBigqueryReservationReplicationStatusToHclTerraform(struct?: GoogleBigqueryReservationReplicationStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleBigqueryReservationReplicationStatusOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleBigqueryReservationReplicationStatus | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryReservationReplicationStatus | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // error - computed: true, optional: false, required: false
+  private _error = new GoogleBigqueryReservationReplicationStatusErrorList(this, "error", false);
+  public get error() {
+    return this._error;
+  }
+
+  // last_error_time - computed: true, optional: false, required: false
+  public get lastErrorTime() {
+    return this.getStringAttribute('last_error_time');
+  }
+
+  // last_replication_time - computed: true, optional: false, required: false
+  public get lastReplicationTime() {
+    return this.getStringAttribute('last_replication_time');
+  }
+}
+
+export class GoogleBigqueryReservationReplicationStatusList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleBigqueryReservationReplicationStatusOutputReference {
+    return new GoogleBigqueryReservationReplicationStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleBigqueryReservationAutoscale {
+  /**
+  * Number of slots to be scaled when needed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#max_slots GoogleBigqueryReservation#max_slots}
+  */
+  readonly maxSlots?: number;
+}
+
+export function googleBigqueryReservationAutoscaleToTerraform(struct?: GoogleBigqueryReservationAutoscaleOutputReference | GoogleBigqueryReservationAutoscale): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_slots: cdktf.numberToTerraform(struct!.maxSlots),
+  }
+}
+
+
+export function googleBigqueryReservationAutoscaleToHclTerraform(struct?: GoogleBigqueryReservationAutoscaleOutputReference | GoogleBigqueryReservationAutoscale): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_slots: {
+      value: cdktf.numberToHclTerraform(struct!.maxSlots),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryReservationAutoscaleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryReservationAutoscale | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxSlots !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxSlots = this._maxSlots;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryReservationAutoscale | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxSlots = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxSlots = value.maxSlots;
+    }
+  }
+
+  // current_slots - computed: true, optional: false, required: false
+  public get currentSlots() {
+    return this.getNumberAttribute('current_slots');
+  }
+
+  // max_slots - computed: false, optional: true, required: false
+  private _maxSlots?: number; 
+  public get maxSlots() {
+    return this.getNumberAttribute('max_slots');
+  }
+  public set maxSlots(value: number) {
+    this._maxSlots = value;
+  }
+  public resetMaxSlots() {
+    this._maxSlots = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxSlotsInput() {
+    return this._maxSlots;
+  }
+}
+export interface GoogleBigqueryReservationTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#create GoogleBigqueryReservation#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#delete GoogleBigqueryReservation#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#update GoogleBigqueryReservation#update}
+  */
+  readonly update?: string;
+}
+
+export function googleBigqueryReservationTimeoutsToTerraform(struct?: GoogleBigqueryReservationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
+export function googleBigqueryReservationTimeoutsToHclTerraform(struct?: GoogleBigqueryReservationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryReservationTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): GoogleBigqueryReservationTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryReservationTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation google_bigquery_reservation}
+*/
+export class GoogleBigqueryReservation extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "google_bigquery_reservation";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GoogleBigqueryReservation resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GoogleBigqueryReservation to import
+  * @param importFromId The id of the existing GoogleBigqueryReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GoogleBigqueryReservation to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_reservation", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GoogleBigqueryReservationConfig
+  */
+  public constructor(scope: Construct, id: string, config: GoogleBigqueryReservationConfig) {
+    super(scope, id, {
+      terraformResourceType: 'google_bigquery_reservation',
+      terraformGeneratorMetadata: {
+        providerName: 'google-beta',
+        providerVersion: '8.3.0',
+        providerVersionConstraint: '~> 8.3.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._concurrency = config.concurrency;
+    this._deletionPolicy = config.deletionPolicy;
+    this._edition = config.edition;
+    this._id = config.id;
+    this._ignoreIdleSlots = config.ignoreIdleSlots;
+    this._labels = config.labels;
+    this._location = config.location;
+    this._maxSlots = config.maxSlots;
+    this._name = config.name;
+    this._project = config.project;
+    this._reservationGroup = config.reservationGroup;
+    this._scalingMode = config.scalingMode;
+    this._secondaryLocation = config.secondaryLocation;
+    this._slotCapacity = config.slotCapacity;
+    this._autoscale.internalValue = config.autoscale;
+    this._timeouts.internalValue = config.timeouts;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // concurrency - computed: false, optional: true, required: false
+  private _concurrency?: number; 
+  public get concurrency() {
+    return this.getNumberAttribute('concurrency');
+  }
+  public set concurrency(value: number) {
+    this._concurrency = value;
+  }
+  public resetConcurrency() {
+    this._concurrency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get concurrencyInput() {
+    return this._concurrency;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
+
+  // edition - computed: true, optional: true, required: false
+  private _edition?: string; 
+  public get edition() {
+    return this.getStringAttribute('edition');
+  }
+  public set edition(value: string) {
+    this._edition = value;
+  }
+  public resetEdition() {
+    this._edition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get editionInput() {
+    return this._edition;
+  }
+
+  // effective_labels - computed: true, optional: false, required: false
+  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  public get effectiveLabels() {
+    return this._effectiveLabels;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // ignore_idle_slots - computed: false, optional: true, required: false
+  private _ignoreIdleSlots?: boolean | cdktf.IResolvable; 
+  public get ignoreIdleSlots() {
+    return this.getBooleanAttribute('ignore_idle_slots');
+  }
+  public set ignoreIdleSlots(value: boolean | cdktf.IResolvable) {
+    this._ignoreIdleSlots = value;
+  }
+  public resetIgnoreIdleSlots() {
+    this._ignoreIdleSlots = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreIdleSlotsInput() {
+    return this._ignoreIdleSlots;
+  }
+
+  // labels - computed: false, optional: true, required: false
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
+  }
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels;
+  }
+
+  // location - computed: false, optional: true, required: false
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // max_slots - computed: false, optional: true, required: false
+  private _maxSlots?: number; 
+  public get maxSlots() {
+    return this.getNumberAttribute('max_slots');
+  }
+  public set maxSlots(value: number) {
+    this._maxSlots = value;
+  }
+  public resetMaxSlots() {
+    this._maxSlots = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxSlotsInput() {
+    return this._maxSlots;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // original_primary_location - computed: true, optional: false, required: false
+  public get originalPrimaryLocation() {
+    return this.getStringAttribute('original_primary_location');
+  }
+
+  // primary_location - computed: true, optional: false, required: false
+  public get primaryLocation() {
+    return this.getStringAttribute('primary_location');
+  }
+
+  // project - computed: true, optional: true, required: false
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  public resetProject() {
+    this._project = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // replication_status - computed: true, optional: false, required: false
+  private _replicationStatus = new GoogleBigqueryReservationReplicationStatusList(this, "replication_status", false);
+  public get replicationStatus() {
+    return this._replicationStatus;
+  }
+
+  // reservation_group - computed: false, optional: true, required: false
+  private _reservationGroup?: string; 
+  public get reservationGroup() {
+    return this.getStringAttribute('reservation_group');
+  }
+  public set reservationGroup(value: string) {
+    this._reservationGroup = value;
+  }
+  public resetReservationGroup() {
+    this._reservationGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reservationGroupInput() {
+    return this._reservationGroup;
+  }
+
+  // scaling_mode - computed: false, optional: true, required: false
+  private _scalingMode?: string; 
+  public get scalingMode() {
+    return this.getStringAttribute('scaling_mode');
+  }
+  public set scalingMode(value: string) {
+    this._scalingMode = value;
+  }
+  public resetScalingMode() {
+    this._scalingMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalingModeInput() {
+    return this._scalingMode;
+  }
+
+  // secondary_location - computed: false, optional: true, required: false
+  private _secondaryLocation?: string; 
+  public get secondaryLocation() {
+    return this.getStringAttribute('secondary_location');
+  }
+  public set secondaryLocation(value: string) {
+    this._secondaryLocation = value;
+  }
+  public resetSecondaryLocation() {
+    this._secondaryLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryLocationInput() {
+    return this._secondaryLocation;
+  }
+
+  // slot_capacity - computed: false, optional: false, required: true
+  private _slotCapacity?: number; 
+  public get slotCapacity() {
+    return this.getNumberAttribute('slot_capacity');
+  }
+  public set slotCapacity(value: number) {
+    this._slotCapacity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slotCapacityInput() {
+    return this._slotCapacity;
+  }
+
+  // terraform_labels - computed: true, optional: false, required: false
+  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  public get terraformLabels() {
+    return this._terraformLabels;
+  }
+
+  // autoscale - computed: false, optional: true, required: false
+  private _autoscale = new GoogleBigqueryReservationAutoscaleOutputReference(this, "autoscale");
+  public get autoscale() {
+    return this._autoscale;
+  }
+  public putAutoscale(value: GoogleBigqueryReservationAutoscale) {
+    this._autoscale.internalValue = value;
+  }
+  public resetAutoscale() {
+    this._autoscale.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscaleInput() {
+    return this._autoscale.internalValue;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new GoogleBigqueryReservationTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: GoogleBigqueryReservationTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      concurrency: cdktf.numberToTerraform(this._concurrency),
+      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
+      edition: cdktf.stringToTerraform(this._edition),
+      id: cdktf.stringToTerraform(this._id),
+      ignore_idle_slots: cdktf.booleanToTerraform(this._ignoreIdleSlots),
+      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
+      location: cdktf.stringToTerraform(this._location),
+      max_slots: cdktf.numberToTerraform(this._maxSlots),
+      name: cdktf.stringToTerraform(this._name),
+      project: cdktf.stringToTerraform(this._project),
+      reservation_group: cdktf.stringToTerraform(this._reservationGroup),
+      scaling_mode: cdktf.stringToTerraform(this._scalingMode),
+      secondary_location: cdktf.stringToTerraform(this._secondaryLocation),
+      slot_capacity: cdktf.numberToTerraform(this._slotCapacity),
+      autoscale: googleBigqueryReservationAutoscaleToTerraform(this._autoscale.internalValue),
+      timeouts: googleBigqueryReservationTimeoutsToTerraform(this._timeouts.internalValue),
+    };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      concurrency: {
+        value: cdktf.numberToHclTerraform(this._concurrency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      deletion_policy: {
+        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      edition: {
+        value: cdktf.stringToHclTerraform(this._edition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_idle_slots: {
+        value: cdktf.booleanToHclTerraform(this._ignoreIdleSlots),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_slots: {
+        value: cdktf.numberToHclTerraform(this._maxSlots),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      reservation_group: {
+        value: cdktf.stringToHclTerraform(this._reservationGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_mode: {
+        value: cdktf.stringToHclTerraform(this._scalingMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secondary_location: {
+        value: cdktf.stringToHclTerraform(this._secondaryLocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      slot_capacity: {
+        value: cdktf.numberToHclTerraform(this._slotCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      autoscale: {
+        value: googleBigqueryReservationAutoscaleToHclTerraform(this._autoscale.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryReservationAutoscaleList",
+      },
+      timeouts: {
+        value: googleBigqueryReservationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleBigqueryReservationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
+}

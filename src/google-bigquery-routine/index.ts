@@ -1,0 +1,2402 @@
+// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface GoogleBigqueryRoutineConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * If set to DATA_MASKING, the function is validated and made available as a masking function. For more information, see https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask Possible values: ["DATA_MASKING"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#data_governance_type GoogleBigqueryRoutine#data_governance_type}
+  */
+  readonly dataGovernanceType?: string;
+  /**
+  * The ID of the dataset containing this routine
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#dataset_id GoogleBigqueryRoutine#dataset_id}
+  */
+  readonly datasetId: string;
+  /**
+  * The body of the routine. For functions, this is the expression in the AS clause.
+  * If language=SQL, it is the substring inside (but excluding) the parentheses.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#definition_body GoogleBigqueryRoutine#definition_body}
+  */
+  readonly definitionBody: string;
+  /**
+  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * the command will fail if this field is set to "PREVENT" in Terraform state.
+  * When set to "ABANDON", the command will remove the resource from Terraform
+  * management without updating or deleting the resource in the API.
+  * When set to "DELETE", deleting the resource is allowed.
+  * 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#deletion_policy GoogleBigqueryRoutine#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
+  * The description of the routine if defined.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#description GoogleBigqueryRoutine#description}
+  */
+  readonly description?: string;
+  /**
+  * The determinism level of the JavaScript UDF if defined. Possible values: ["DETERMINISM_LEVEL_UNSPECIFIED", "DETERMINISTIC", "NOT_DETERMINISTIC"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#determinism_level GoogleBigqueryRoutine#determinism_level}
+  */
+  readonly determinismLevel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#id GoogleBigqueryRoutine#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Optional. If language = "JAVASCRIPT", this field stores the path of the
+  * imported JAVASCRIPT libraries.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#imported_libraries GoogleBigqueryRoutine#imported_libraries}
+  */
+  readonly importedLibraries?: string[];
+  /**
+  * The language of the routine. Possible values: ["SQL", "JAVASCRIPT", "PYTHON", "JAVA", "SCALA"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#language GoogleBigqueryRoutine#language}
+  */
+  readonly language?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#project GoogleBigqueryRoutine#project}
+  */
+  readonly project?: string;
+  /**
+  * Optional. Can be set only if routineType = "TABLE_VALUED_FUNCTION".
+  * 
+  * If absent, the return table type is inferred from definitionBody at query time in each query
+  * that references this routine. If present, then the columns in the evaluated table result will
+  * be cast to match the column types specificed in return table type, at query time.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#return_table_type GoogleBigqueryRoutine#return_table_type}
+  */
+  readonly returnTableType?: string;
+  /**
+  * A JSON schema for the return type. Optional if language = "SQL"; required otherwise.
+  * If absent, the return type is inferred from definitionBody at query time in each query
+  * that references this routine. If present, then the evaluated result will be cast to
+  * the specified returned type at query time. ~>**NOTE**: Because this field expects a JSON
+  * string, any changes to the string will create a diff, even if the JSON itself hasn't
+  * changed. If the API returns a different value for the same schema, e.g. it switche
+  * d the order of values or replaced STRUCT field type with RECORD field type, we currently
+  * cannot suppress the recurring diff this causes. As a workaround, we recommend using
+  * the schema as returned by the API.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#return_type GoogleBigqueryRoutine#return_type}
+  */
+  readonly returnType?: string;
+  /**
+  * The ID of the the routine. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#routine_id GoogleBigqueryRoutine#routine_id}
+  */
+  readonly routineId: string;
+  /**
+  * The type of routine. Possible values: ["SCALAR_FUNCTION", "PROCEDURE", "TABLE_VALUED_FUNCTION"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#routine_type GoogleBigqueryRoutine#routine_type}
+  */
+  readonly routineType: string;
+  /**
+  * Optional. The security mode of the routine, if defined. If not defined, the security mode is automatically determined from the routine's configuration. Possible values: ["DEFINER", "INVOKER"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#security_mode GoogleBigqueryRoutine#security_mode}
+  */
+  readonly securityMode?: string;
+  /**
+  * arguments block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#arguments GoogleBigqueryRoutine#arguments}
+  */
+  readonly arguments?: GoogleBigqueryRoutineArguments[] | cdktf.IResolvable;
+  /**
+  * external_runtime_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#external_runtime_options GoogleBigqueryRoutine#external_runtime_options}
+  */
+  readonly externalRuntimeOptions?: GoogleBigqueryRoutineExternalRuntimeOptions;
+  /**
+  * python_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#python_options GoogleBigqueryRoutine#python_options}
+  */
+  readonly pythonOptions?: GoogleBigqueryRoutinePythonOptions;
+  /**
+  * remote_function_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#remote_function_options GoogleBigqueryRoutine#remote_function_options}
+  */
+  readonly remoteFunctionOptions?: GoogleBigqueryRoutineRemoteFunctionOptions;
+  /**
+  * spark_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#spark_options GoogleBigqueryRoutine#spark_options}
+  */
+  readonly sparkOptions?: GoogleBigqueryRoutineSparkOptions;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#timeouts GoogleBigqueryRoutine#timeouts}
+  */
+  readonly timeouts?: GoogleBigqueryRoutineTimeouts;
+}
+export interface GoogleBigqueryRoutineArgumentsTableTypeColumns {
+  /**
+  * The name of the column.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#name GoogleBigqueryRoutine#name}
+  */
+  readonly name?: string;
+  /**
+  * A JSON schema for the data type of the column. Required unless argumentKind = ANY_TYPE.
+  * ~>**NOTE**: Because this field expects a JSON string, any changes to the string
+  * will create a diff, even if the JSON itself hasn't changed. If the API returns
+  * a different value for the same schema, e.g. it switched the order of values
+  * or replaced STRUCT field type with RECORD field type, we currently cannot
+  * suppress the recurring diff this causes. As a workaround, we recommend using
+  * the schema as returned by the API.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#type GoogleBigqueryRoutine#type}
+  */
+  readonly type?: string;
+}
+
+export function googleBigqueryRoutineArgumentsTableTypeColumnsToTerraform(struct?: GoogleBigqueryRoutineArgumentsTableTypeColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function googleBigqueryRoutineArgumentsTableTypeColumnsToHclTerraform(struct?: GoogleBigqueryRoutineArgumentsTableTypeColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryRoutineArgumentsTableTypeColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleBigqueryRoutineArgumentsTableTypeColumns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryRoutineArgumentsTableTypeColumns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class GoogleBigqueryRoutineArgumentsTableTypeColumnsList extends cdktf.ComplexList {
+  public internalValue? : GoogleBigqueryRoutineArgumentsTableTypeColumns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleBigqueryRoutineArgumentsTableTypeColumnsOutputReference {
+    return new GoogleBigqueryRoutineArgumentsTableTypeColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleBigqueryRoutineArgumentsTableType {
+  /**
+  * columns block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#columns GoogleBigqueryRoutine#columns}
+  */
+  readonly columns?: GoogleBigqueryRoutineArgumentsTableTypeColumns[] | cdktf.IResolvable;
+}
+
+export function googleBigqueryRoutineArgumentsTableTypeToTerraform(struct?: GoogleBigqueryRoutineArgumentsTableTypeOutputReference | GoogleBigqueryRoutineArgumentsTableType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    columns: cdktf.listMapper(googleBigqueryRoutineArgumentsTableTypeColumnsToTerraform, true)(struct!.columns),
+  }
+}
+
+
+export function googleBigqueryRoutineArgumentsTableTypeToHclTerraform(struct?: GoogleBigqueryRoutineArgumentsTableTypeOutputReference | GoogleBigqueryRoutineArgumentsTableType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    columns: {
+      value: cdktf.listMapperHcl(googleBigqueryRoutineArgumentsTableTypeColumnsToHclTerraform, true)(struct!.columns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryRoutineArgumentsTableTypeColumnsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryRoutineArgumentsTableTypeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryRoutineArgumentsTableType | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._columns?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columns = this._columns?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryRoutineArgumentsTableType | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._columns.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._columns.internalValue = value.columns;
+    }
+  }
+
+  // columns - computed: false, optional: true, required: false
+  private _columns = new GoogleBigqueryRoutineArgumentsTableTypeColumnsList(this, "columns", false);
+  public get columns() {
+    return this._columns;
+  }
+  public putColumns(value: GoogleBigqueryRoutineArgumentsTableTypeColumns[] | cdktf.IResolvable) {
+    this._columns.internalValue = value;
+  }
+  public resetColumns() {
+    this._columns.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnsInput() {
+    return this._columns.internalValue;
+  }
+}
+export interface GoogleBigqueryRoutineArguments {
+  /**
+  * Defaults to FIXED_TYPE. Default value: "FIXED_TYPE" Possible values: ["FIXED_TYPE", "ANY_TYPE", "FIXED_TABLE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#argument_kind GoogleBigqueryRoutine#argument_kind}
+  */
+  readonly argumentKind?: string;
+  /**
+  * A JSON schema for the data type. Required unless argumentKind = ANY_TYPE.
+  * ~>**NOTE**: Because this field expects a JSON string, any changes to the string
+  * will create a diff, even if the JSON itself hasn't changed. If the API returns
+  * a different value for the same schema, e.g. it switched the order of values
+  * or replaced STRUCT field type with RECORD field type, we currently cannot
+  * suppress the recurring diff this causes. As a workaround, we recommend using
+  * the schema as returned by the API.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#data_type GoogleBigqueryRoutine#data_type}
+  */
+  readonly dataType?: string;
+  /**
+  * Specifies whether the argument is input or output. Can be set for procedures only. Possible values: ["IN", "OUT", "INOUT"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#mode GoogleBigqueryRoutine#mode}
+  */
+  readonly mode?: string;
+  /**
+  * The name of this argument. Can be absent for function return argument.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#name GoogleBigqueryRoutine#name}
+  */
+  readonly name?: string;
+  /**
+  * table_type block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#table_type GoogleBigqueryRoutine#table_type}
+  */
+  readonly tableType?: GoogleBigqueryRoutineArgumentsTableType;
+}
+
+export function googleBigqueryRoutineArgumentsToTerraform(struct?: GoogleBigqueryRoutineArguments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    argument_kind: cdktf.stringToTerraform(struct!.argumentKind),
+    data_type: cdktf.stringToTerraform(struct!.dataType),
+    mode: cdktf.stringToTerraform(struct!.mode),
+    name: cdktf.stringToTerraform(struct!.name),
+    table_type: googleBigqueryRoutineArgumentsTableTypeToTerraform(struct!.tableType),
+  }
+}
+
+
+export function googleBigqueryRoutineArgumentsToHclTerraform(struct?: GoogleBigqueryRoutineArguments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    argument_kind: {
+      value: cdktf.stringToHclTerraform(struct!.argumentKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_type: {
+      value: cdktf.stringToHclTerraform(struct!.dataType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_type: {
+      value: googleBigqueryRoutineArgumentsTableTypeToHclTerraform(struct!.tableType),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryRoutineArgumentsTableTypeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryRoutineArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleBigqueryRoutineArguments | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._argumentKind !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.argumentKind = this._argumentKind;
+    }
+    if (this._dataType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataType = this._dataType;
+    }
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._tableType?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableType = this._tableType?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryRoutineArguments | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._argumentKind = undefined;
+      this._dataType = undefined;
+      this._mode = undefined;
+      this._name = undefined;
+      this._tableType.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._argumentKind = value.argumentKind;
+      this._dataType = value.dataType;
+      this._mode = value.mode;
+      this._name = value.name;
+      this._tableType.internalValue = value.tableType;
+    }
+  }
+
+  // argument_kind - computed: false, optional: true, required: false
+  private _argumentKind?: string; 
+  public get argumentKind() {
+    return this.getStringAttribute('argument_kind');
+  }
+  public set argumentKind(value: string) {
+    this._argumentKind = value;
+  }
+  public resetArgumentKind() {
+    this._argumentKind = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get argumentKindInput() {
+    return this._argumentKind;
+  }
+
+  // data_type - computed: false, optional: true, required: false
+  private _dataType?: string; 
+  public get dataType() {
+    return this.getStringAttribute('data_type');
+  }
+  public set dataType(value: string) {
+    this._dataType = value;
+  }
+  public resetDataType() {
+    this._dataType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataTypeInput() {
+    return this._dataType;
+  }
+
+  // mode - computed: false, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // table_type - computed: false, optional: true, required: false
+  private _tableType = new GoogleBigqueryRoutineArgumentsTableTypeOutputReference(this, "table_type");
+  public get tableType() {
+    return this._tableType;
+  }
+  public putTableType(value: GoogleBigqueryRoutineArgumentsTableType) {
+    this._tableType.internalValue = value;
+  }
+  public resetTableType() {
+    this._tableType.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableTypeInput() {
+    return this._tableType.internalValue;
+  }
+}
+
+export class GoogleBigqueryRoutineArgumentsList extends cdktf.ComplexList {
+  public internalValue? : GoogleBigqueryRoutineArguments[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleBigqueryRoutineArgumentsOutputReference {
+    return new GoogleBigqueryRoutineArgumentsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleBigqueryRoutineExternalRuntimeOptions {
+  /**
+  * Amount of CPU provisioned for a Python UDF container instance. For more
+  * information, see [Configure container limits for Python
+  * UDFs](https://cloud.google.com/bigquery/docs/user-defined-functions-python#configure-container-limits)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#container_cpu GoogleBigqueryRoutine#container_cpu}
+  */
+  readonly containerCpu?: number;
+  /**
+  * Amount of memory provisioned for a Python UDF container instance. Format:
+  * {number}{unit} where unit is one of "M", "G", "Mi" and "Gi" (e.g. 1G,
+  * 512Mi). If not specified, the default value is 512Mi. For more information,
+  * see [Configure container limits for Python
+  * UDFs](https://cloud.google.com/bigquery/docs/user-defined-functions-python#configure-container-limits)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#container_memory GoogleBigqueryRoutine#container_memory}
+  */
+  readonly containerMemory?: string;
+  /**
+  * Maximum number of concurrent requests per Python UDF container instance. For more
+  * information, see [Configure container limits for Python
+  * UDFs](https://cloud.google.com/bigquery/docs/user-defined-functions-python#configure-container-limits)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#container_request_concurrency GoogleBigqueryRoutine#container_request_concurrency}
+  */
+  readonly containerRequestConcurrency?: string;
+  /**
+  * Maximum number of rows in each batch sent to the external runtime. If
+  * absent or if 0, BigQuery dynamically decides the number of rows in a batch.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#max_batching_rows GoogleBigqueryRoutine#max_batching_rows}
+  */
+  readonly maxBatchingRows?: string;
+  /**
+  * Fully qualified name of the connection whose service account will be used
+  * to execute the code in the container. Format:
+  * '"projects/{project_id}/locations/{location_id}/connections/{connection_id}"'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#runtime_connection GoogleBigqueryRoutine#runtime_connection}
+  */
+  readonly runtimeConnection?: string;
+  /**
+  * Language runtime version. Example: 'python-3.11'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#runtime_version GoogleBigqueryRoutine#runtime_version}
+  */
+  readonly runtimeVersion?: string;
+}
+
+export function googleBigqueryRoutineExternalRuntimeOptionsToTerraform(struct?: GoogleBigqueryRoutineExternalRuntimeOptionsOutputReference | GoogleBigqueryRoutineExternalRuntimeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    container_cpu: cdktf.numberToTerraform(struct!.containerCpu),
+    container_memory: cdktf.stringToTerraform(struct!.containerMemory),
+    container_request_concurrency: cdktf.stringToTerraform(struct!.containerRequestConcurrency),
+    max_batching_rows: cdktf.stringToTerraform(struct!.maxBatchingRows),
+    runtime_connection: cdktf.stringToTerraform(struct!.runtimeConnection),
+    runtime_version: cdktf.stringToTerraform(struct!.runtimeVersion),
+  }
+}
+
+
+export function googleBigqueryRoutineExternalRuntimeOptionsToHclTerraform(struct?: GoogleBigqueryRoutineExternalRuntimeOptionsOutputReference | GoogleBigqueryRoutineExternalRuntimeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    container_cpu: {
+      value: cdktf.numberToHclTerraform(struct!.containerCpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    container_memory: {
+      value: cdktf.stringToHclTerraform(struct!.containerMemory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    container_request_concurrency: {
+      value: cdktf.stringToHclTerraform(struct!.containerRequestConcurrency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_batching_rows: {
+      value: cdktf.stringToHclTerraform(struct!.maxBatchingRows),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    runtime_connection: {
+      value: cdktf.stringToHclTerraform(struct!.runtimeConnection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    runtime_version: {
+      value: cdktf.stringToHclTerraform(struct!.runtimeVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryRoutineExternalRuntimeOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryRoutineExternalRuntimeOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._containerCpu !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.containerCpu = this._containerCpu;
+    }
+    if (this._containerMemory !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.containerMemory = this._containerMemory;
+    }
+    if (this._containerRequestConcurrency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.containerRequestConcurrency = this._containerRequestConcurrency;
+    }
+    if (this._maxBatchingRows !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxBatchingRows = this._maxBatchingRows;
+    }
+    if (this._runtimeConnection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeConnection = this._runtimeConnection;
+    }
+    if (this._runtimeVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeVersion = this._runtimeVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryRoutineExternalRuntimeOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._containerCpu = undefined;
+      this._containerMemory = undefined;
+      this._containerRequestConcurrency = undefined;
+      this._maxBatchingRows = undefined;
+      this._runtimeConnection = undefined;
+      this._runtimeVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._containerCpu = value.containerCpu;
+      this._containerMemory = value.containerMemory;
+      this._containerRequestConcurrency = value.containerRequestConcurrency;
+      this._maxBatchingRows = value.maxBatchingRows;
+      this._runtimeConnection = value.runtimeConnection;
+      this._runtimeVersion = value.runtimeVersion;
+    }
+  }
+
+  // container_cpu - computed: false, optional: true, required: false
+  private _containerCpu?: number; 
+  public get containerCpu() {
+    return this.getNumberAttribute('container_cpu');
+  }
+  public set containerCpu(value: number) {
+    this._containerCpu = value;
+  }
+  public resetContainerCpu() {
+    this._containerCpu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerCpuInput() {
+    return this._containerCpu;
+  }
+
+  // container_memory - computed: false, optional: true, required: false
+  private _containerMemory?: string; 
+  public get containerMemory() {
+    return this.getStringAttribute('container_memory');
+  }
+  public set containerMemory(value: string) {
+    this._containerMemory = value;
+  }
+  public resetContainerMemory() {
+    this._containerMemory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerMemoryInput() {
+    return this._containerMemory;
+  }
+
+  // container_request_concurrency - computed: false, optional: true, required: false
+  private _containerRequestConcurrency?: string; 
+  public get containerRequestConcurrency() {
+    return this.getStringAttribute('container_request_concurrency');
+  }
+  public set containerRequestConcurrency(value: string) {
+    this._containerRequestConcurrency = value;
+  }
+  public resetContainerRequestConcurrency() {
+    this._containerRequestConcurrency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerRequestConcurrencyInput() {
+    return this._containerRequestConcurrency;
+  }
+
+  // max_batching_rows - computed: false, optional: true, required: false
+  private _maxBatchingRows?: string; 
+  public get maxBatchingRows() {
+    return this.getStringAttribute('max_batching_rows');
+  }
+  public set maxBatchingRows(value: string) {
+    this._maxBatchingRows = value;
+  }
+  public resetMaxBatchingRows() {
+    this._maxBatchingRows = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxBatchingRowsInput() {
+    return this._maxBatchingRows;
+  }
+
+  // runtime_connection - computed: false, optional: true, required: false
+  private _runtimeConnection?: string; 
+  public get runtimeConnection() {
+    return this.getStringAttribute('runtime_connection');
+  }
+  public set runtimeConnection(value: string) {
+    this._runtimeConnection = value;
+  }
+  public resetRuntimeConnection() {
+    this._runtimeConnection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeConnectionInput() {
+    return this._runtimeConnection;
+  }
+
+  // runtime_version - computed: false, optional: true, required: false
+  private _runtimeVersion?: string; 
+  public get runtimeVersion() {
+    return this.getStringAttribute('runtime_version');
+  }
+  public set runtimeVersion(value: string) {
+    this._runtimeVersion = value;
+  }
+  public resetRuntimeVersion() {
+    this._runtimeVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeVersionInput() {
+    return this._runtimeVersion;
+  }
+}
+export interface GoogleBigqueryRoutinePythonOptions {
+  /**
+  * The name of the function defined in Python code as the entry point when the
+  * Python UDF is invoked.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#entry_point GoogleBigqueryRoutine#entry_point}
+  */
+  readonly entryPoint: string;
+  /**
+  * A list of Python package names along with versions to be installed.
+  * Example: ["pandas>=2.1", "google-cloud-translate==3.11"]. For more
+  * information, see [Use third-party
+  * packages](https://cloud.google.com/bigquery/docs/user-defined-functions-python#third-party-packages).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#packages GoogleBigqueryRoutine#packages}
+  */
+  readonly packages?: string[];
+}
+
+export function googleBigqueryRoutinePythonOptionsToTerraform(struct?: GoogleBigqueryRoutinePythonOptionsOutputReference | GoogleBigqueryRoutinePythonOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    entry_point: cdktf.stringToTerraform(struct!.entryPoint),
+    packages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.packages),
+  }
+}
+
+
+export function googleBigqueryRoutinePythonOptionsToHclTerraform(struct?: GoogleBigqueryRoutinePythonOptionsOutputReference | GoogleBigqueryRoutinePythonOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entry_point: {
+      value: cdktf.stringToHclTerraform(struct!.entryPoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    packages: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.packages),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryRoutinePythonOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryRoutinePythonOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entryPoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entryPoint = this._entryPoint;
+    }
+    if (this._packages !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.packages = this._packages;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryRoutinePythonOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._entryPoint = undefined;
+      this._packages = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._entryPoint = value.entryPoint;
+      this._packages = value.packages;
+    }
+  }
+
+  // entry_point - computed: false, optional: false, required: true
+  private _entryPoint?: string; 
+  public get entryPoint() {
+    return this.getStringAttribute('entry_point');
+  }
+  public set entryPoint(value: string) {
+    this._entryPoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entryPointInput() {
+    return this._entryPoint;
+  }
+
+  // packages - computed: false, optional: true, required: false
+  private _packages?: string[]; 
+  public get packages() {
+    return this.getListAttribute('packages');
+  }
+  public set packages(value: string[]) {
+    this._packages = value;
+  }
+  public resetPackages() {
+    this._packages = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get packagesInput() {
+    return this._packages;
+  }
+}
+export interface GoogleBigqueryRoutineRemoteFunctionOptions {
+  /**
+  * Fully qualified name of the user-provided connection object which holds
+  * the authentication information to send requests to the remote service.
+  * Format: "projects/{projectId}/locations/{locationId}/connections/{connectionId}"
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#connection GoogleBigqueryRoutine#connection}
+  */
+  readonly connection?: string;
+  /**
+  * Endpoint of the user-provided remote service, e.g.
+  * 'https://us-east1-my_gcf_project.cloudfunctions.net/remote_add'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#endpoint GoogleBigqueryRoutine#endpoint}
+  */
+  readonly endpoint?: string;
+  /**
+  * Max number of rows in each batch sent to the remote service. If absent or if 0,
+  * BigQuery dynamically decides the number of rows in a batch.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#max_batching_rows GoogleBigqueryRoutine#max_batching_rows}
+  */
+  readonly maxBatchingRows?: string;
+  /**
+  * User-defined context as a set of key/value pairs, which will be sent as function
+  * invocation context together with batched arguments in the requests to the remote
+  * service. The total number of bytes of keys and values must be less than 8KB.
+  * 
+  * An object containing a list of "key": value pairs. Example:
+  * '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#user_defined_context GoogleBigqueryRoutine#user_defined_context}
+  */
+  readonly userDefinedContext?: { [key: string]: string };
+}
+
+export function googleBigqueryRoutineRemoteFunctionOptionsToTerraform(struct?: GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference | GoogleBigqueryRoutineRemoteFunctionOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    connection: cdktf.stringToTerraform(struct!.connection),
+    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+    max_batching_rows: cdktf.stringToTerraform(struct!.maxBatchingRows),
+    user_defined_context: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.userDefinedContext),
+  }
+}
+
+
+export function googleBigqueryRoutineRemoteFunctionOptionsToHclTerraform(struct?: GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference | GoogleBigqueryRoutineRemoteFunctionOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection: {
+      value: cdktf.stringToHclTerraform(struct!.connection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_batching_rows: {
+      value: cdktf.stringToHclTerraform(struct!.maxBatchingRows),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_defined_context: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.userDefinedContext),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryRoutineRemoteFunctionOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connection = this._connection;
+    }
+    if (this._endpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoint = this._endpoint;
+    }
+    if (this._maxBatchingRows !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxBatchingRows = this._maxBatchingRows;
+    }
+    if (this._userDefinedContext !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userDefinedContext = this._userDefinedContext;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryRoutineRemoteFunctionOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._connection = undefined;
+      this._endpoint = undefined;
+      this._maxBatchingRows = undefined;
+      this._userDefinedContext = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._connection = value.connection;
+      this._endpoint = value.endpoint;
+      this._maxBatchingRows = value.maxBatchingRows;
+      this._userDefinedContext = value.userDefinedContext;
+    }
+  }
+
+  // connection - computed: false, optional: true, required: false
+  private _connection?: string; 
+  public get connection() {
+    return this.getStringAttribute('connection');
+  }
+  public set connection(value: string) {
+    this._connection = value;
+  }
+  public resetConnection() {
+    this._connection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionInput() {
+    return this._connection;
+  }
+
+  // endpoint - computed: false, optional: true, required: false
+  private _endpoint?: string; 
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+  public set endpoint(value: string) {
+    this._endpoint = value;
+  }
+  public resetEndpoint() {
+    this._endpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint;
+  }
+
+  // max_batching_rows - computed: false, optional: true, required: false
+  private _maxBatchingRows?: string; 
+  public get maxBatchingRows() {
+    return this.getStringAttribute('max_batching_rows');
+  }
+  public set maxBatchingRows(value: string) {
+    this._maxBatchingRows = value;
+  }
+  public resetMaxBatchingRows() {
+    this._maxBatchingRows = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxBatchingRowsInput() {
+    return this._maxBatchingRows;
+  }
+
+  // user_defined_context - computed: true, optional: true, required: false
+  private _userDefinedContext?: { [key: string]: string }; 
+  public get userDefinedContext() {
+    return this.getStringMapAttribute('user_defined_context');
+  }
+  public set userDefinedContext(value: { [key: string]: string }) {
+    this._userDefinedContext = value;
+  }
+  public resetUserDefinedContext() {
+    this._userDefinedContext = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userDefinedContextInput() {
+    return this._userDefinedContext;
+  }
+}
+export interface GoogleBigqueryRoutineSparkOptions {
+  /**
+  * Archive files to be extracted into the working directory of each executor. For more information about Apache Spark, see Apache Spark.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#archive_uris GoogleBigqueryRoutine#archive_uris}
+  */
+  readonly archiveUris?: string[];
+  /**
+  * Fully qualified name of the user-provided Spark connection object.
+  * Format: "projects/{projectId}/locations/{locationId}/connections/{connectionId}"
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#connection GoogleBigqueryRoutine#connection}
+  */
+  readonly connection?: string;
+  /**
+  * Custom container image for the runtime environment.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#container_image GoogleBigqueryRoutine#container_image}
+  */
+  readonly containerImage?: string;
+  /**
+  * Files to be placed in the working directory of each executor. For more information about Apache Spark, see Apache Spark.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#file_uris GoogleBigqueryRoutine#file_uris}
+  */
+  readonly fileUris?: string[];
+  /**
+  * JARs to include on the driver and executor CLASSPATH. For more information about Apache Spark, see Apache Spark.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#jar_uris GoogleBigqueryRoutine#jar_uris}
+  */
+  readonly jarUris?: string[];
+  /**
+  * The fully qualified name of a class in jarUris, for example, com.example.wordcount.
+  * Exactly one of mainClass and main_jar_uri field should be set for Java/Scala language type.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#main_class GoogleBigqueryRoutine#main_class}
+  */
+  readonly mainClass?: string;
+  /**
+  * The main file/jar URI of the Spark application.
+  * Exactly one of the definitionBody field and the mainFileUri field must be set for Python.
+  * Exactly one of mainClass and mainFileUri field should be set for Java/Scala language type.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#main_file_uri GoogleBigqueryRoutine#main_file_uri}
+  */
+  readonly mainFileUri?: string;
+  /**
+  * Configuration properties as a set of key/value pairs, which will be passed on to the Spark application.
+  * For more information, see Apache Spark and the procedure option list.
+  * An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#properties GoogleBigqueryRoutine#properties}
+  */
+  readonly properties?: { [key: string]: string };
+  /**
+  * Python files to be placed on the PYTHONPATH for PySpark application. Supported file types: .py, .egg, and .zip. For more information about Apache Spark, see Apache Spark.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#py_file_uris GoogleBigqueryRoutine#py_file_uris}
+  */
+  readonly pyFileUris?: string[];
+  /**
+  * Runtime version. If not specified, the default runtime version is used.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#runtime_version GoogleBigqueryRoutine#runtime_version}
+  */
+  readonly runtimeVersion?: string;
+}
+
+export function googleBigqueryRoutineSparkOptionsToTerraform(struct?: GoogleBigqueryRoutineSparkOptionsOutputReference | GoogleBigqueryRoutineSparkOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
+    connection: cdktf.stringToTerraform(struct!.connection),
+    container_image: cdktf.stringToTerraform(struct!.containerImage),
+    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
+    jar_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarUris),
+    main_class: cdktf.stringToTerraform(struct!.mainClass),
+    main_file_uri: cdktf.stringToTerraform(struct!.mainFileUri),
+    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
+    py_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pyFileUris),
+    runtime_version: cdktf.stringToTerraform(struct!.runtimeVersion),
+  }
+}
+
+
+export function googleBigqueryRoutineSparkOptionsToHclTerraform(struct?: GoogleBigqueryRoutineSparkOptionsOutputReference | GoogleBigqueryRoutineSparkOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    archive_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    connection: {
+      value: cdktf.stringToHclTerraform(struct!.connection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    container_image: {
+      value: cdktf.stringToHclTerraform(struct!.containerImage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    jar_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    main_class: {
+      value: cdktf.stringToHclTerraform(struct!.mainClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    main_file_uri: {
+      value: cdktf.stringToHclTerraform(struct!.mainFileUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    py_file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pyFileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    runtime_version: {
+      value: cdktf.stringToHclTerraform(struct!.runtimeVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryRoutineSparkOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryRoutineSparkOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._archiveUris !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.archiveUris = this._archiveUris;
+    }
+    if (this._connection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connection = this._connection;
+    }
+    if (this._containerImage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.containerImage = this._containerImage;
+    }
+    if (this._fileUris !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileUris = this._fileUris;
+    }
+    if (this._jarUris !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jarUris = this._jarUris;
+    }
+    if (this._mainClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mainClass = this._mainClass;
+    }
+    if (this._mainFileUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mainFileUri = this._mainFileUri;
+    }
+    if (this._properties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.properties = this._properties;
+    }
+    if (this._pyFileUris !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pyFileUris = this._pyFileUris;
+    }
+    if (this._runtimeVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runtimeVersion = this._runtimeVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryRoutineSparkOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._archiveUris = undefined;
+      this._connection = undefined;
+      this._containerImage = undefined;
+      this._fileUris = undefined;
+      this._jarUris = undefined;
+      this._mainClass = undefined;
+      this._mainFileUri = undefined;
+      this._properties = undefined;
+      this._pyFileUris = undefined;
+      this._runtimeVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._archiveUris = value.archiveUris;
+      this._connection = value.connection;
+      this._containerImage = value.containerImage;
+      this._fileUris = value.fileUris;
+      this._jarUris = value.jarUris;
+      this._mainClass = value.mainClass;
+      this._mainFileUri = value.mainFileUri;
+      this._properties = value.properties;
+      this._pyFileUris = value.pyFileUris;
+      this._runtimeVersion = value.runtimeVersion;
+    }
+  }
+
+  // archive_uris - computed: true, optional: true, required: false
+  private _archiveUris?: string[]; 
+  public get archiveUris() {
+    return this.getListAttribute('archive_uris');
+  }
+  public set archiveUris(value: string[]) {
+    this._archiveUris = value;
+  }
+  public resetArchiveUris() {
+    this._archiveUris = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get archiveUrisInput() {
+    return this._archiveUris;
+  }
+
+  // connection - computed: false, optional: true, required: false
+  private _connection?: string; 
+  public get connection() {
+    return this.getStringAttribute('connection');
+  }
+  public set connection(value: string) {
+    this._connection = value;
+  }
+  public resetConnection() {
+    this._connection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionInput() {
+    return this._connection;
+  }
+
+  // container_image - computed: false, optional: true, required: false
+  private _containerImage?: string; 
+  public get containerImage() {
+    return this.getStringAttribute('container_image');
+  }
+  public set containerImage(value: string) {
+    this._containerImage = value;
+  }
+  public resetContainerImage() {
+    this._containerImage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerImageInput() {
+    return this._containerImage;
+  }
+
+  // file_uris - computed: true, optional: true, required: false
+  private _fileUris?: string[]; 
+  public get fileUris() {
+    return this.getListAttribute('file_uris');
+  }
+  public set fileUris(value: string[]) {
+    this._fileUris = value;
+  }
+  public resetFileUris() {
+    this._fileUris = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileUrisInput() {
+    return this._fileUris;
+  }
+
+  // jar_uris - computed: true, optional: true, required: false
+  private _jarUris?: string[]; 
+  public get jarUris() {
+    return this.getListAttribute('jar_uris');
+  }
+  public set jarUris(value: string[]) {
+    this._jarUris = value;
+  }
+  public resetJarUris() {
+    this._jarUris = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jarUrisInput() {
+    return this._jarUris;
+  }
+
+  // main_class - computed: false, optional: true, required: false
+  private _mainClass?: string; 
+  public get mainClass() {
+    return this.getStringAttribute('main_class');
+  }
+  public set mainClass(value: string) {
+    this._mainClass = value;
+  }
+  public resetMainClass() {
+    this._mainClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mainClassInput() {
+    return this._mainClass;
+  }
+
+  // main_file_uri - computed: false, optional: true, required: false
+  private _mainFileUri?: string; 
+  public get mainFileUri() {
+    return this.getStringAttribute('main_file_uri');
+  }
+  public set mainFileUri(value: string) {
+    this._mainFileUri = value;
+  }
+  public resetMainFileUri() {
+    this._mainFileUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mainFileUriInput() {
+    return this._mainFileUri;
+  }
+
+  // properties - computed: true, optional: true, required: false
+  private _properties?: { [key: string]: string }; 
+  public get properties() {
+    return this.getStringMapAttribute('properties');
+  }
+  public set properties(value: { [key: string]: string }) {
+    this._properties = value;
+  }
+  public resetProperties() {
+    this._properties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertiesInput() {
+    return this._properties;
+  }
+
+  // py_file_uris - computed: true, optional: true, required: false
+  private _pyFileUris?: string[]; 
+  public get pyFileUris() {
+    return this.getListAttribute('py_file_uris');
+  }
+  public set pyFileUris(value: string[]) {
+    this._pyFileUris = value;
+  }
+  public resetPyFileUris() {
+    this._pyFileUris = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pyFileUrisInput() {
+    return this._pyFileUris;
+  }
+
+  // runtime_version - computed: false, optional: true, required: false
+  private _runtimeVersion?: string; 
+  public get runtimeVersion() {
+    return this.getStringAttribute('runtime_version');
+  }
+  public set runtimeVersion(value: string) {
+    this._runtimeVersion = value;
+  }
+  public resetRuntimeVersion() {
+    this._runtimeVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeVersionInput() {
+    return this._runtimeVersion;
+  }
+}
+export interface GoogleBigqueryRoutineTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#create GoogleBigqueryRoutine#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#delete GoogleBigqueryRoutine#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#update GoogleBigqueryRoutine#update}
+  */
+  readonly update?: string;
+}
+
+export function googleBigqueryRoutineTimeoutsToTerraform(struct?: GoogleBigqueryRoutineTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
+export function googleBigqueryRoutineTimeoutsToHclTerraform(struct?: GoogleBigqueryRoutineTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryRoutineTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): GoogleBigqueryRoutineTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryRoutineTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine google_bigquery_routine}
+*/
+export class GoogleBigqueryRoutine extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "google_bigquery_routine";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GoogleBigqueryRoutine resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GoogleBigqueryRoutine to import
+  * @param importFromId The id of the existing GoogleBigqueryRoutine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GoogleBigqueryRoutine to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_routine", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GoogleBigqueryRoutineConfig
+  */
+  public constructor(scope: Construct, id: string, config: GoogleBigqueryRoutineConfig) {
+    super(scope, id, {
+      terraformResourceType: 'google_bigquery_routine',
+      terraformGeneratorMetadata: {
+        providerName: 'google-beta',
+        providerVersion: '8.3.0',
+        providerVersionConstraint: '~> 8.3.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._dataGovernanceType = config.dataGovernanceType;
+    this._datasetId = config.datasetId;
+    this._definitionBody = config.definitionBody;
+    this._deletionPolicy = config.deletionPolicy;
+    this._description = config.description;
+    this._determinismLevel = config.determinismLevel;
+    this._id = config.id;
+    this._importedLibraries = config.importedLibraries;
+    this._language = config.language;
+    this._project = config.project;
+    this._returnTableType = config.returnTableType;
+    this._returnType = config.returnType;
+    this._routineId = config.routineId;
+    this._routineType = config.routineType;
+    this._securityMode = config.securityMode;
+    this._arguments.internalValue = config.arguments;
+    this._externalRuntimeOptions.internalValue = config.externalRuntimeOptions;
+    this._pythonOptions.internalValue = config.pythonOptions;
+    this._remoteFunctionOptions.internalValue = config.remoteFunctionOptions;
+    this._sparkOptions.internalValue = config.sparkOptions;
+    this._timeouts.internalValue = config.timeouts;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // creation_time - computed: true, optional: false, required: false
+  public get creationTime() {
+    return this.getNumberAttribute('creation_time');
+  }
+
+  // data_governance_type - computed: false, optional: true, required: false
+  private _dataGovernanceType?: string; 
+  public get dataGovernanceType() {
+    return this.getStringAttribute('data_governance_type');
+  }
+  public set dataGovernanceType(value: string) {
+    this._dataGovernanceType = value;
+  }
+  public resetDataGovernanceType() {
+    this._dataGovernanceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataGovernanceTypeInput() {
+    return this._dataGovernanceType;
+  }
+
+  // dataset_id - computed: false, optional: false, required: true
+  private _datasetId?: string; 
+  public get datasetId() {
+    return this.getStringAttribute('dataset_id');
+  }
+  public set datasetId(value: string) {
+    this._datasetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datasetIdInput() {
+    return this._datasetId;
+  }
+
+  // definition_body - computed: false, optional: false, required: true
+  private _definitionBody?: string; 
+  public get definitionBody() {
+    return this.getStringAttribute('definition_body');
+  }
+  public set definitionBody(value: string) {
+    this._definitionBody = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get definitionBodyInput() {
+    return this._definitionBody;
+  }
+
+  // deletion_policy - computed: true, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // determinism_level - computed: false, optional: true, required: false
+  private _determinismLevel?: string; 
+  public get determinismLevel() {
+    return this.getStringAttribute('determinism_level');
+  }
+  public set determinismLevel(value: string) {
+    this._determinismLevel = value;
+  }
+  public resetDeterminismLevel() {
+    this._determinismLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get determinismLevelInput() {
+    return this._determinismLevel;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // imported_libraries - computed: false, optional: true, required: false
+  private _importedLibraries?: string[]; 
+  public get importedLibraries() {
+    return this.getListAttribute('imported_libraries');
+  }
+  public set importedLibraries(value: string[]) {
+    this._importedLibraries = value;
+  }
+  public resetImportedLibraries() {
+    this._importedLibraries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get importedLibrariesInput() {
+    return this._importedLibraries;
+  }
+
+  // language - computed: false, optional: true, required: false
+  private _language?: string; 
+  public get language() {
+    return this.getStringAttribute('language');
+  }
+  public set language(value: string) {
+    this._language = value;
+  }
+  public resetLanguage() {
+    this._language = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get languageInput() {
+    return this._language;
+  }
+
+  // last_modified_time - computed: true, optional: false, required: false
+  public get lastModifiedTime() {
+    return this.getNumberAttribute('last_modified_time');
+  }
+
+  // project - computed: true, optional: true, required: false
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  public resetProject() {
+    this._project = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // return_table_type - computed: false, optional: true, required: false
+  private _returnTableType?: string; 
+  public get returnTableType() {
+    return this.getStringAttribute('return_table_type');
+  }
+  public set returnTableType(value: string) {
+    this._returnTableType = value;
+  }
+  public resetReturnTableType() {
+    this._returnTableType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnTableTypeInput() {
+    return this._returnTableType;
+  }
+
+  // return_type - computed: false, optional: true, required: false
+  private _returnType?: string; 
+  public get returnType() {
+    return this.getStringAttribute('return_type');
+  }
+  public set returnType(value: string) {
+    this._returnType = value;
+  }
+  public resetReturnType() {
+    this._returnType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnTypeInput() {
+    return this._returnType;
+  }
+
+  // routine_id - computed: false, optional: false, required: true
+  private _routineId?: string; 
+  public get routineId() {
+    return this.getStringAttribute('routine_id');
+  }
+  public set routineId(value: string) {
+    this._routineId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routineIdInput() {
+    return this._routineId;
+  }
+
+  // routine_type - computed: false, optional: false, required: true
+  private _routineType?: string; 
+  public get routineType() {
+    return this.getStringAttribute('routine_type');
+  }
+  public set routineType(value: string) {
+    this._routineType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routineTypeInput() {
+    return this._routineType;
+  }
+
+  // security_mode - computed: false, optional: true, required: false
+  private _securityMode?: string; 
+  public get securityMode() {
+    return this.getStringAttribute('security_mode');
+  }
+  public set securityMode(value: string) {
+    this._securityMode = value;
+  }
+  public resetSecurityMode() {
+    this._securityMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityModeInput() {
+    return this._securityMode;
+  }
+
+  // arguments - computed: false, optional: true, required: false
+  private _arguments = new GoogleBigqueryRoutineArgumentsList(this, "arguments", false);
+  public get arguments() {
+    return this._arguments;
+  }
+  public putArguments(value: GoogleBigqueryRoutineArguments[] | cdktf.IResolvable) {
+    this._arguments.internalValue = value;
+  }
+  public resetArguments() {
+    this._arguments.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get argumentsInput() {
+    return this._arguments.internalValue;
+  }
+
+  // external_runtime_options - computed: false, optional: true, required: false
+  private _externalRuntimeOptions = new GoogleBigqueryRoutineExternalRuntimeOptionsOutputReference(this, "external_runtime_options");
+  public get externalRuntimeOptions() {
+    return this._externalRuntimeOptions;
+  }
+  public putExternalRuntimeOptions(value: GoogleBigqueryRoutineExternalRuntimeOptions) {
+    this._externalRuntimeOptions.internalValue = value;
+  }
+  public resetExternalRuntimeOptions() {
+    this._externalRuntimeOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalRuntimeOptionsInput() {
+    return this._externalRuntimeOptions.internalValue;
+  }
+
+  // python_options - computed: false, optional: true, required: false
+  private _pythonOptions = new GoogleBigqueryRoutinePythonOptionsOutputReference(this, "python_options");
+  public get pythonOptions() {
+    return this._pythonOptions;
+  }
+  public putPythonOptions(value: GoogleBigqueryRoutinePythonOptions) {
+    this._pythonOptions.internalValue = value;
+  }
+  public resetPythonOptions() {
+    this._pythonOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pythonOptionsInput() {
+    return this._pythonOptions.internalValue;
+  }
+
+  // remote_function_options - computed: false, optional: true, required: false
+  private _remoteFunctionOptions = new GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference(this, "remote_function_options");
+  public get remoteFunctionOptions() {
+    return this._remoteFunctionOptions;
+  }
+  public putRemoteFunctionOptions(value: GoogleBigqueryRoutineRemoteFunctionOptions) {
+    this._remoteFunctionOptions.internalValue = value;
+  }
+  public resetRemoteFunctionOptions() {
+    this._remoteFunctionOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteFunctionOptionsInput() {
+    return this._remoteFunctionOptions.internalValue;
+  }
+
+  // spark_options - computed: false, optional: true, required: false
+  private _sparkOptions = new GoogleBigqueryRoutineSparkOptionsOutputReference(this, "spark_options");
+  public get sparkOptions() {
+    return this._sparkOptions;
+  }
+  public putSparkOptions(value: GoogleBigqueryRoutineSparkOptions) {
+    this._sparkOptions.internalValue = value;
+  }
+  public resetSparkOptions() {
+    this._sparkOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkOptionsInput() {
+    return this._sparkOptions.internalValue;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new GoogleBigqueryRoutineTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: GoogleBigqueryRoutineTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      data_governance_type: cdktf.stringToTerraform(this._dataGovernanceType),
+      dataset_id: cdktf.stringToTerraform(this._datasetId),
+      definition_body: cdktf.stringToTerraform(this._definitionBody),
+      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
+      description: cdktf.stringToTerraform(this._description),
+      determinism_level: cdktf.stringToTerraform(this._determinismLevel),
+      id: cdktf.stringToTerraform(this._id),
+      imported_libraries: cdktf.listMapper(cdktf.stringToTerraform, false)(this._importedLibraries),
+      language: cdktf.stringToTerraform(this._language),
+      project: cdktf.stringToTerraform(this._project),
+      return_table_type: cdktf.stringToTerraform(this._returnTableType),
+      return_type: cdktf.stringToTerraform(this._returnType),
+      routine_id: cdktf.stringToTerraform(this._routineId),
+      routine_type: cdktf.stringToTerraform(this._routineType),
+      security_mode: cdktf.stringToTerraform(this._securityMode),
+      arguments: cdktf.listMapper(googleBigqueryRoutineArgumentsToTerraform, true)(this._arguments.internalValue),
+      external_runtime_options: googleBigqueryRoutineExternalRuntimeOptionsToTerraform(this._externalRuntimeOptions.internalValue),
+      python_options: googleBigqueryRoutinePythonOptionsToTerraform(this._pythonOptions.internalValue),
+      remote_function_options: googleBigqueryRoutineRemoteFunctionOptionsToTerraform(this._remoteFunctionOptions.internalValue),
+      spark_options: googleBigqueryRoutineSparkOptionsToTerraform(this._sparkOptions.internalValue),
+      timeouts: googleBigqueryRoutineTimeoutsToTerraform(this._timeouts.internalValue),
+    };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      data_governance_type: {
+        value: cdktf.stringToHclTerraform(this._dataGovernanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dataset_id: {
+        value: cdktf.stringToHclTerraform(this._datasetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      definition_body: {
+        value: cdktf.stringToHclTerraform(this._definitionBody),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_policy: {
+        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      determinism_level: {
+        value: cdktf.stringToHclTerraform(this._determinismLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      imported_libraries: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._importedLibraries),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      language: {
+        value: cdktf.stringToHclTerraform(this._language),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      return_table_type: {
+        value: cdktf.stringToHclTerraform(this._returnTableType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      return_type: {
+        value: cdktf.stringToHclTerraform(this._returnType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      routine_id: {
+        value: cdktf.stringToHclTerraform(this._routineId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      routine_type: {
+        value: cdktf.stringToHclTerraform(this._routineType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_mode: {
+        value: cdktf.stringToHclTerraform(this._securityMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      arguments: {
+        value: cdktf.listMapperHcl(googleBigqueryRoutineArgumentsToHclTerraform, true)(this._arguments.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryRoutineArgumentsList",
+      },
+      external_runtime_options: {
+        value: googleBigqueryRoutineExternalRuntimeOptionsToHclTerraform(this._externalRuntimeOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryRoutineExternalRuntimeOptionsList",
+      },
+      python_options: {
+        value: googleBigqueryRoutinePythonOptionsToHclTerraform(this._pythonOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryRoutinePythonOptionsList",
+      },
+      remote_function_options: {
+        value: googleBigqueryRoutineRemoteFunctionOptionsToHclTerraform(this._remoteFunctionOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryRoutineRemoteFunctionOptionsList",
+      },
+      spark_options: {
+        value: googleBigqueryRoutineSparkOptionsToHclTerraform(this._sparkOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryRoutineSparkOptionsList",
+      },
+      timeouts: {
+        value: googleBigqueryRoutineTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleBigqueryRoutineTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
+}

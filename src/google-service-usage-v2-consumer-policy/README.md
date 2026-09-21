@@ -1,0 +1,3 @@
+# `google_service_usage_v2_consumer_policy`
+
+Refer to the Terraform Registry for docs: [`google_service_usage_v2_consumer_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_service_usage_v2_consumer_policy).
