@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleChronicleFindingsRefinementConfig extends cdktf.Terraform
   /**
   * Display name of the findings refinement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#display_name GoogleChronicleFindingsRefinement#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#display_name GoogleChronicleFindingsRefinement#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#id GoogleChronicleFindingsRefinement#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#id GoogleChronicleFindingsRefinement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,17 +23,17 @@ export interface GoogleChronicleFindingsRefinementConfig extends cdktf.Terraform
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#instance GoogleChronicleFindingsRefinement#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#instance GoogleChronicleFindingsRefinement#instance}
   */
   readonly instance: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#location GoogleChronicleFindingsRefinement#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#location GoogleChronicleFindingsRefinement#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#project GoogleChronicleFindingsRefinement#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#project GoogleChronicleFindingsRefinement#project}
   */
   readonly project?: string;
   /**
@@ -43,7 +43,7 @@ export interface GoogleChronicleFindingsRefinementConfig extends cdktf.Terraform
   * information:
   * https://cloud.google.com/chronicle/docs/investigation/udm-search
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#query GoogleChronicleFindingsRefinement#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#query GoogleChronicleFindingsRefinement#query}
   */
   readonly query?: string;
   /**
@@ -51,19 +51,19 @@ export interface GoogleChronicleFindingsRefinementConfig extends cdktf.Terraform
   * Possible values:
   * DETECTION_EXCLUSION
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#type GoogleChronicleFindingsRefinement#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#type GoogleChronicleFindingsRefinement#type}
   */
   readonly type?: string;
   /**
   * outcome_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#outcome_filters GoogleChronicleFindingsRefinement#outcome_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#outcome_filters GoogleChronicleFindingsRefinement#outcome_filters}
   */
   readonly outcomeFilters?: GoogleChronicleFindingsRefinementOutcomeFilters[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#timeouts GoogleChronicleFindingsRefinement#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#timeouts GoogleChronicleFindingsRefinement#timeouts}
   */
   readonly timeouts?: GoogleChronicleFindingsRefinementTimeouts;
 }
@@ -76,19 +76,19 @@ export interface GoogleChronicleFindingsRefinementOutcomeFilters {
   * MATCHES_REGEX
   * MATCHES_CIDR
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#outcome_filter_operator GoogleChronicleFindingsRefinement#outcome_filter_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#outcome_filter_operator GoogleChronicleFindingsRefinement#outcome_filter_operator}
   */
   readonly outcomeFilterOperator: string;
   /**
   * The value of the outcome variable to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#outcome_value GoogleChronicleFindingsRefinement#outcome_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#outcome_value GoogleChronicleFindingsRefinement#outcome_value}
   */
   readonly outcomeValue: string;
   /**
   * The outcome variable name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#outcome_variable GoogleChronicleFindingsRefinement#outcome_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#outcome_variable GoogleChronicleFindingsRefinement#outcome_variable}
   */
   readonly outcomeVariable: string;
 }
@@ -253,15 +253,15 @@ export class GoogleChronicleFindingsRefinementOutcomeFiltersList extends cdktf.C
 }
 export interface GoogleChronicleFindingsRefinementTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#create GoogleChronicleFindingsRefinement#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#create GoogleChronicleFindingsRefinement#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#delete GoogleChronicleFindingsRefinement#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#delete GoogleChronicleFindingsRefinement#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#update GoogleChronicleFindingsRefinement#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#update GoogleChronicleFindingsRefinement#update}
   */
   readonly update?: string;
 }
@@ -413,7 +413,7 @@ export class GoogleChronicleFindingsRefinementTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement google_chronicle_findings_refinement}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement google_chronicle_findings_refinement}
 */
 export class GoogleChronicleFindingsRefinement extends cdktf.TerraformResource {
 
@@ -429,7 +429,7 @@ export class GoogleChronicleFindingsRefinement extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleChronicleFindingsRefinement resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleChronicleFindingsRefinement to import
-  * @param importFromId The id of the existing GoogleChronicleFindingsRefinement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleChronicleFindingsRefinement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleChronicleFindingsRefinement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -441,7 +441,7 @@ export class GoogleChronicleFindingsRefinement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_chronicle_findings_refinement google_chronicle_findings_refinement} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_chronicle_findings_refinement google_chronicle_findings_refinement} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -452,8 +452,8 @@ export class GoogleChronicleFindingsRefinement extends cdktf.TerraformResource {
       terraformResourceType: 'google_chronicle_findings_refinement',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

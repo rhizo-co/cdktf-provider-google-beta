@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface GoogleLicenseManagerConfigurationConfig extends cdktf.Terraform
   /**
   * Whether the configuration is active. We suggest you deactivate a configuration instead of deleting it, and allow License Manager to manage deletion of the configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#active GoogleLicenseManagerConfiguration#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#active GoogleLicenseManagerConfiguration#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
   * Id of the object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#configuration_id GoogleLicenseManagerConfiguration#configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#configuration_id GoogleLicenseManagerConfiguration#configuration_id}
   */
   readonly configurationId: string;
   /**
@@ -28,11 +28,11 @@ export interface GoogleLicenseManagerConfigurationConfig extends cdktf.Terraform
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#deletion_policy GoogleLicenseManagerConfiguration#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#deletion_policy GoogleLicenseManagerConfiguration#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#id GoogleLicenseManagerConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#id GoogleLicenseManagerConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,49 +44,49 @@ export interface GoogleLicenseManagerConfigurationConfig extends cdktf.Terraform
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#labels GoogleLicenseManagerConfiguration#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#labels GoogleLicenseManagerConfiguration#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Number of units to bill for. When licensing a product that is billed per-user, this means number of users. When licensing a product that is billed per-pack (e.g. SQL Server), this means the number of packs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#license_count GoogleLicenseManagerConfiguration#license_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#license_count GoogleLicenseManagerConfiguration#license_count}
   */
   readonly licenseCount: number;
   /**
   * The region where the configuration should be created. This region must be the same where the licensed software will run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#location GoogleLicenseManagerConfiguration#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#location GoogleLicenseManagerConfiguration#location}
   */
   readonly location: string;
   /**
   * Name of the product for which you are setting the license configuration. For supported products see https://docs.cloud.google.com/compute/docs/instances/windows/license-manager#supported-license-products. Available values include Office2021ProfessionalPlus
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#product GoogleLicenseManagerConfiguration#product}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#product GoogleLicenseManagerConfiguration#product}
   */
   readonly product: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#project GoogleLicenseManagerConfiguration#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#project GoogleLicenseManagerConfiguration#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#timeouts GoogleLicenseManagerConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#timeouts GoogleLicenseManagerConfiguration#timeouts}
   */
   readonly timeouts?: GoogleLicenseManagerConfigurationTimeouts;
 }
 export interface GoogleLicenseManagerConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#create GoogleLicenseManagerConfiguration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#create GoogleLicenseManagerConfiguration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#delete GoogleLicenseManagerConfiguration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#delete GoogleLicenseManagerConfiguration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#update GoogleLicenseManagerConfiguration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#update GoogleLicenseManagerConfiguration#update}
   */
   readonly update?: string;
 }
@@ -238,7 +238,7 @@ export class GoogleLicenseManagerConfigurationTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration google_license_manager_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration google_license_manager_configuration}
 */
 export class GoogleLicenseManagerConfiguration extends cdktf.TerraformResource {
 
@@ -254,7 +254,7 @@ export class GoogleLicenseManagerConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleLicenseManagerConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleLicenseManagerConfiguration to import
-  * @param importFromId The id of the existing GoogleLicenseManagerConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleLicenseManagerConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleLicenseManagerConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -266,7 +266,7 @@ export class GoogleLicenseManagerConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_license_manager_configuration google_license_manager_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_license_manager_configuration google_license_manager_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -277,8 +277,8 @@ export class GoogleLicenseManagerConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'google_license_manager_configuration',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

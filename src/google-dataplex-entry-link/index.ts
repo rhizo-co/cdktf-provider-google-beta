@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,30 +16,30 @@ export interface GoogleDataplexEntryLinkConfig extends cdktf.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#deletion_policy GoogleDataplexEntryLink#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#deletion_policy GoogleDataplexEntryLink#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The id of the entry group this entry link is in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#entry_group_id GoogleDataplexEntryLink#entry_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#entry_group_id GoogleDataplexEntryLink#entry_group_id}
   */
   readonly entryGroupId: string;
   /**
   * The id of the entry link to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#entry_link_id GoogleDataplexEntryLink#entry_link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#entry_link_id GoogleDataplexEntryLink#entry_link_id}
   */
   readonly entryLinkId: string;
   /**
   * Relative resource name of the Entry Link Type used to create this Entry Link. For example:
   * projects/dataplex-types/locations/global/entryLinkTypes/definition
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#entry_link_type GoogleDataplexEntryLink#entry_link_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#entry_link_type GoogleDataplexEntryLink#entry_link_type}
   */
   readonly entryLinkType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#id GoogleDataplexEntryLink#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#id GoogleDataplexEntryLink#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -48,29 +48,29 @@ export interface GoogleDataplexEntryLinkConfig extends cdktf.TerraformMetaArgume
   /**
   * The location for the entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#location GoogleDataplexEntryLink#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#location GoogleDataplexEntryLink#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#project GoogleDataplexEntryLink#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#project GoogleDataplexEntryLink#project}
   */
   readonly project?: string;
   /**
   * aspects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#aspects GoogleDataplexEntryLink#aspects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#aspects GoogleDataplexEntryLink#aspects}
   */
   readonly aspects?: GoogleDataplexEntryLinkAspects[] | cdktf.IResolvable;
   /**
   * entry_references block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#entry_references GoogleDataplexEntryLink#entry_references}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#entry_references GoogleDataplexEntryLink#entry_references}
   */
   readonly entryReferences: GoogleDataplexEntryLinkEntryReferences[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#timeouts GoogleDataplexEntryLink#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#timeouts GoogleDataplexEntryLink#timeouts}
   */
   readonly timeouts?: GoogleDataplexEntryLinkTimeouts;
 }
@@ -78,7 +78,7 @@ export interface GoogleDataplexEntryLinkAspectsAspect {
   /**
   * The content of the aspect in JSON form, according to its aspect type schema. The maximum size of the field is 120KB (encoded as UTF-8).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#data GoogleDataplexEntryLink#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#data GoogleDataplexEntryLink#data}
   */
   readonly data: string;
 }
@@ -182,13 +182,13 @@ export interface GoogleDataplexEntryLinkAspects {
   * The map keys of the Aspects which the service should modify.
   * It should be the aspect type reference in the format '{project_number}.{location_id}.{aspect_type_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#aspect_key GoogleDataplexEntryLink#aspect_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#aspect_key GoogleDataplexEntryLink#aspect_key}
   */
   readonly aspectKey: string;
   /**
   * aspect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#aspect GoogleDataplexEntryLink#aspect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#aspect GoogleDataplexEntryLink#aspect}
   */
   readonly aspect: GoogleDataplexEntryLinkAspectsAspect;
 }
@@ -330,20 +330,20 @@ export interface GoogleDataplexEntryLinkEntryReferences {
   * The relative resource name of the referenced Entry, of the form:
   * projects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id}/entries/{entry_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#name GoogleDataplexEntryLink#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#name GoogleDataplexEntryLink#name}
   */
   readonly name: string;
   /**
   * The path in the Entry that is referenced in the Entry Link.
   * Empty path denotes that the Entry itself is referenced in the Entry Link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#path GoogleDataplexEntryLink#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#path GoogleDataplexEntryLink#path}
   */
   readonly path?: string;
   /**
   * The reference type of the Entry. Possible values: ["SOURCE", "TARGET"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#type GoogleDataplexEntryLink#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#type GoogleDataplexEntryLink#type}
   */
   readonly type?: string;
 }
@@ -514,15 +514,15 @@ export class GoogleDataplexEntryLinkEntryReferencesList extends cdktf.ComplexLis
 }
 export interface GoogleDataplexEntryLinkTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#create GoogleDataplexEntryLink#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#create GoogleDataplexEntryLink#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#delete GoogleDataplexEntryLink#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#delete GoogleDataplexEntryLink#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#update GoogleDataplexEntryLink#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#update GoogleDataplexEntryLink#update}
   */
   readonly update?: string;
 }
@@ -674,7 +674,7 @@ export class GoogleDataplexEntryLinkTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link google_dataplex_entry_link}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link google_dataplex_entry_link}
 */
 export class GoogleDataplexEntryLink extends cdktf.TerraformResource {
 
@@ -690,7 +690,7 @@ export class GoogleDataplexEntryLink extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDataplexEntryLink resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataplexEntryLink to import
-  * @param importFromId The id of the existing GoogleDataplexEntryLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataplexEntryLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataplexEntryLink to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -702,7 +702,7 @@ export class GoogleDataplexEntryLink extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataplex_entry_link google_dataplex_entry_link} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataplex_entry_link google_dataplex_entry_link} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -713,8 +713,8 @@ export class GoogleDataplexEntryLink extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_entry_link',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

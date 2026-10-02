@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,7 +14,7 @@ export interface GoogleVectorSearchCollectionConfig extends cdktf.TerraformMetaA
   * Specifically, it must be 1-63 characters long and match the regular
   * expression '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#collection_id GoogleVectorSearchCollection#collection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#collection_id GoogleVectorSearchCollection#collection_id}
   */
   readonly collectionId: string;
   /**
@@ -22,7 +22,7 @@ export interface GoogleVectorSearchCollectionConfig extends cdktf.TerraformMetaA
   * Field names must contain only alphanumeric characters,
   * underscores, and hyphens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#data_schema GoogleVectorSearchCollection#data_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#data_schema GoogleVectorSearchCollection#data_schema}
   */
   readonly dataSchema?: string;
   /**
@@ -34,23 +34,23 @@ export interface GoogleVectorSearchCollectionConfig extends cdktf.TerraformMetaA
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#deletion_policy GoogleVectorSearchCollection#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#deletion_policy GoogleVectorSearchCollection#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * User-specified description of the collection
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#description GoogleVectorSearchCollection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#description GoogleVectorSearchCollection#description}
   */
   readonly description?: string;
   /**
   * User-specified display name of the collection
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#display_name GoogleVectorSearchCollection#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#display_name GoogleVectorSearchCollection#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#id GoogleVectorSearchCollection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#id GoogleVectorSearchCollection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -62,35 +62,35 @@ export interface GoogleVectorSearchCollectionConfig extends cdktf.TerraformMetaA
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#labels GoogleVectorSearchCollection#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#labels GoogleVectorSearchCollection#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#location GoogleVectorSearchCollection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#location GoogleVectorSearchCollection#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#project GoogleVectorSearchCollection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#project GoogleVectorSearchCollection#project}
   */
   readonly project?: string;
   /**
   * encryption_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#encryption_spec GoogleVectorSearchCollection#encryption_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#encryption_spec GoogleVectorSearchCollection#encryption_spec}
   */
   readonly encryptionSpec?: GoogleVectorSearchCollectionEncryptionSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#timeouts GoogleVectorSearchCollection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#timeouts GoogleVectorSearchCollection#timeouts}
   */
   readonly timeouts?: GoogleVectorSearchCollectionTimeouts;
   /**
   * vector_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#vector_schema GoogleVectorSearchCollection#vector_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#vector_schema GoogleVectorSearchCollection#vector_schema}
   */
   readonly vectorSchema?: GoogleVectorSearchCollectionVectorSchema[] | cdktf.IResolvable;
 }
@@ -102,7 +102,7 @@ export interface GoogleVectorSearchCollectionEncryptionSpec {
   * the format
   * 'projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#crypto_key_name GoogleVectorSearchCollection#crypto_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#crypto_key_name GoogleVectorSearchCollection#crypto_key_name}
   */
   readonly cryptoKeyName: string;
 }
@@ -183,15 +183,15 @@ export class GoogleVectorSearchCollectionEncryptionSpecOutputReference extends c
 }
 export interface GoogleVectorSearchCollectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#create GoogleVectorSearchCollection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#create GoogleVectorSearchCollection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#delete GoogleVectorSearchCollection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#delete GoogleVectorSearchCollection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#update GoogleVectorSearchCollection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#update GoogleVectorSearchCollection#update}
   */
   readonly update?: string;
 }
@@ -347,7 +347,7 @@ export interface GoogleVectorSearchCollectionVectorSchemaDenseVectorVertexEmbedd
   * https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#embeddings-models
   * for the list of supported models.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#model_id GoogleVectorSearchCollection#model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#model_id GoogleVectorSearchCollection#model_id}
   */
   readonly modelId: string;
   /**
@@ -361,7 +361,7 @@ export interface GoogleVectorSearchCollectionVectorSchemaDenseVectorVertexEmbedd
   * FACT_VERIFICATION
   * CODE_RETRIEVAL_QUERY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#task_type GoogleVectorSearchCollection#task_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#task_type GoogleVectorSearchCollection#task_type}
   */
   readonly taskType: string;
   /**
@@ -369,7 +369,7 @@ export interface GoogleVectorSearchCollectionVectorSchemaDenseVectorVertexEmbedd
   * contain one or more references to fields in the DataObject, e.g.:
   * "Movie Title: {title} ---- Movie Plot: {plot}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#text_template GoogleVectorSearchCollection#text_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#text_template GoogleVectorSearchCollection#text_template}
   */
   readonly textTemplate: string;
 }
@@ -504,13 +504,13 @@ export interface GoogleVectorSearchCollectionVectorSchemaDenseVector {
   /**
   * Dimensionality of the vector field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#dimensions GoogleVectorSearchCollection#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#dimensions GoogleVectorSearchCollection#dimensions}
   */
   readonly dimensions?: number;
   /**
   * vertex_embedding_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#vertex_embedding_config GoogleVectorSearchCollection#vertex_embedding_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#vertex_embedding_config GoogleVectorSearchCollection#vertex_embedding_config}
   */
   readonly vertexEmbeddingConfig?: GoogleVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig;
 }
@@ -672,19 +672,19 @@ export class GoogleVectorSearchCollectionVectorSchemaSparseVectorOutputReference
 }
 export interface GoogleVectorSearchCollectionVectorSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#field_name GoogleVectorSearchCollection#field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#field_name GoogleVectorSearchCollection#field_name}
   */
   readonly fieldName: string;
   /**
   * dense_vector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#dense_vector GoogleVectorSearchCollection#dense_vector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#dense_vector GoogleVectorSearchCollection#dense_vector}
   */
   readonly denseVector?: GoogleVectorSearchCollectionVectorSchemaDenseVector;
   /**
   * sparse_vector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#sparse_vector GoogleVectorSearchCollection#sparse_vector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#sparse_vector GoogleVectorSearchCollection#sparse_vector}
   */
   readonly sparseVector?: GoogleVectorSearchCollectionVectorSchemaSparseVector;
 }
@@ -855,7 +855,7 @@ export class GoogleVectorSearchCollectionVectorSchemaList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection google_vector_search_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection google_vector_search_collection}
 */
 export class GoogleVectorSearchCollection extends cdktf.TerraformResource {
 
@@ -871,7 +871,7 @@ export class GoogleVectorSearchCollection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleVectorSearchCollection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleVectorSearchCollection to import
-  * @param importFromId The id of the existing GoogleVectorSearchCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleVectorSearchCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleVectorSearchCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -883,7 +883,7 @@ export class GoogleVectorSearchCollection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_collection google_vector_search_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_collection google_vector_search_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -894,8 +894,8 @@ export class GoogleVectorSearchCollection extends cdktf.TerraformResource {
       terraformResourceType: 'google_vector_search_collection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

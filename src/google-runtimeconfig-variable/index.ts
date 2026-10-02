@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,11 @@ export interface GoogleRuntimeconfigVariableConfig extends cdktf.TerraformMetaAr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable#deletion_policy GoogleRuntimeconfigVariable#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable#deletion_policy GoogleRuntimeconfigVariable#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable#id GoogleRuntimeconfigVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable#id GoogleRuntimeconfigVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,33 +29,33 @@ export interface GoogleRuntimeconfigVariableConfig extends cdktf.TerraformMetaAr
   /**
   * The name of the variable to manage. Note that variable names can be hierarchical using slashes (e.g. "prod-variables/hostname").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable#name GoogleRuntimeconfigVariable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable#name GoogleRuntimeconfigVariable#name}
   */
   readonly name: string;
   /**
   * The name of the RuntimeConfig resource containing this variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable#parent GoogleRuntimeconfigVariable#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable#parent GoogleRuntimeconfigVariable#parent}
   */
   readonly parent: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable#project GoogleRuntimeconfigVariable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable#project GoogleRuntimeconfigVariable#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable#text GoogleRuntimeconfigVariable#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable#text GoogleRuntimeconfigVariable#text}
   */
   readonly text?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable#value GoogleRuntimeconfigVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable#value GoogleRuntimeconfigVariable#value}
   */
   readonly value?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable google_runtimeconfig_variable}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable google_runtimeconfig_variable}
 */
 export class GoogleRuntimeconfigVariable extends cdktf.TerraformResource {
 
@@ -71,7 +71,7 @@ export class GoogleRuntimeconfigVariable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleRuntimeconfigVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleRuntimeconfigVariable to import
-  * @param importFromId The id of the existing GoogleRuntimeconfigVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleRuntimeconfigVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleRuntimeconfigVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -83,7 +83,7 @@ export class GoogleRuntimeconfigVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_runtimeconfig_variable google_runtimeconfig_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_runtimeconfig_variable google_runtimeconfig_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -94,8 +94,8 @@ export class GoogleRuntimeconfigVariable extends cdktf.TerraformResource {
       terraformResourceType: 'google_runtimeconfig_variable',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GoogleObservabilityFolderSettingsConfig extends cdktf.Terraform
   /**
   * The default storage location for new resources, e.g. buckets. Only valid for global location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#default_storage_location GoogleObservabilityFolderSettings#default_storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#default_storage_location GoogleObservabilityFolderSettings#default_storage_location}
   */
   readonly defaultStorageLocation?: string;
   /**
   * The folder ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#folder GoogleObservabilityFolderSettings#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#folder GoogleObservabilityFolderSettings#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#id GoogleObservabilityFolderSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#id GoogleObservabilityFolderSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,33 +29,33 @@ export interface GoogleObservabilityFolderSettingsConfig extends cdktf.Terraform
   /**
   * The default Cloud KMS key to use for new resources. Only valid for regional locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#kms_key_name GoogleObservabilityFolderSettings#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#kms_key_name GoogleObservabilityFolderSettings#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * The location of the settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#location GoogleObservabilityFolderSettings#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#location GoogleObservabilityFolderSettings#location}
   */
   readonly location: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#timeouts GoogleObservabilityFolderSettings#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#timeouts GoogleObservabilityFolderSettings#timeouts}
   */
   readonly timeouts?: GoogleObservabilityFolderSettingsTimeouts;
 }
 export interface GoogleObservabilityFolderSettingsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#create GoogleObservabilityFolderSettings#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#create GoogleObservabilityFolderSettings#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#delete GoogleObservabilityFolderSettings#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#delete GoogleObservabilityFolderSettings#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#update GoogleObservabilityFolderSettings#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#update GoogleObservabilityFolderSettings#update}
   */
   readonly update?: string;
 }
@@ -207,7 +207,7 @@ export class GoogleObservabilityFolderSettingsTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings google_observability_folder_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings google_observability_folder_settings}
 */
 export class GoogleObservabilityFolderSettings extends cdktf.TerraformResource {
 
@@ -223,7 +223,7 @@ export class GoogleObservabilityFolderSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleObservabilityFolderSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleObservabilityFolderSettings to import
-  * @param importFromId The id of the existing GoogleObservabilityFolderSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleObservabilityFolderSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleObservabilityFolderSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -235,7 +235,7 @@ export class GoogleObservabilityFolderSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_folder_settings google_observability_folder_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_folder_settings google_observability_folder_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -246,8 +246,8 @@ export class GoogleObservabilityFolderSettings extends cdktf.TerraformResource {
       terraformResourceType: 'google_observability_folder_settings',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

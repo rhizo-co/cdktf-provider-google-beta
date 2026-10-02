@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleTagsTagBindingCollectionConfig extends cdktf.TerraformMet
   /**
   * The full resource name of the resource to which the tags are bound. E.g. //cloudresourcemanager.googleapis.com/projects/123
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection#full_resource_name GoogleTagsTagBindingCollection#full_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection#full_resource_name GoogleTagsTagBindingCollection#full_resource_name}
   */
   readonly fullResourceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection#id GoogleTagsTagBindingCollection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection#id GoogleTagsTagBindingCollection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +23,7 @@ export interface GoogleTagsTagBindingCollectionConfig extends cdktf.TerraformMet
   /**
   * The location of the TagBindingCollection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection#location GoogleTagsTagBindingCollection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection#location GoogleTagsTagBindingCollection#location}
   */
   readonly location?: string;
   /**
@@ -33,27 +33,27 @@ export interface GoogleTagsTagBindingCollectionConfig extends cdktf.TerraformMet
   * Keys must be namespaced names of TagKeys, and values must be short names of TagValues.
   * This field is non-authoritative. Terraform will only manage the precise tags present in this map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection#tags GoogleTagsTagBindingCollection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection#tags GoogleTagsTagBindingCollection#tags}
   */
   readonly tags: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection#timeouts GoogleTagsTagBindingCollection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection#timeouts GoogleTagsTagBindingCollection#timeouts}
   */
   readonly timeouts?: GoogleTagsTagBindingCollectionTimeouts;
 }
 export interface GoogleTagsTagBindingCollectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection#create GoogleTagsTagBindingCollection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection#create GoogleTagsTagBindingCollection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection#delete GoogleTagsTagBindingCollection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection#delete GoogleTagsTagBindingCollection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection#update GoogleTagsTagBindingCollection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection#update GoogleTagsTagBindingCollection#update}
   */
   readonly update?: string;
 }
@@ -205,7 +205,7 @@ export class GoogleTagsTagBindingCollectionTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection google_tags_tag_binding_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection google_tags_tag_binding_collection}
 */
 export class GoogleTagsTagBindingCollection extends cdktf.TerraformResource {
 
@@ -221,7 +221,7 @@ export class GoogleTagsTagBindingCollection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleTagsTagBindingCollection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleTagsTagBindingCollection to import
-  * @param importFromId The id of the existing GoogleTagsTagBindingCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleTagsTagBindingCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleTagsTagBindingCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -233,7 +233,7 @@ export class GoogleTagsTagBindingCollection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_tags_tag_binding_collection google_tags_tag_binding_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_tags_tag_binding_collection google_tags_tag_binding_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -244,8 +244,8 @@ export class GoogleTagsTagBindingCollection extends cdktf.TerraformResource {
       terraformResourceType: 'google_tags_tag_binding_collection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

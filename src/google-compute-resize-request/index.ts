@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface GoogleComputeResizeRequestConfig extends cdktf.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#deletion_policy GoogleComputeResizeRequest#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#deletion_policy GoogleComputeResizeRequest#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resize-request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#description GoogleComputeResizeRequest#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#description GoogleComputeResizeRequest#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#id GoogleComputeResizeRequest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#id GoogleComputeResizeRequest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,41 +35,41 @@ export interface GoogleComputeResizeRequestConfig extends cdktf.TerraformMetaArg
   /**
   * The reference of the instance group manager this ResizeRequest is a part of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#instance_group_manager GoogleComputeResizeRequest#instance_group_manager}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#instance_group_manager GoogleComputeResizeRequest#instance_group_manager}
   */
   readonly instanceGroupManager: string;
   /**
   * The name of this resize request. The name must be 1-63 characters long, and comply with RFC1035.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#name GoogleComputeResizeRequest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#name GoogleComputeResizeRequest#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#project GoogleComputeResizeRequest#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#project GoogleComputeResizeRequest#project}
   */
   readonly project?: string;
   /**
   * The number of instances to be created by this resize request. The group's target size will be increased by this number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#resize_by GoogleComputeResizeRequest#resize_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#resize_by GoogleComputeResizeRequest#resize_by}
   */
   readonly resizeBy: number;
   /**
   * The reference of the compute zone scoping this request. If it is not provided, the provider zone is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#zone GoogleComputeResizeRequest#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#zone GoogleComputeResizeRequest#zone}
   */
   readonly zone?: string;
   /**
   * requested_run_duration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#requested_run_duration GoogleComputeResizeRequest#requested_run_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#requested_run_duration GoogleComputeResizeRequest#requested_run_duration}
   */
   readonly requestedRunDuration?: GoogleComputeResizeRequestRequestedRunDuration;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#timeouts GoogleComputeResizeRequest#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#timeouts GoogleComputeResizeRequest#timeouts}
   */
   readonly timeouts?: GoogleComputeResizeRequestTimeouts;
 }
@@ -1603,13 +1603,13 @@ export interface GoogleComputeResizeRequestRequestedRunDuration {
   /**
   * Span of time that's a fraction of a second at nanosecond resolution. Durations less than one second are represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#nanos GoogleComputeResizeRequest#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#nanos GoogleComputeResizeRequest#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second. Must be from 600 to 604800 inclusive. Note: minimum and maximum allowed range for requestedRunDuration is 10 minutes (600 seconds) and 7 days(604800 seconds) correspondingly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#seconds GoogleComputeResizeRequest#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#seconds GoogleComputeResizeRequest#seconds}
   */
   readonly seconds: string;
 }
@@ -1719,11 +1719,11 @@ export class GoogleComputeResizeRequestRequestedRunDurationOutputReference exten
 }
 export interface GoogleComputeResizeRequestTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#create GoogleComputeResizeRequest#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#create GoogleComputeResizeRequest#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#delete GoogleComputeResizeRequest#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#delete GoogleComputeResizeRequest#delete}
   */
   readonly delete?: string;
 }
@@ -1846,7 +1846,7 @@ export class GoogleComputeResizeRequestTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request google_compute_resize_request}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request google_compute_resize_request}
 */
 export class GoogleComputeResizeRequest extends cdktf.TerraformResource {
 
@@ -1862,7 +1862,7 @@ export class GoogleComputeResizeRequest extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeResizeRequest resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeResizeRequest to import
-  * @param importFromId The id of the existing GoogleComputeResizeRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeResizeRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeResizeRequest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1874,7 +1874,7 @@ export class GoogleComputeResizeRequest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_resize_request google_compute_resize_request} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_resize_request google_compute_resize_request} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1885,8 +1885,8 @@ export class GoogleComputeResizeRequest extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_resize_request',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

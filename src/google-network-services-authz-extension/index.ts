@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface GoogleNetworkServicesAuthzExtensionConfig extends cdktf.Terrafo
   /**
   * The :authority header in the gRPC request sent from Envoy to the extension service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#authority GoogleNetworkServicesAuthzExtension#authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#authority GoogleNetworkServicesAuthzExtension#authority}
   */
   readonly authority?: string;
   /**
@@ -22,13 +22,13 @@ export interface GoogleNetworkServicesAuthzExtensionConfig extends cdktf.Terrafo
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#deletion_policy GoogleNetworkServicesAuthzExtension#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#deletion_policy GoogleNetworkServicesAuthzExtension#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A human-readable description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#description GoogleNetworkServicesAuthzExtension#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#description GoogleNetworkServicesAuthzExtension#description}
   */
   readonly description?: string;
   /**
@@ -37,28 +37,17 @@ export interface GoogleNetworkServicesAuthzExtensionConfig extends cdktf.Terrafo
   * * If response headers have not been delivered to the downstream client, a generic 500 error is returned to the client. The error response can be tailored by configuring a custom error response in the load balancer.
   * * If response headers have been delivered, then the HTTP stream to the downstream client is reset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#fail_open GoogleNetworkServicesAuthzExtension#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#fail_open GoogleNetworkServicesAuthzExtension#fail_open}
   */
   readonly failOpen?: boolean | cdktf.IResolvable;
   /**
-  * List of the Envoy attributes to forward to the extension server. The attributes
-  * provided here are included as part of the 'ProcessingRequest.attributes' field
-  * (of type 'map'), where the keys are the attribute names. Refer to the
-  * [documentation](https://cloud.google.com/service-extensions/docs/attributes)
-  * for the names of attributes that can be forwarded. If omitted, no attributes
-  * are sent. Each element is a string indicating the attribute name.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#forward_attributes GoogleNetworkServicesAuthzExtension#forward_attributes}
-  */
-  readonly forwardAttributes?: string[];
-  /**
   * List of the HTTP headers to forward to the extension (from the client). If omitted, all headers are sent. Each element is a string indicating the header name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#forward_headers GoogleNetworkServicesAuthzExtension#forward_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#forward_headers GoogleNetworkServicesAuthzExtension#forward_headers}
   */
   readonly forwardHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#id GoogleNetworkServicesAuthzExtension#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#id GoogleNetworkServicesAuthzExtension#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -71,7 +60,7 @@ export interface GoogleNetworkServicesAuthzExtensionConfig extends cdktf.Terrafo
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#labels GoogleNetworkServicesAuthzExtension#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#labels GoogleNetworkServicesAuthzExtension#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -79,13 +68,13 @@ export interface GoogleNetworkServicesAuthzExtensionConfig extends cdktf.Terrafo
   * this extension must share the same load balancing scheme. For more information, refer to
   * [Backend services overview](https://cloud.google.com/load-balancing/docs/backend-service). Possible values: ["INTERNAL_MANAGED", "EXTERNAL_MANAGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#load_balancing_scheme GoogleNetworkServicesAuthzExtension#load_balancing_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#load_balancing_scheme GoogleNetworkServicesAuthzExtension#load_balancing_scheme}
   */
   readonly loadBalancingScheme?: string;
   /**
   * The location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#location GoogleNetworkServicesAuthzExtension#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#location GoogleNetworkServicesAuthzExtension#location}
   */
   readonly location: string;
   /**
@@ -93,17 +82,17 @@ export interface GoogleNetworkServicesAuthzExtensionConfig extends cdktf.Terrafo
   * 
   * {forwarding_rule_id} - substituted with the forwarding rule's fully qualified resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#metadata GoogleNetworkServicesAuthzExtension#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#metadata GoogleNetworkServicesAuthzExtension#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Identifier. Name of the AuthzExtension resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#name GoogleNetworkServicesAuthzExtension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#name GoogleNetworkServicesAuthzExtension#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#project GoogleNetworkServicesAuthzExtension#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#project GoogleNetworkServicesAuthzExtension#project}
   */
   readonly project?: string;
   /**
@@ -114,13 +103,13 @@ export interface GoogleNetworkServicesAuthzExtensionConfig extends cdktf.Terrafo
   * * A fully qualified domain name that can be resolved by the dataplane
   * * Backend service resource URI of the form 'https://www.googleapis.com/compute/v1/projects/{{project}}/regions/{{region}}/backendServices/{{name}}' or 'https://www.googleapis.com/compute/v1/projects/{{project}}/global/backendServices/{{name}}}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#service GoogleNetworkServicesAuthzExtension#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#service GoogleNetworkServicesAuthzExtension#service}
   */
   readonly service: string;
   /**
   * Specifies the timeout for each individual message on the stream. The timeout must be between 10-10000 milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#timeout GoogleNetworkServicesAuthzExtension#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#timeout GoogleNetworkServicesAuthzExtension#timeout}
   */
   readonly timeout: string;
   /**
@@ -142,27 +131,27 @@ export interface GoogleNetworkServicesAuthzExtensionConfig extends cdktf.Terrafo
   *     The backend service must support HTTP/2 or H2C.
   *     This option is only supported for regional AuthzExtension resources. Possible values: ["WIRE_FORMAT_UNSPECIFIED", "EXT_PROC_GRPC", "EXT_AUTHZ_GRPC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#wire_format GoogleNetworkServicesAuthzExtension#wire_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#wire_format GoogleNetworkServicesAuthzExtension#wire_format}
   */
   readonly wireFormat?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#timeouts GoogleNetworkServicesAuthzExtension#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#timeouts GoogleNetworkServicesAuthzExtension#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesAuthzExtensionTimeouts;
 }
 export interface GoogleNetworkServicesAuthzExtensionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#create GoogleNetworkServicesAuthzExtension#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#create GoogleNetworkServicesAuthzExtension#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#delete GoogleNetworkServicesAuthzExtension#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#delete GoogleNetworkServicesAuthzExtension#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#update GoogleNetworkServicesAuthzExtension#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#update GoogleNetworkServicesAuthzExtension#update}
   */
   readonly update?: string;
 }
@@ -314,7 +303,7 @@ export class GoogleNetworkServicesAuthzExtensionTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension google_network_services_authz_extension}
 */
 export class GoogleNetworkServicesAuthzExtension extends cdktf.TerraformResource {
 
@@ -330,7 +319,7 @@ export class GoogleNetworkServicesAuthzExtension extends cdktf.TerraformResource
   * Generates CDKTF code for importing a GoogleNetworkServicesAuthzExtension resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNetworkServicesAuthzExtension to import
-  * @param importFromId The id of the existing GoogleNetworkServicesAuthzExtension that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNetworkServicesAuthzExtension that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNetworkServicesAuthzExtension to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -342,7 +331,7 @@ export class GoogleNetworkServicesAuthzExtension extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_network_services_authz_extension google_network_services_authz_extension} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -353,8 +342,8 @@ export class GoogleNetworkServicesAuthzExtension extends cdktf.TerraformResource
       terraformResourceType: 'google_network_services_authz_extension',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -368,7 +357,6 @@ export class GoogleNetworkServicesAuthzExtension extends cdktf.TerraformResource
     this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._failOpen = config.failOpen;
-    this._forwardAttributes = config.forwardAttributes;
     this._forwardHeaders = config.forwardHeaders;
     this._id = config.id;
     this._labels = config.labels;
@@ -460,22 +448,6 @@ export class GoogleNetworkServicesAuthzExtension extends cdktf.TerraformResource
   // Temporarily expose input value. Use with caution.
   public get failOpenInput() {
     return this._failOpen;
-  }
-
-  // forward_attributes - computed: false, optional: true, required: false
-  private _forwardAttributes?: string[]; 
-  public get forwardAttributes() {
-    return this.getListAttribute('forward_attributes');
-  }
-  public set forwardAttributes(value: string[]) {
-    this._forwardAttributes = value;
-  }
-  public resetForwardAttributes() {
-    this._forwardAttributes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get forwardAttributesInput() {
-    return this._forwardAttributes;
   }
 
   // forward_headers - computed: false, optional: true, required: false
@@ -679,7 +651,6 @@ export class GoogleNetworkServicesAuthzExtension extends cdktf.TerraformResource
       deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
       description: cdktf.stringToTerraform(this._description),
       fail_open: cdktf.booleanToTerraform(this._failOpen),
-      forward_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._forwardAttributes),
       forward_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._forwardHeaders),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
@@ -720,12 +691,6 @@ export class GoogleNetworkServicesAuthzExtension extends cdktf.TerraformResource
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      forward_attributes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._forwardAttributes),
-        isBlock: false,
-        type: "list",
-        storageClassType: "stringList",
       },
       forward_headers: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._forwardHeaders),

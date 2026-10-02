@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,53 +16,53 @@ export interface GoogleApigeeApiDeploymentConfig extends cdktf.TerraformMetaArgu
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#deletion_policy GoogleApigeeApiDeployment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#deletion_policy GoogleApigeeApiDeployment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The Apigee Environment associated with the Apigee API deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#environment GoogleApigeeApiDeployment#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#environment GoogleApigeeApiDeployment#environment}
   */
   readonly environment: string;
   /**
   * The Apigee Organization associated with the Apigee API deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#org_id GoogleApigeeApiDeployment#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#org_id GoogleApigeeApiDeployment#org_id}
   */
   readonly orgId: string;
   /**
   * The Apigee API associated with the Apigee API deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#proxy_id GoogleApigeeApiDeployment#proxy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#proxy_id GoogleApigeeApiDeployment#proxy_id}
   */
   readonly proxyId: string;
   /**
   * The revision of the API proxy to be deployed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#revision GoogleApigeeApiDeployment#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#revision GoogleApigeeApiDeployment#revision}
   */
   readonly revision: string;
   /**
   * The Google Cloud IAM service account to use as the identity for the deployed proxy. The format must be '{ACCOUNT_ID}@{PROJECT}.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#service_account GoogleApigeeApiDeployment#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#service_account GoogleApigeeApiDeployment#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#timeouts GoogleApigeeApiDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#timeouts GoogleApigeeApiDeployment#timeouts}
   */
   readonly timeouts?: GoogleApigeeApiDeploymentTimeouts;
 }
 export interface GoogleApigeeApiDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#create GoogleApigeeApiDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#create GoogleApigeeApiDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#delete GoogleApigeeApiDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#delete GoogleApigeeApiDeployment#delete}
   */
   readonly delete?: string;
 }
@@ -185,7 +185,7 @@ export class GoogleApigeeApiDeploymentTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment google_apigee_api_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment google_apigee_api_deployment}
 */
 export class GoogleApigeeApiDeployment extends cdktf.TerraformResource {
 
@@ -201,7 +201,7 @@ export class GoogleApigeeApiDeployment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApigeeApiDeployment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApigeeApiDeployment to import
-  * @param importFromId The id of the existing GoogleApigeeApiDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApigeeApiDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApigeeApiDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +213,7 @@ export class GoogleApigeeApiDeployment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apigee_api_deployment google_apigee_api_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apigee_api_deployment google_apigee_api_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,8 +224,8 @@ export class GoogleApigeeApiDeployment extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_api_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

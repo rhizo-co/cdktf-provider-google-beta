@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleComputeNetworkFirewallPolicyIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#id GoogleComputeNetworkFirewallPolicyIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#id GoogleComputeNetworkFirewallPolicyIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#member GoogleComputeNetworkFirewallPolicyIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#member GoogleComputeNetworkFirewallPolicyIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#name GoogleComputeNetworkFirewallPolicyIamMember#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#name GoogleComputeNetworkFirewallPolicyIamMember#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#project GoogleComputeNetworkFirewallPolicyIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#project GoogleComputeNetworkFirewallPolicyIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#role GoogleComputeNetworkFirewallPolicyIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#role GoogleComputeNetworkFirewallPolicyIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#condition GoogleComputeNetworkFirewallPolicyIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#condition GoogleComputeNetworkFirewallPolicyIamMember#condition}
   */
   readonly condition?: GoogleComputeNetworkFirewallPolicyIamMemberCondition;
 }
 export interface GoogleComputeNetworkFirewallPolicyIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#description GoogleComputeNetworkFirewallPolicyIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#description GoogleComputeNetworkFirewallPolicyIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#expression GoogleComputeNetworkFirewallPolicyIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#expression GoogleComputeNetworkFirewallPolicyIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#title GoogleComputeNetworkFirewallPolicyIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#title GoogleComputeNetworkFirewallPolicyIamMember#title}
   */
   readonly title: string;
 }
@@ -183,7 +183,7 @@ export class GoogleComputeNetworkFirewallPolicyIamMemberConditionOutputReference
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member google_compute_network_firewall_policy_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member google_compute_network_firewall_policy_iam_member}
 */
 export class GoogleComputeNetworkFirewallPolicyIamMember extends cdktf.TerraformResource {
 
@@ -199,7 +199,7 @@ export class GoogleComputeNetworkFirewallPolicyIamMember extends cdktf.Terraform
   * Generates CDKTF code for importing a GoogleComputeNetworkFirewallPolicyIamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeNetworkFirewallPolicyIamMember to import
-  * @param importFromId The id of the existing GoogleComputeNetworkFirewallPolicyIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeNetworkFirewallPolicyIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeNetworkFirewallPolicyIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -211,7 +211,7 @@ export class GoogleComputeNetworkFirewallPolicyIamMember extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_network_firewall_policy_iam_member google_compute_network_firewall_policy_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_network_firewall_policy_iam_member google_compute_network_firewall_policy_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -222,8 +222,8 @@ export class GoogleComputeNetworkFirewallPolicyIamMember extends cdktf.Terraform
       terraformResourceType: 'google_compute_network_firewall_policy_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,23 +16,23 @@ export interface GoogleMigrationCenterSourceConfig extends cdktf.TerraformMetaAr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#deletion_policy GoogleMigrationCenterSource#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#deletion_policy GoogleMigrationCenterSource#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Free-text description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#description GoogleMigrationCenterSource#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#description GoogleMigrationCenterSource#description}
   */
   readonly description?: string;
   /**
   * User-friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#display_name GoogleMigrationCenterSource#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#display_name GoogleMigrationCenterSource#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#id GoogleMigrationCenterSource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#id GoogleMigrationCenterSource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,24 +41,24 @@ export interface GoogleMigrationCenterSourceConfig extends cdktf.TerraformMetaAr
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#location GoogleMigrationCenterSource#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#location GoogleMigrationCenterSource#location}
   */
   readonly location: string;
   /**
   * If 'true', the source is managed by other service(s).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#managed GoogleMigrationCenterSource#managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#managed GoogleMigrationCenterSource#managed}
   */
   readonly managed?: boolean | cdktf.IResolvable;
   /**
   * The information confidence of the source.
   * The higher the value, the higher the confidence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#priority GoogleMigrationCenterSource#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#priority GoogleMigrationCenterSource#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#project GoogleMigrationCenterSource#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#project GoogleMigrationCenterSource#project}
   */
   readonly project?: string;
   /**
@@ -68,7 +68,7 @@ export interface GoogleMigrationCenterSourceConfig extends cdktf.TerraformMetaAr
   * length of 63 characters. The ID must match the
   * regular expression: '[a-z]([a-z0-9-]{0,61}[a-z0-9])?'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#source_id GoogleMigrationCenterSource#source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#source_id GoogleMigrationCenterSource#source_id}
   */
   readonly sourceId: string;
   /**
@@ -81,27 +81,27 @@ export interface GoogleMigrationCenterSourceConfig extends cdktf.TerraformMetaAr
   * SOURCE_TYPE_CUSTOM
   * SOURCE_TYPE_DISCOVERY_CLIENT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#type GoogleMigrationCenterSource#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#type GoogleMigrationCenterSource#type}
   */
   readonly type?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#timeouts GoogleMigrationCenterSource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#timeouts GoogleMigrationCenterSource#timeouts}
   */
   readonly timeouts?: GoogleMigrationCenterSourceTimeouts;
 }
 export interface GoogleMigrationCenterSourceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#create GoogleMigrationCenterSource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#create GoogleMigrationCenterSource#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#delete GoogleMigrationCenterSource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#delete GoogleMigrationCenterSource#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#update GoogleMigrationCenterSource#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#update GoogleMigrationCenterSource#update}
   */
   readonly update?: string;
 }
@@ -253,7 +253,7 @@ export class GoogleMigrationCenterSourceTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source google_migration_center_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source google_migration_center_source}
 */
 export class GoogleMigrationCenterSource extends cdktf.TerraformResource {
 
@@ -269,7 +269,7 @@ export class GoogleMigrationCenterSource extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleMigrationCenterSource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleMigrationCenterSource to import
-  * @param importFromId The id of the existing GoogleMigrationCenterSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleMigrationCenterSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleMigrationCenterSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -281,7 +281,7 @@ export class GoogleMigrationCenterSource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_migration_center_source google_migration_center_source} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_migration_center_source google_migration_center_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -292,8 +292,8 @@ export class GoogleMigrationCenterSource extends cdktf.TerraformResource {
       terraformResourceType: 'google_migration_center_source',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

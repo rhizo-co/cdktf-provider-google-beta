@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleIapAgentRegistryMcpServerIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#id GoogleIapAgentRegistryMcpServerIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#id GoogleIapAgentRegistryMcpServerIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#location GoogleIapAgentRegistryMcpServerIamBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#location GoogleIapAgentRegistryMcpServerIamBinding#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#mcp_server_id GoogleIapAgentRegistryMcpServerIamBinding#mcp_server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#mcp_server_id GoogleIapAgentRegistryMcpServerIamBinding#mcp_server_id}
   */
   readonly mcpServerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#members GoogleIapAgentRegistryMcpServerIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#members GoogleIapAgentRegistryMcpServerIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#project GoogleIapAgentRegistryMcpServerIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#project GoogleIapAgentRegistryMcpServerIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#role GoogleIapAgentRegistryMcpServerIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#role GoogleIapAgentRegistryMcpServerIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#condition GoogleIapAgentRegistryMcpServerIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#condition GoogleIapAgentRegistryMcpServerIamBinding#condition}
   */
   readonly condition?: GoogleIapAgentRegistryMcpServerIamBindingCondition;
 }
 export interface GoogleIapAgentRegistryMcpServerIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#description GoogleIapAgentRegistryMcpServerIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#description GoogleIapAgentRegistryMcpServerIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#expression GoogleIapAgentRegistryMcpServerIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#expression GoogleIapAgentRegistryMcpServerIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#title GoogleIapAgentRegistryMcpServerIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#title GoogleIapAgentRegistryMcpServerIamBinding#title}
   */
   readonly title: string;
 }
@@ -187,7 +187,7 @@ export class GoogleIapAgentRegistryMcpServerIamBindingConditionOutputReference e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding google_iap_agent_registry_mcp_server_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding google_iap_agent_registry_mcp_server_iam_binding}
 */
 export class GoogleIapAgentRegistryMcpServerIamBinding extends cdktf.TerraformResource {
 
@@ -203,7 +203,7 @@ export class GoogleIapAgentRegistryMcpServerIamBinding extends cdktf.TerraformRe
   * Generates CDKTF code for importing a GoogleIapAgentRegistryMcpServerIamBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIapAgentRegistryMcpServerIamBinding to import
-  * @param importFromId The id of the existing GoogleIapAgentRegistryMcpServerIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIapAgentRegistryMcpServerIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIapAgentRegistryMcpServerIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -215,7 +215,7 @@ export class GoogleIapAgentRegistryMcpServerIamBinding extends cdktf.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_iap_agent_registry_mcp_server_iam_binding google_iap_agent_registry_mcp_server_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_iap_agent_registry_mcp_server_iam_binding google_iap_agent_registry_mcp_server_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,8 +226,8 @@ export class GoogleIapAgentRegistryMcpServerIamBinding extends cdktf.TerraformRe
       terraformResourceType: 'google_iap_agent_registry_mcp_server_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

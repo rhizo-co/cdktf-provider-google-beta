@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleObservabilityOrganizationSettingsConfig extends cdktf.Ter
   /**
   * The default storage location for new resources, e.g. buckets. Only valid for global location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#default_storage_location GoogleObservabilityOrganizationSettings#default_storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#default_storage_location GoogleObservabilityOrganizationSettings#default_storage_location}
   */
   readonly defaultStorageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#id GoogleObservabilityOrganizationSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#id GoogleObservabilityOrganizationSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,39 +23,39 @@ export interface GoogleObservabilityOrganizationSettingsConfig extends cdktf.Ter
   /**
   * The default Cloud KMS key to use for new resources. Only valid for regional locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#kms_key_name GoogleObservabilityOrganizationSettings#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#kms_key_name GoogleObservabilityOrganizationSettings#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * The location of the settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#location GoogleObservabilityOrganizationSettings#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#location GoogleObservabilityOrganizationSettings#location}
   */
   readonly location: string;
   /**
   * The organization ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#organization GoogleObservabilityOrganizationSettings#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#organization GoogleObservabilityOrganizationSettings#organization}
   */
   readonly organization: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#timeouts GoogleObservabilityOrganizationSettings#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#timeouts GoogleObservabilityOrganizationSettings#timeouts}
   */
   readonly timeouts?: GoogleObservabilityOrganizationSettingsTimeouts;
 }
 export interface GoogleObservabilityOrganizationSettingsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#create GoogleObservabilityOrganizationSettings#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#create GoogleObservabilityOrganizationSettings#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#delete GoogleObservabilityOrganizationSettings#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#delete GoogleObservabilityOrganizationSettings#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#update GoogleObservabilityOrganizationSettings#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#update GoogleObservabilityOrganizationSettings#update}
   */
   readonly update?: string;
 }
@@ -207,7 +207,7 @@ export class GoogleObservabilityOrganizationSettingsTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings google_observability_organization_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings google_observability_organization_settings}
 */
 export class GoogleObservabilityOrganizationSettings extends cdktf.TerraformResource {
 
@@ -223,7 +223,7 @@ export class GoogleObservabilityOrganizationSettings extends cdktf.TerraformReso
   * Generates CDKTF code for importing a GoogleObservabilityOrganizationSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleObservabilityOrganizationSettings to import
-  * @param importFromId The id of the existing GoogleObservabilityOrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleObservabilityOrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleObservabilityOrganizationSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -235,7 +235,7 @@ export class GoogleObservabilityOrganizationSettings extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_observability_organization_settings google_observability_organization_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_observability_organization_settings google_observability_organization_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -246,8 +246,8 @@ export class GoogleObservabilityOrganizationSettings extends cdktf.TerraformReso
       terraformResourceType: 'google_observability_organization_settings',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

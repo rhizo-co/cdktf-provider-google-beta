@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface GoogleManagedKafkaClusterConfig extends cdktf.TerraformMetaArgu
   /**
   * The ID to use for the cluster, which will become the final component of the cluster's name. The ID must be 1-63 characters long, and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' to comply with RFC 1035. This value is structured like: 'my-cluster-id'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#cluster_id GoogleManagedKafkaCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#cluster_id GoogleManagedKafkaCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
@@ -22,11 +22,11 @@ export interface GoogleManagedKafkaClusterConfig extends cdktf.TerraformMetaArgu
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#deletion_policy GoogleManagedKafkaCluster#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#deletion_policy GoogleManagedKafkaCluster#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#id GoogleManagedKafkaCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#id GoogleManagedKafkaCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,141 +38,61 @@ export interface GoogleManagedKafkaClusterConfig extends cdktf.TerraformMetaArgu
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#labels GoogleManagedKafkaCluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#labels GoogleManagedKafkaCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#location GoogleManagedKafkaCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#location GoogleManagedKafkaCluster#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#project GoogleManagedKafkaCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#project GoogleManagedKafkaCluster#project}
   */
   readonly project?: string;
   /**
   * broker_capacity_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#broker_capacity_config GoogleManagedKafkaCluster#broker_capacity_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#broker_capacity_config GoogleManagedKafkaCluster#broker_capacity_config}
   */
   readonly brokerCapacityConfig?: GoogleManagedKafkaClusterBrokerCapacityConfig;
   /**
   * capacity_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#capacity_config GoogleManagedKafkaCluster#capacity_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#capacity_config GoogleManagedKafkaCluster#capacity_config}
   */
   readonly capacityConfig: GoogleManagedKafkaClusterCapacityConfig;
   /**
   * gcp_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#gcp_config GoogleManagedKafkaCluster#gcp_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#gcp_config GoogleManagedKafkaCluster#gcp_config}
   */
   readonly gcpConfig: GoogleManagedKafkaClusterGcpConfig;
   /**
   * rebalance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#rebalance_config GoogleManagedKafkaCluster#rebalance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#rebalance_config GoogleManagedKafkaCluster#rebalance_config}
   */
   readonly rebalanceConfig?: GoogleManagedKafkaClusterRebalanceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#timeouts GoogleManagedKafkaCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#timeouts GoogleManagedKafkaCluster#timeouts}
   */
   readonly timeouts?: GoogleManagedKafkaClusterTimeouts;
   /**
   * tls_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#tls_config GoogleManagedKafkaCluster#tls_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#tls_config GoogleManagedKafkaCluster#tls_config}
   */
   readonly tlsConfig?: GoogleManagedKafkaClusterTlsConfig;
-}
-export interface GoogleManagedKafkaClusterPublicClusterDetails {
-}
-
-export function googleManagedKafkaClusterPublicClusterDetailsToTerraform(struct?: GoogleManagedKafkaClusterPublicClusterDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleManagedKafkaClusterPublicClusterDetailsToHclTerraform(struct?: GoogleManagedKafkaClusterPublicClusterDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleManagedKafkaClusterPublicClusterDetailsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleManagedKafkaClusterPublicClusterDetails | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleManagedKafkaClusterPublicClusterDetails | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // discovery_dns_records - computed: true, optional: false, required: false
-  public get discoveryDnsRecords() {
-    return this.getListAttribute('discovery_dns_records');
-  }
-
-  // external_ip_addresses - computed: true, optional: false, required: false
-  public get externalIpAddresses() {
-    return this.getListAttribute('external_ip_addresses');
-  }
-}
-
-export class GoogleManagedKafkaClusterPublicClusterDetailsList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleManagedKafkaClusterPublicClusterDetailsOutputReference {
-    return new GoogleManagedKafkaClusterPublicClusterDetailsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
 }
 export interface GoogleManagedKafkaClusterBrokerCapacityConfig {
   /**
   * The disk to provision for each broker in Gibibytes. Minimum: 100 GiB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#disk_size_gib GoogleManagedKafkaCluster#disk_size_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#disk_size_gib GoogleManagedKafkaCluster#disk_size_gib}
   */
   readonly diskSizeGib?: string;
 }
@@ -258,13 +178,13 @@ export interface GoogleManagedKafkaClusterCapacityConfig {
   /**
   * The memory to provision for the cluster in bytes. The value must be between 1 GiB and 8 GiB per vCPU. Ex. 1024Mi, 4Gi.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#memory_bytes GoogleManagedKafkaCluster#memory_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#memory_bytes GoogleManagedKafkaCluster#memory_bytes}
   */
   readonly memoryBytes: string;
   /**
   * The number of vCPUs to provision for the cluster. The minimum is 3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#vcpu_count GoogleManagedKafkaCluster#vcpu_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#vcpu_count GoogleManagedKafkaCluster#vcpu_count}
   */
   readonly vcpuCount: string;
 }
@@ -373,7 +293,7 @@ export interface GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs {
   /**
   * Name of the VPC subnet from which the cluster is accessible. Both broker and bootstrap server IP addresses and DNS entries are automatically created in the subnet. There can only be one subnet per network, and the subnet must be located in the same region as the cluster. The project may differ. The name of the subnet must be in the format 'projects/PROJECT_ID/regions/REGION/subnetworks/SUBNET'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#subnet GoogleManagedKafkaCluster#subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#subnet GoogleManagedKafkaCluster#subnet}
   */
   readonly subnet: string;
 }
@@ -484,102 +404,13 @@ export class GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList ex
     return new GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig {
-  /**
-  * A list of IPv4 addresses or CIDR ranges that are allowed to connect to the cluster. To protect your cluster, allow access from only trusted external IP ranges. Don't expose your cluster to untrusted ranges.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#allowed_source_ip_ranges GoogleManagedKafkaCluster#allowed_source_ip_ranges}
-  */
-  readonly allowedSourceIpRanges: string[];
-}
-
-export function googleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigToTerraform(struct?: GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference | GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    allowed_source_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedSourceIpRanges),
-  }
-}
-
-
-export function googleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigToHclTerraform(struct?: GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference | GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    allowed_source_ip_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedSourceIpRanges),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._allowedSourceIpRanges !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowedSourceIpRanges = this._allowedSourceIpRanges;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._allowedSourceIpRanges = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._allowedSourceIpRanges = value.allowedSourceIpRanges;
-    }
-  }
-
-  // allowed_source_ip_ranges - computed: false, optional: false, required: true
-  private _allowedSourceIpRanges?: string[]; 
-  public get allowedSourceIpRanges() {
-    return this.getListAttribute('allowed_source_ip_ranges');
-  }
-  public set allowedSourceIpRanges(value: string[]) {
-    this._allowedSourceIpRanges = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowedSourceIpRangesInput() {
-    return this._allowedSourceIpRanges;
-  }
-}
 export interface GoogleManagedKafkaClusterGcpConfigAccessConfig {
   /**
   * network_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#network_configs GoogleManagedKafkaCluster#network_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#network_configs GoogleManagedKafkaCluster#network_configs}
   */
   readonly networkConfigs: GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs[] | cdktf.IResolvable;
-  /**
-  * public_cluster_config block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#public_cluster_config GoogleManagedKafkaCluster#public_cluster_config}
-  */
-  readonly publicClusterConfig?: GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig;
 }
 
 export function googleManagedKafkaClusterGcpConfigAccessConfigToTerraform(struct?: GoogleManagedKafkaClusterGcpConfigAccessConfigOutputReference | GoogleManagedKafkaClusterGcpConfigAccessConfig): any {
@@ -589,7 +420,6 @@ export function googleManagedKafkaClusterGcpConfigAccessConfigToTerraform(struct
   }
   return {
     network_configs: cdktf.listMapper(googleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsToTerraform, true)(struct!.networkConfigs),
-    public_cluster_config: googleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigToTerraform(struct!.publicClusterConfig),
   }
 }
 
@@ -605,12 +435,6 @@ export function googleManagedKafkaClusterGcpConfigAccessConfigToHclTerraform(str
       isBlock: true,
       type: "list",
       storageClassType: "GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList",
-    },
-    public_cluster_config: {
-      value: googleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigToHclTerraform(struct!.publicClusterConfig),
-      isBlock: true,
-      type: "list",
-      storageClassType: "GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigList",
     },
   };
 
@@ -636,10 +460,6 @@ export class GoogleManagedKafkaClusterGcpConfigAccessConfigOutputReference exten
       hasAnyValues = true;
       internalValueResult.networkConfigs = this._networkConfigs?.internalValue;
     }
-    if (this._publicClusterConfig?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.publicClusterConfig = this._publicClusterConfig?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -647,12 +467,10 @@ export class GoogleManagedKafkaClusterGcpConfigAccessConfigOutputReference exten
     if (value === undefined) {
       this.isEmptyObject = false;
       this._networkConfigs.internalValue = undefined;
-      this._publicClusterConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._networkConfigs.internalValue = value.networkConfigs;
-      this._publicClusterConfig.internalValue = value.publicClusterConfig;
     }
   }
 
@@ -668,34 +486,18 @@ export class GoogleManagedKafkaClusterGcpConfigAccessConfigOutputReference exten
   public get networkConfigsInput() {
     return this._networkConfigs.internalValue;
   }
-
-  // public_cluster_config - computed: false, optional: true, required: false
-  private _publicClusterConfig = new GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference(this, "public_cluster_config");
-  public get publicClusterConfig() {
-    return this._publicClusterConfig;
-  }
-  public putPublicClusterConfig(value: GoogleManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig) {
-    this._publicClusterConfig.internalValue = value;
-  }
-  public resetPublicClusterConfig() {
-    this._publicClusterConfig.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicClusterConfigInput() {
-    return this._publicClusterConfig.internalValue;
-  }
 }
 export interface GoogleManagedKafkaClusterGcpConfig {
   /**
   * The Cloud KMS Key name to use for encryption. The key must be located in the same region as the cluster and cannot be changed. Must be in the format 'projects/PROJECT_ID/locations/LOCATION/keyRings/KEY_RING/cryptoKeys/KEY'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#kms_key GoogleManagedKafkaCluster#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#kms_key GoogleManagedKafkaCluster#kms_key}
   */
   readonly kmsKey?: string;
   /**
   * access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#access_config GoogleManagedKafkaCluster#access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#access_config GoogleManagedKafkaCluster#access_config}
   */
   readonly accessConfig: GoogleManagedKafkaClusterGcpConfigAccessConfig;
 }
@@ -807,7 +609,7 @@ export interface GoogleManagedKafkaClusterRebalanceConfig {
   /**
   * The rebalance behavior for the cluster. When not specified, defaults to 'NO_REBALANCE'. Possible values: 'MODE_UNSPECIFIED', 'NO_REBALANCE', 'AUTO_REBALANCE_ON_SCALE_UP'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#mode GoogleManagedKafkaCluster#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#mode GoogleManagedKafkaCluster#mode}
   */
   readonly mode?: string;
 }
@@ -891,15 +693,15 @@ export class GoogleManagedKafkaClusterRebalanceConfigOutputReference extends cdk
 }
 export interface GoogleManagedKafkaClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#create GoogleManagedKafkaCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#create GoogleManagedKafkaCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#delete GoogleManagedKafkaCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#delete GoogleManagedKafkaCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#update GoogleManagedKafkaCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#update GoogleManagedKafkaCluster#update}
   */
   readonly update?: string;
 }
@@ -1053,7 +855,7 @@ export interface GoogleManagedKafkaClusterTlsConfigTrustConfigCasConfigs {
   /**
   * The name of the CA pool to pull CA certificates from. The CA pool does not need to be in the same project or location as the Kafka cluster. Must be in the format 'projects/PROJECT_ID/locations/LOCATION/caPools/CA_POOL_ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#ca_pool GoogleManagedKafkaCluster#ca_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#ca_pool GoogleManagedKafkaCluster#ca_pool}
   */
   readonly caPool: string;
 }
@@ -1168,7 +970,7 @@ export interface GoogleManagedKafkaClusterTlsConfigTrustConfig {
   /**
   * cas_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#cas_configs GoogleManagedKafkaCluster#cas_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#cas_configs GoogleManagedKafkaCluster#cas_configs}
   */
   readonly casConfigs?: GoogleManagedKafkaClusterTlsConfigTrustConfigCasConfigs[] | cdktf.IResolvable;
 }
@@ -1254,13 +1056,13 @@ export interface GoogleManagedKafkaClusterTlsConfig {
   /**
   * The rules for mapping mTLS certificate Distinguished Names (DNs) to shortened principal names for Kafka ACLs. This field corresponds exactly to the ssl.principal.mapping.rules broker config and matches the format and syntax defined in the Apache Kafka documentation. Setting or modifying this field will trigger a rolling restart of the Kafka brokers to apply the change. An empty string means that the default Kafka behavior is used. Example: 'RULE:^CN=(.?),OU=ServiceUsers.$/$1@example.com/,DEFAULT'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#ssl_principal_mapping_rules GoogleManagedKafkaCluster#ssl_principal_mapping_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#ssl_principal_mapping_rules GoogleManagedKafkaCluster#ssl_principal_mapping_rules}
   */
   readonly sslPrincipalMappingRules?: string;
   /**
   * trust_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#trust_config GoogleManagedKafkaCluster#trust_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#trust_config GoogleManagedKafkaCluster#trust_config}
   */
   readonly trustConfig?: GoogleManagedKafkaClusterTlsConfigTrustConfig;
 }
@@ -1373,7 +1175,7 @@ export class GoogleManagedKafkaClusterTlsConfigOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster}
 */
 export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
 
@@ -1389,7 +1191,7 @@ export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleManagedKafkaCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleManagedKafkaCluster to import
-  * @param importFromId The id of the existing GoogleManagedKafkaCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleManagedKafkaCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleManagedKafkaCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1401,7 +1203,7 @@ export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1412,8 +1214,8 @@ export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_managed_kafka_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1440,11 +1242,6 @@ export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // bootstrap_address - computed: true, optional: false, required: false
-  public get bootstrapAddress() {
-    return this.getStringAttribute('bootstrap_address');
-  }
 
   // cluster_id - computed: false, optional: false, required: true
   private _clusterId?: string; 
@@ -1550,12 +1347,6 @@ export class GoogleManagedKafkaCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
-  }
-
-  // public_cluster_details - computed: true, optional: false, required: false
-  private _publicClusterDetails = new GoogleManagedKafkaClusterPublicClusterDetailsList(this, "public_cluster_details", false);
-  public get publicClusterDetails() {
-    return this._publicClusterDetails;
   }
 
   // state - computed: true, optional: false, required: false

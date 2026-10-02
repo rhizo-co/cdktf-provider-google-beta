@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ export interface GoogleEventarcEnrollmentConfig extends cdktf.TerraformMetaArgum
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#annotations GoogleEventarcEnrollment#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#annotations GoogleEventarcEnrollment#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * A CEL expression identifying which messages this enrollment applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#cel_match GoogleEventarcEnrollment#cel_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#cel_match GoogleEventarcEnrollment#cel_match}
   */
   readonly celMatch: string;
   /**
@@ -31,7 +31,7 @@ export interface GoogleEventarcEnrollmentConfig extends cdktf.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#deletion_policy GoogleEventarcEnrollment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#deletion_policy GoogleEventarcEnrollment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -39,24 +39,24 @@ export interface GoogleEventarcEnrollmentConfig extends cdktf.TerraformMetaArgum
   * point to the full resource name of a Pipeline. Format:
   * "projects/{PROJECT_ID}/locations/{region}/pipelines/{PIPELINE_ID)"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#destination GoogleEventarcEnrollment#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#destination GoogleEventarcEnrollment#destination}
   */
   readonly destination: string;
   /**
   * Resource display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#display_name GoogleEventarcEnrollment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#display_name GoogleEventarcEnrollment#display_name}
   */
   readonly displayName?: string;
   /**
   * The user-provided ID to be assigned to the Enrollment. It should match the
   * format '^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#enrollment_id GoogleEventarcEnrollment#enrollment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#enrollment_id GoogleEventarcEnrollment#enrollment_id}
   */
   readonly enrollmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#id GoogleEventarcEnrollment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#id GoogleEventarcEnrollment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -68,13 +68,13 @@ export interface GoogleEventarcEnrollmentConfig extends cdktf.TerraformMetaArgum
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#labels GoogleEventarcEnrollment#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#labels GoogleEventarcEnrollment#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#location GoogleEventarcEnrollment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#location GoogleEventarcEnrollment#location}
   */
   readonly location: string;
   /**
@@ -82,31 +82,31 @@ export interface GoogleEventarcEnrollmentConfig extends cdktf.TerraformMetaArgum
   * matches the form
   * projects/{project}/locations/{location}/messageBuses/{messageBus}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#message_bus GoogleEventarcEnrollment#message_bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#message_bus GoogleEventarcEnrollment#message_bus}
   */
   readonly messageBus: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#project GoogleEventarcEnrollment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#project GoogleEventarcEnrollment#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#timeouts GoogleEventarcEnrollment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#timeouts GoogleEventarcEnrollment#timeouts}
   */
   readonly timeouts?: GoogleEventarcEnrollmentTimeouts;
 }
 export interface GoogleEventarcEnrollmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#create GoogleEventarcEnrollment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#create GoogleEventarcEnrollment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#delete GoogleEventarcEnrollment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#delete GoogleEventarcEnrollment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#update GoogleEventarcEnrollment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#update GoogleEventarcEnrollment#update}
   */
   readonly update?: string;
 }
@@ -258,7 +258,7 @@ export class GoogleEventarcEnrollmentTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment google_eventarc_enrollment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment google_eventarc_enrollment}
 */
 export class GoogleEventarcEnrollment extends cdktf.TerraformResource {
 
@@ -274,7 +274,7 @@ export class GoogleEventarcEnrollment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleEventarcEnrollment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleEventarcEnrollment to import
-  * @param importFromId The id of the existing GoogleEventarcEnrollment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleEventarcEnrollment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleEventarcEnrollment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -286,7 +286,7 @@ export class GoogleEventarcEnrollment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_eventarc_enrollment google_eventarc_enrollment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_eventarc_enrollment google_eventarc_enrollment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -297,8 +297,8 @@ export class GoogleEventarcEnrollment extends cdktf.TerraformResource {
       terraformResourceType: 'google_eventarc_enrollment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

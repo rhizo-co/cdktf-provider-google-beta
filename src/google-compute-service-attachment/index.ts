@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,14 +11,14 @@ export interface GoogleComputeServiceAttachmentConfig extends cdktf.TerraformMet
   * The connection preference to use for this service attachment. Valid
   * values include "ACCEPT_AUTOMATIC", "ACCEPT_MANUAL".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#connection_preference GoogleComputeServiceAttachment#connection_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#connection_preference GoogleComputeServiceAttachment#connection_preference}
   */
   readonly connectionPreference: string;
   /**
   * An array of projects that are not allowed to connect to this service
   * attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#consumer_reject_lists GoogleComputeServiceAttachment#consumer_reject_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#consumer_reject_lists GoogleComputeServiceAttachment#consumer_reject_lists}
   */
   readonly consumerRejectLists?: string[];
   /**
@@ -30,13 +30,13 @@ export interface GoogleComputeServiceAttachmentConfig extends cdktf.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#deletion_policy GoogleComputeServiceAttachment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#deletion_policy GoogleComputeServiceAttachment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#description GoogleComputeServiceAttachment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#description GoogleComputeServiceAttachment#description}
   */
   readonly description?: string;
   /**
@@ -45,7 +45,7 @@ export interface GoogleComputeServiceAttachmentConfig extends cdktf.TerraformMet
   * valid domain name: "p.mycompany.com.". Current max number of domain names
   * supported is 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#domain_names GoogleComputeServiceAttachment#domain_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#domain_names GoogleComputeServiceAttachment#domain_names}
   */
   readonly domainNames?: string[];
   /**
@@ -53,11 +53,11 @@ export interface GoogleComputeServiceAttachmentConfig extends cdktf.TerraformMet
   * address data in TCP connections that traverse proxies on their way to
   * destination servers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#enable_proxy_protocol GoogleComputeServiceAttachment#enable_proxy_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#enable_proxy_protocol GoogleComputeServiceAttachment#enable_proxy_protocol}
   */
   readonly enableProxyProtocol: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#id GoogleComputeServiceAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#id GoogleComputeServiceAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -71,17 +71,17 @@ export interface GoogleComputeServiceAttachmentConfig extends cdktf.TerraformMet
   * following characters must be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#name GoogleComputeServiceAttachment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#name GoogleComputeServiceAttachment#name}
   */
   readonly name: string;
   /**
   * An array of subnets that is provided for NAT in this service attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#nat_subnets GoogleComputeServiceAttachment#nat_subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#nat_subnets GoogleComputeServiceAttachment#nat_subnets}
   */
   readonly natSubnets: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#project GoogleComputeServiceAttachment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#project GoogleComputeServiceAttachment#project}
   */
   readonly project?: string;
   /**
@@ -93,7 +93,7 @@ export interface GoogleComputeServiceAttachmentConfig extends cdktf.TerraformMet
   * 
   * If unspecified, the default propagated connection limit is 250. To explicitly send a zero value, set 'send_propagated_connection_limit_if_zero = true'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#propagated_connection_limit GoogleComputeServiceAttachment#propagated_connection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#propagated_connection_limit GoogleComputeServiceAttachment#propagated_connection_limit}
   */
   readonly propagatedConnectionLimit?: number;
   /**
@@ -102,13 +102,13 @@ export interface GoogleComputeServiceAttachmentConfig extends cdktf.TerraformMet
   * If false, connection policy update will only affect existing PENDING PSC endpoints. Existing ACCEPTED/REJECTED endpoints will remain untouched regardless how the connection policy is modified .
   * If true, update will affect both PENDING and ACCEPTED/REJECTED PSC endpoints. For example, an ACCEPTED PSC endpoint will be moved to REJECTED if its project is added to the reject list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#reconcile_connections GoogleComputeServiceAttachment#reconcile_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#reconcile_connections GoogleComputeServiceAttachment#reconcile_connections}
   */
   readonly reconcileConnections?: boolean | cdktf.IResolvable;
   /**
   * URL of the region where the resource resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#region GoogleComputeServiceAttachment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#region GoogleComputeServiceAttachment#region}
   */
   readonly region?: string;
   /**
@@ -117,7 +117,7 @@ export interface GoogleComputeServiceAttachmentConfig extends cdktf.TerraformMet
   * When true, the provider will set propagated_connection_limit to zero.
   * Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#send_propagated_connection_limit_if_zero GoogleComputeServiceAttachment#send_propagated_connection_limit_if_zero}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#send_propagated_connection_limit_if_zero GoogleComputeServiceAttachment#send_propagated_connection_limit_if_zero}
   */
   readonly sendPropagatedConnectionLimitIfZero?: boolean | cdktf.IResolvable;
   /**
@@ -125,31 +125,31 @@ export interface GoogleComputeServiceAttachmentConfig extends cdktf.TerraformMet
   * Any value provided here will be ignored until the API issue is resolved, expected around 2026-03.
   * [If true, show NAT IPs of all connected endpoints.]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#show_nat_ips GoogleComputeServiceAttachment#show_nat_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#show_nat_ips GoogleComputeServiceAttachment#show_nat_ips}
   */
   readonly showNatIps?: boolean | cdktf.IResolvable;
   /**
   * The URL of a service serving the endpoint identified by this service attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#target_service GoogleComputeServiceAttachment#target_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#target_service GoogleComputeServiceAttachment#target_service}
   */
   readonly targetService: string;
   /**
   * consumer_accept_lists block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#consumer_accept_lists GoogleComputeServiceAttachment#consumer_accept_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#consumer_accept_lists GoogleComputeServiceAttachment#consumer_accept_lists}
   */
   readonly consumerAcceptLists?: GoogleComputeServiceAttachmentConsumerAcceptLists[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#timeouts GoogleComputeServiceAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#timeouts GoogleComputeServiceAttachment#timeouts}
   */
   readonly timeouts?: GoogleComputeServiceAttachmentTimeouts;
   /**
   * tunneling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#tunneling_config GoogleComputeServiceAttachment#tunneling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#tunneling_config GoogleComputeServiceAttachment#tunneling_config}
   */
   readonly tunnelingConfig?: GoogleComputeServiceAttachmentTunnelingConfig;
 }
@@ -338,28 +338,28 @@ export interface GoogleComputeServiceAttachmentConsumerAcceptLists {
   * The number of consumer forwarding rules the consumer project can
   * create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#connection_limit GoogleComputeServiceAttachment#connection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#connection_limit GoogleComputeServiceAttachment#connection_limit}
   */
   readonly connectionLimit: number;
   /**
   * The endpoint that is allowed to connect to this service attachment.
   * Only one of project_id_or_num, network_url and endpoint_url may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#endpoint_url GoogleComputeServiceAttachment#endpoint_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#endpoint_url GoogleComputeServiceAttachment#endpoint_url}
   */
   readonly endpointUrl?: string;
   /**
   * The network that is allowed to connect to this service attachment.
   * Only one of project_id_or_num and network_url may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#network_url GoogleComputeServiceAttachment#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#network_url GoogleComputeServiceAttachment#network_url}
   */
   readonly networkUrl?: string;
   /**
   * A project that is allowed to connect to this service attachment.
   * Only one of project_id_or_num and network_url may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#project_id_or_num GoogleComputeServiceAttachment#project_id_or_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#project_id_or_num GoogleComputeServiceAttachment#project_id_or_num}
   */
   readonly projectIdOrNum?: string;
 }
@@ -559,15 +559,15 @@ export class GoogleComputeServiceAttachmentConsumerAcceptListsList extends cdktf
 }
 export interface GoogleComputeServiceAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#create GoogleComputeServiceAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#create GoogleComputeServiceAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#delete GoogleComputeServiceAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#delete GoogleComputeServiceAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#update GoogleComputeServiceAttachment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#update GoogleComputeServiceAttachment#update}
   */
   readonly update?: string;
 }
@@ -721,13 +721,13 @@ export interface GoogleComputeServiceAttachmentTunnelingConfig {
   /**
   * The encapsulation profile for tunneling traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#encapsulation_profile GoogleComputeServiceAttachment#encapsulation_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#encapsulation_profile GoogleComputeServiceAttachment#encapsulation_profile}
   */
   readonly encapsulationProfile?: string;
   /**
   * The routing mode for tunneling traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#routing_mode GoogleComputeServiceAttachment#routing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#routing_mode GoogleComputeServiceAttachment#routing_mode}
   */
   readonly routingMode?: string;
 }
@@ -840,7 +840,7 @@ export class GoogleComputeServiceAttachmentTunnelingConfigOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment google_compute_service_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment google_compute_service_attachment}
 */
 export class GoogleComputeServiceAttachment extends cdktf.TerraformResource {
 
@@ -856,7 +856,7 @@ export class GoogleComputeServiceAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeServiceAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeServiceAttachment to import
-  * @param importFromId The id of the existing GoogleComputeServiceAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeServiceAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeServiceAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -868,7 +868,7 @@ export class GoogleComputeServiceAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -879,8 +879,8 @@ export class GoogleComputeServiceAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_service_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -937,7 +937,7 @@ export class GoogleComputeServiceAttachment extends cdktf.TerraformResource {
   // consumer_reject_lists - computed: false, optional: true, required: false
   private _consumerRejectLists?: string[]; 
   public get consumerRejectLists() {
-    return cdktf.Fn.tolist(this.getListAttribute('consumer_reject_lists'));
+    return this.getListAttribute('consumer_reject_lists');
   }
   public set consumerRejectLists(value: string[]) {
     this._consumerRejectLists = value;
@@ -1048,7 +1048,7 @@ export class GoogleComputeServiceAttachment extends cdktf.TerraformResource {
   // nat_subnets - computed: false, optional: false, required: true
   private _natSubnets?: string[]; 
   public get natSubnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('nat_subnets'));
+    return this.getListAttribute('nat_subnets');
   }
   public set natSubnets(value: string[]) {
     this._natSubnets = value;
@@ -1265,7 +1265,7 @@ export class GoogleComputeServiceAttachment extends cdktf.TerraformResource {
       consumer_reject_lists: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._consumerRejectLists),
         isBlock: false,
-        type: "set",
+        type: "list",
         storageClassType: "stringList",
       },
       deletion_policy: {
@@ -1307,7 +1307,7 @@ export class GoogleComputeServiceAttachment extends cdktf.TerraformResource {
       nat_subnets: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._natSubnets),
         isBlock: false,
-        type: "set",
+        type: "list",
         storageClassType: "stringList",
       },
       project: {

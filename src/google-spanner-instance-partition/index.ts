@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,7 +11,7 @@ export interface GoogleSpannerInstancePartitionConfig extends cdktf.TerraformMet
   * The name of the instance partition's configuration (similar to a region) which
   * defines the geographic placement and replication of data in this instance partition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#config GoogleSpannerInstancePartition#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#config GoogleSpannerInstancePartition#config}
   */
   readonly config: string;
   /**
@@ -23,18 +23,18 @@ export interface GoogleSpannerInstancePartitionConfig extends cdktf.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#deletion_policy GoogleSpannerInstancePartition#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#deletion_policy GoogleSpannerInstancePartition#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The descriptive name for this instance partition as it appears in UIs.
   * Must be unique per project and between 4 and 30 characters in length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#display_name GoogleSpannerInstancePartition#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#display_name GoogleSpannerInstancePartition#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#id GoogleSpannerInstancePartition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#id GoogleSpannerInstancePartition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,7 +43,7 @@ export interface GoogleSpannerInstancePartitionConfig extends cdktf.TerraformMet
   /**
   * The instance to create the instance partition in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#instance GoogleSpannerInstancePartition#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#instance GoogleSpannerInstancePartition#instance}
   */
   readonly instance: string;
   /**
@@ -51,7 +51,7 @@ export interface GoogleSpannerInstancePartitionConfig extends cdktf.TerraformMet
   * the instance partition is created. The name must be between 2 and 64 characters
   * and match the regular expression [a-z][a-z0-9\\-]{0,61}[a-z0-9].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#name GoogleSpannerInstancePartition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#name GoogleSpannerInstancePartition#name}
   */
   readonly name: string;
   /**
@@ -59,7 +59,7 @@ export interface GoogleSpannerInstancePartitionConfig extends cdktf.TerraformMet
   * 1000 processing units. Exactly one of either node_count, processing_units,
   * or autoscaling_config must be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#node_count GoogleSpannerInstancePartition#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#node_count GoogleSpannerInstancePartition#node_count}
   */
   readonly nodeCount?: number;
   /**
@@ -67,23 +67,23 @@ export interface GoogleSpannerInstancePartitionConfig extends cdktf.TerraformMet
   * Exactly one of either node_count, processing_units, or autoscaling_config
   * must be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#processing_units GoogleSpannerInstancePartition#processing_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#processing_units GoogleSpannerInstancePartition#processing_units}
   */
   readonly processingUnits?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#project GoogleSpannerInstancePartition#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#project GoogleSpannerInstancePartition#project}
   */
   readonly project?: string;
   /**
   * autoscaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#autoscaling_config GoogleSpannerInstancePartition#autoscaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#autoscaling_config GoogleSpannerInstancePartition#autoscaling_config}
   */
   readonly autoscalingConfig?: GoogleSpannerInstancePartitionAutoscalingConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#timeouts GoogleSpannerInstancePartition#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#timeouts GoogleSpannerInstancePartition#timeouts}
   */
   readonly timeouts?: GoogleSpannerInstancePartitionTimeouts;
 }
@@ -92,7 +92,7 @@ export interface GoogleSpannerInstancePartitionAutoscalingConfigAutoscalingLimit
   * Specifies maximum number of nodes allocated to the instance partition. If set, this number
   * should be greater than or equal to min_nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#max_nodes GoogleSpannerInstancePartition#max_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#max_nodes GoogleSpannerInstancePartition#max_nodes}
   */
   readonly maxNodes?: number;
   /**
@@ -100,21 +100,21 @@ export interface GoogleSpannerInstancePartitionAutoscalingConfigAutoscalingLimit
   * If set, this number should be multiples of 1000 and be greater than or equal to
   * min_processing_units.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#max_processing_units GoogleSpannerInstancePartition#max_processing_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#max_processing_units GoogleSpannerInstancePartition#max_processing_units}
   */
   readonly maxProcessingUnits?: number;
   /**
   * Specifies number of nodes allocated to the instance partition. If set, this number
   * should be greater than or equal to 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#min_nodes GoogleSpannerInstancePartition#min_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#min_nodes GoogleSpannerInstancePartition#min_nodes}
   */
   readonly minNodes?: number;
   /**
   * Specifies minimum number of processing units allocated to the instance partition.
   * If set, this number should be multiples of 1000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#min_processing_units GoogleSpannerInstancePartition#min_processing_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#min_processing_units GoogleSpannerInstancePartition#min_processing_units}
   */
   readonly minProcessingUnits?: number;
 }
@@ -289,7 +289,7 @@ export interface GoogleSpannerInstancePartitionAutoscalingConfigAutoscalingTarge
   * should be trying to achieve for the instance partition.
   * This number is on a scale from 0 (no utilization) to 100 (full utilization).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#high_priority_cpu_utilization_percent GoogleSpannerInstancePartition#high_priority_cpu_utilization_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#high_priority_cpu_utilization_percent GoogleSpannerInstancePartition#high_priority_cpu_utilization_percent}
   */
   readonly highPriorityCpuUtilizationPercent?: number;
   /**
@@ -297,7 +297,7 @@ export interface GoogleSpannerInstancePartitionAutoscalingConfigAutoscalingTarge
   * should be trying to achieve for the instance partition.
   * This number is on a scale from 0 (no utilization) to 100 (full utilization).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#storage_utilization_percent GoogleSpannerInstancePartition#storage_utilization_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#storage_utilization_percent GoogleSpannerInstancePartition#storage_utilization_percent}
   */
   readonly storageUtilizationPercent?: number;
   /**
@@ -307,7 +307,7 @@ export interface GoogleSpannerInstancePartitionAutoscalingConfigAutoscalingTarge
   * If not specified or set to 0, the autoscaler will skip scaling based on total cpu utilization.
   * The value should be higher than high_priority_cpu_utilization_percent if present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#total_cpu_utilization_percent GoogleSpannerInstancePartition#total_cpu_utilization_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#total_cpu_utilization_percent GoogleSpannerInstancePartition#total_cpu_utilization_percent}
   */
   readonly totalCpuUtilizationPercent?: number;
 }
@@ -451,13 +451,13 @@ export interface GoogleSpannerInstancePartitionAutoscalingConfig {
   /**
   * autoscaling_limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#autoscaling_limits GoogleSpannerInstancePartition#autoscaling_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#autoscaling_limits GoogleSpannerInstancePartition#autoscaling_limits}
   */
   readonly autoscalingLimits?: GoogleSpannerInstancePartitionAutoscalingConfigAutoscalingLimits;
   /**
   * autoscaling_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#autoscaling_targets GoogleSpannerInstancePartition#autoscaling_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#autoscaling_targets GoogleSpannerInstancePartition#autoscaling_targets}
   */
   readonly autoscalingTargets?: GoogleSpannerInstancePartitionAutoscalingConfigAutoscalingTargets;
 }
@@ -570,15 +570,15 @@ export class GoogleSpannerInstancePartitionAutoscalingConfigOutputReference exte
 }
 export interface GoogleSpannerInstancePartitionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#create GoogleSpannerInstancePartition#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#create GoogleSpannerInstancePartition#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#delete GoogleSpannerInstancePartition#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#delete GoogleSpannerInstancePartition#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#update GoogleSpannerInstancePartition#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#update GoogleSpannerInstancePartition#update}
   */
   readonly update?: string;
 }
@@ -730,7 +730,7 @@ export class GoogleSpannerInstancePartitionTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition google_spanner_instance_partition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition google_spanner_instance_partition}
 */
 export class GoogleSpannerInstancePartition extends cdktf.TerraformResource {
 
@@ -746,7 +746,7 @@ export class GoogleSpannerInstancePartition extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSpannerInstancePartition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSpannerInstancePartition to import
-  * @param importFromId The id of the existing GoogleSpannerInstancePartition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSpannerInstancePartition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSpannerInstancePartition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -758,7 +758,7 @@ export class GoogleSpannerInstancePartition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_spanner_instance_partition google_spanner_instance_partition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_spanner_instance_partition google_spanner_instance_partition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -769,8 +769,8 @@ export class GoogleSpannerInstancePartition extends cdktf.TerraformResource {
       terraformResourceType: 'google_spanner_instance_partition',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

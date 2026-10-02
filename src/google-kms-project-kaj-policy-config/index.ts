@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,26 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleKmsProjectKajPolicyConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config#id GoogleKmsProjectKajPolicyConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config#id GoogleKmsProjectKajPolicyConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config#project GoogleKmsProjectKajPolicyConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config#project GoogleKmsProjectKajPolicyConfig#project}
   */
   readonly project?: string;
   /**
   * default_key_access_justification_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config#default_key_access_justification_policy GoogleKmsProjectKajPolicyConfig#default_key_access_justification_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config#default_key_access_justification_policy GoogleKmsProjectKajPolicyConfig#default_key_access_justification_policy}
   */
   readonly defaultKeyAccessJustificationPolicy?: GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config#timeouts GoogleKmsProjectKajPolicyConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config#timeouts GoogleKmsProjectKajPolicyConfig#timeouts}
   */
   readonly timeouts?: GoogleKmsProjectKajPolicyConfigTimeouts;
 }
@@ -37,7 +37,7 @@ export interface GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPol
   * AccessReason values for encrypt, decrypt, and sign operations on a
   * CryptoKey. Possible values: ["CUSTOMER_INITIATED_SUPPORT", "GOOGLE_INITIATED_SERVICE", "THIRD_PARTY_DATA_REQUEST", "GOOGLE_INITIATED_REVIEW", "CUSTOMER_INITIATED_ACCESS", "GOOGLE_INITIATED_SYSTEM_OPERATION", "REASON_NOT_EXPECTED", "MODIFIED_CUSTOMER_INITIATED_ACCESS", "MODIFIED_GOOGLE_INITIATED_SYSTEM_OPERATION", "GOOGLE_RESPONSE_TO_PRODUCTION_ALERT", "CUSTOMER_AUTHORIZED_WORKFLOW_SERVICING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config#allowed_access_reasons GoogleKmsProjectKajPolicyConfig#allowed_access_reasons}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config#allowed_access_reasons GoogleKmsProjectKajPolicyConfig#allowed_access_reasons}
   */
   readonly allowedAccessReasons?: string[];
 }
@@ -121,15 +121,15 @@ export class GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyO
 }
 export interface GoogleKmsProjectKajPolicyConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config#create GoogleKmsProjectKajPolicyConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config#create GoogleKmsProjectKajPolicyConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config#delete GoogleKmsProjectKajPolicyConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config#delete GoogleKmsProjectKajPolicyConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config#update GoogleKmsProjectKajPolicyConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config#update GoogleKmsProjectKajPolicyConfig#update}
   */
   readonly update?: string;
 }
@@ -281,7 +281,7 @@ export class GoogleKmsProjectKajPolicyConfigTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config google_kms_project_kaj_policy_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config google_kms_project_kaj_policy_config}
 */
 export class GoogleKmsProjectKajPolicyConfig extends cdktf.TerraformResource {
 
@@ -297,7 +297,7 @@ export class GoogleKmsProjectKajPolicyConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleKmsProjectKajPolicyConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleKmsProjectKajPolicyConfig to import
-  * @param importFromId The id of the existing GoogleKmsProjectKajPolicyConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleKmsProjectKajPolicyConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleKmsProjectKajPolicyConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -309,7 +309,7 @@ export class GoogleKmsProjectKajPolicyConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_kms_project_kaj_policy_config google_kms_project_kaj_policy_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_kms_project_kaj_policy_config google_kms_project_kaj_policy_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -320,8 +320,8 @@ export class GoogleKmsProjectKajPolicyConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_kms_project_kaj_policy_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

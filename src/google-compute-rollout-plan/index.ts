@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface GoogleComputeRolloutPlanConfig extends cdktf.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#deletion_policy GoogleComputeRolloutPlan#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#deletion_policy GoogleComputeRolloutPlan#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#description GoogleComputeRolloutPlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#description GoogleComputeRolloutPlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#id GoogleComputeRolloutPlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#id GoogleComputeRolloutPlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,40 +35,40 @@ export interface GoogleComputeRolloutPlanConfig extends cdktf.TerraformMetaArgum
   /**
   * The location scope of the rollout plan. Possible values: ["LOCATION_SCOPE_UNSPECIFIED", "ZONAL", "REGIONAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#location_scope GoogleComputeRolloutPlan#location_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#location_scope GoogleComputeRolloutPlan#location_scope}
   */
   readonly locationScope?: string;
   /**
   * Name of the resource. Provided by the client when the resource is created.
   * The name must be 1-63 characters long, and comply with RFC1035.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#name GoogleComputeRolloutPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#name GoogleComputeRolloutPlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#project GoogleComputeRolloutPlan#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#project GoogleComputeRolloutPlan#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#timeouts GoogleComputeRolloutPlan#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#timeouts GoogleComputeRolloutPlan#timeouts}
   */
   readonly timeouts?: GoogleComputeRolloutPlanTimeouts;
   /**
   * waves block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#waves GoogleComputeRolloutPlan#waves}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#waves GoogleComputeRolloutPlan#waves}
   */
   readonly waves: GoogleComputeRolloutPlanWaves[] | cdktf.IResolvable;
 }
 export interface GoogleComputeRolloutPlanTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#create GoogleComputeRolloutPlan#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#create GoogleComputeRolloutPlan#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#delete GoogleComputeRolloutPlan#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#delete GoogleComputeRolloutPlan#delete}
   */
   readonly delete?: string;
 }
@@ -193,19 +193,19 @@ export interface GoogleComputeRolloutPlanWavesOrchestrationOptionsDelays {
   /**
   * Controls whether the delay should only be added between batches of projects corresponding to different locations, or also between batches of projects corresponding to the same location. Possible values: ["DELIMITER_UNSPECIFIED", "DELIMITER_LOCATION", "DELIMITER_BATCH"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#delimiter GoogleComputeRolloutPlan#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#delimiter GoogleComputeRolloutPlan#delimiter}
   */
   readonly delimiter?: string;
   /**
   * The duration of the delay, if any, to be added between batches of projects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#duration GoogleComputeRolloutPlan#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#duration GoogleComputeRolloutPlan#duration}
   */
   readonly duration?: string;
   /**
   * Controls whether the specified duration is to be added at the end of each batch, or if the total processing time for each batch will be padded if needed to meet the specified duration. Possible values: ["TYPE_UNSPECIFIED", "TYPE_OFFSET", "TYPE_MINIMUM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#type GoogleComputeRolloutPlan#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#type GoogleComputeRolloutPlan#type}
   */
   readonly type?: string;
 }
@@ -381,19 +381,19 @@ export interface GoogleComputeRolloutPlanWavesOrchestrationOptions {
   /**
   * Maximum number of locations to be orchestrated in parallel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#max_concurrent_locations GoogleComputeRolloutPlan#max_concurrent_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#max_concurrent_locations GoogleComputeRolloutPlan#max_concurrent_locations}
   */
   readonly maxConcurrentLocations?: number;
   /**
   * Maximum number of resources to be orchestrated per location in parallel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#max_concurrent_resources_per_location GoogleComputeRolloutPlan#max_concurrent_resources_per_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#max_concurrent_resources_per_location GoogleComputeRolloutPlan#max_concurrent_resources_per_location}
   */
   readonly maxConcurrentResourcesPerLocation?: number;
   /**
   * delays block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#delays GoogleComputeRolloutPlan#delays}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#delays GoogleComputeRolloutPlan#delays}
   */
   readonly delays?: GoogleComputeRolloutPlanWavesOrchestrationOptionsDelays[] | cdktf.IResolvable;
 }
@@ -537,7 +537,7 @@ export interface GoogleComputeRolloutPlanWavesSelectorsLocationSelector {
   /**
   * Example: "us-central1-a"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#included_locations GoogleComputeRolloutPlan#included_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#included_locations GoogleComputeRolloutPlan#included_locations}
   */
   readonly includedLocations?: string[];
 }
@@ -623,19 +623,19 @@ export interface GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelector
   /**
   * Format: "folders/{folder_id}"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#included_folders GoogleComputeRolloutPlan#included_folders}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#included_folders GoogleComputeRolloutPlan#included_folders}
   */
   readonly includedFolders?: string[];
   /**
   * Format: "organizations/{organization_id}"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#included_organizations GoogleComputeRolloutPlan#included_organizations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#included_organizations GoogleComputeRolloutPlan#included_organizations}
   */
   readonly includedOrganizations?: string[];
   /**
   * Format: "projects/{project_id}"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#included_projects GoogleComputeRolloutPlan#included_projects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#included_projects GoogleComputeRolloutPlan#included_projects}
   */
   readonly includedProjects?: string[];
 }
@@ -779,13 +779,13 @@ export interface GoogleComputeRolloutPlanWavesSelectors {
   /**
   * location_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#location_selector GoogleComputeRolloutPlan#location_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#location_selector GoogleComputeRolloutPlan#location_selector}
   */
   readonly locationSelector?: GoogleComputeRolloutPlanWavesSelectorsLocationSelector;
   /**
   * resource_hierarchy_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#resource_hierarchy_selector GoogleComputeRolloutPlan#resource_hierarchy_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#resource_hierarchy_selector GoogleComputeRolloutPlan#resource_hierarchy_selector}
   */
   readonly resourceHierarchySelector?: GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelector;
 }
@@ -933,7 +933,7 @@ export interface GoogleComputeRolloutPlanWavesValidationTimeBasedValidationMetad
   * The duration that the system waits in between waves. This wait starts
   * after all changes in the wave are rolled out.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#wait_duration GoogleComputeRolloutPlan#wait_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#wait_duration GoogleComputeRolloutPlan#wait_duration}
   */
   readonly waitDuration?: string;
 }
@@ -1021,13 +1021,13 @@ export interface GoogleComputeRolloutPlanWavesValidation {
   * "manual": The system waits for an end-user approval API before progressing to the next wave.
   * "time": The system waits for a user specified duration before progressing to the next wave.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#type GoogleComputeRolloutPlan#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#type GoogleComputeRolloutPlan#type}
   */
   readonly type: string;
   /**
   * time_based_validation_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#time_based_validation_metadata GoogleComputeRolloutPlan#time_based_validation_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#time_based_validation_metadata GoogleComputeRolloutPlan#time_based_validation_metadata}
   */
   readonly timeBasedValidationMetadata?: GoogleComputeRolloutPlanWavesValidationTimeBasedValidationMetadata;
 }
@@ -1139,25 +1139,25 @@ export interface GoogleComputeRolloutPlanWaves {
   /**
   * The display name of this wave of the rollout plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#display_name GoogleComputeRolloutPlan#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#display_name GoogleComputeRolloutPlan#display_name}
   */
   readonly displayName?: string;
   /**
   * orchestration_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#orchestration_options GoogleComputeRolloutPlan#orchestration_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#orchestration_options GoogleComputeRolloutPlan#orchestration_options}
   */
   readonly orchestrationOptions?: GoogleComputeRolloutPlanWavesOrchestrationOptions;
   /**
   * selectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#selectors GoogleComputeRolloutPlan#selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#selectors GoogleComputeRolloutPlan#selectors}
   */
   readonly selectors: GoogleComputeRolloutPlanWavesSelectors[] | cdktf.IResolvable;
   /**
   * validation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#validation GoogleComputeRolloutPlan#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#validation GoogleComputeRolloutPlan#validation}
   */
   readonly validation: GoogleComputeRolloutPlanWavesValidation;
 }
@@ -1359,7 +1359,7 @@ export class GoogleComputeRolloutPlanWavesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan google_compute_rollout_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan google_compute_rollout_plan}
 */
 export class GoogleComputeRolloutPlan extends cdktf.TerraformResource {
 
@@ -1375,7 +1375,7 @@ export class GoogleComputeRolloutPlan extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeRolloutPlan resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeRolloutPlan to import
-  * @param importFromId The id of the existing GoogleComputeRolloutPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeRolloutPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeRolloutPlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1387,7 +1387,7 @@ export class GoogleComputeRolloutPlan extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_rollout_plan google_compute_rollout_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_rollout_plan google_compute_rollout_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1398,8 +1398,8 @@ export class GoogleComputeRolloutPlan extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_rollout_plan',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

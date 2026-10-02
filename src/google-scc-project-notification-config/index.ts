@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface GoogleSccProjectNotificationConfigConfig extends cdktf.Terrafor
   /**
   * This must be unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#config_id GoogleSccProjectNotificationConfig#config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#config_id GoogleSccProjectNotificationConfig#config_id}
   */
   readonly configId: string;
   /**
@@ -22,43 +22,43 @@ export interface GoogleSccProjectNotificationConfigConfig extends cdktf.Terrafor
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#deletion_policy GoogleSccProjectNotificationConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#deletion_policy GoogleSccProjectNotificationConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the notification config (max of 1024 characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#description GoogleSccProjectNotificationConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#description GoogleSccProjectNotificationConfig#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#id GoogleSccProjectNotificationConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#id GoogleSccProjectNotificationConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#project GoogleSccProjectNotificationConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#project GoogleSccProjectNotificationConfig#project}
   */
   readonly project?: string;
   /**
   * The Pub/Sub topic to send notifications to. Its format is
   * "projects/[project_id]/topics/[topic]".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#pubsub_topic GoogleSccProjectNotificationConfig#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#pubsub_topic GoogleSccProjectNotificationConfig#pubsub_topic}
   */
   readonly pubsubTopic: string;
   /**
   * streaming_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#streaming_config GoogleSccProjectNotificationConfig#streaming_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#streaming_config GoogleSccProjectNotificationConfig#streaming_config}
   */
   readonly streamingConfig: GoogleSccProjectNotificationConfigStreamingConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#timeouts GoogleSccProjectNotificationConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#timeouts GoogleSccProjectNotificationConfig#timeouts}
   */
   readonly timeouts?: GoogleSccProjectNotificationConfigTimeouts;
 }
@@ -90,7 +90,7 @@ export interface GoogleSccProjectNotificationConfigStreamingConfig {
   * [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
   * for information on how to write a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#filter GoogleSccProjectNotificationConfig#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#filter GoogleSccProjectNotificationConfig#filter}
   */
   readonly filter: string;
 }
@@ -171,15 +171,15 @@ export class GoogleSccProjectNotificationConfigStreamingConfigOutputReference ex
 }
 export interface GoogleSccProjectNotificationConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#create GoogleSccProjectNotificationConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#create GoogleSccProjectNotificationConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#delete GoogleSccProjectNotificationConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#delete GoogleSccProjectNotificationConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#update GoogleSccProjectNotificationConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#update GoogleSccProjectNotificationConfig#update}
   */
   readonly update?: string;
 }
@@ -331,7 +331,7 @@ export class GoogleSccProjectNotificationConfigTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config google_scc_project_notification_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config google_scc_project_notification_config}
 */
 export class GoogleSccProjectNotificationConfig extends cdktf.TerraformResource {
 
@@ -347,7 +347,7 @@ export class GoogleSccProjectNotificationConfig extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a GoogleSccProjectNotificationConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSccProjectNotificationConfig to import
-  * @param importFromId The id of the existing GoogleSccProjectNotificationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSccProjectNotificationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSccProjectNotificationConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -359,7 +359,7 @@ export class GoogleSccProjectNotificationConfig extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_scc_project_notification_config google_scc_project_notification_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_scc_project_notification_config google_scc_project_notification_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -370,8 +370,8 @@ export class GoogleSccProjectNotificationConfig extends cdktf.TerraformResource 
       terraformResourceType: 'google_scc_project_notification_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

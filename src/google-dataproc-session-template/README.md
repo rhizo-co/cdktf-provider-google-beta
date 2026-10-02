@@ -1,3 +1,3 @@
 # `google_dataproc_session_template`
 
-Refer to the Terraform Registry for docs: [`google_dataproc_session_template`](https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_dataproc_session_template).
+Refer to the Terraform Registry for docs: [`google_dataproc_session_template`](https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_dataproc_session_template).

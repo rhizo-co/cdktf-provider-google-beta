@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,11 @@ export interface GoogleCloudSupportSupportEventSubscriptionConfig extends cdktf.
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription#deletion_policy GoogleCloudSupportSupportEventSubscription#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription#deletion_policy GoogleCloudSupportSupportEventSubscription#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription#id GoogleCloudSupportSupportEventSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription#id GoogleCloudSupportSupportEventSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,34 +29,34 @@ export interface GoogleCloudSupportSupportEventSubscriptionConfig extends cdktf.
   /**
   * The organization ID for the support event subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription#organization GoogleCloudSupportSupportEventSubscription#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription#organization GoogleCloudSupportSupportEventSubscription#organization}
   */
   readonly organization: string;
   /**
   * The name of the Pub/Sub topic to publish notifications to.
   * Format: projects/{project}/topics/{topic}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription#pub_sub_topic GoogleCloudSupportSupportEventSubscription#pub_sub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription#pub_sub_topic GoogleCloudSupportSupportEventSubscription#pub_sub_topic}
   */
   readonly pubSubTopic: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription#timeouts GoogleCloudSupportSupportEventSubscription#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription#timeouts GoogleCloudSupportSupportEventSubscription#timeouts}
   */
   readonly timeouts?: GoogleCloudSupportSupportEventSubscriptionTimeouts;
 }
 export interface GoogleCloudSupportSupportEventSubscriptionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription#create GoogleCloudSupportSupportEventSubscription#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription#create GoogleCloudSupportSupportEventSubscription#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription#delete GoogleCloudSupportSupportEventSubscription#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription#delete GoogleCloudSupportSupportEventSubscription#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription#update GoogleCloudSupportSupportEventSubscription#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription#update GoogleCloudSupportSupportEventSubscription#update}
   */
   readonly update?: string;
 }
@@ -208,7 +208,7 @@ export class GoogleCloudSupportSupportEventSubscriptionTimeoutsOutputReference e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription google_cloud_support_support_event_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription google_cloud_support_support_event_subscription}
 */
 export class GoogleCloudSupportSupportEventSubscription extends cdktf.TerraformResource {
 
@@ -224,7 +224,7 @@ export class GoogleCloudSupportSupportEventSubscription extends cdktf.TerraformR
   * Generates CDKTF code for importing a GoogleCloudSupportSupportEventSubscription resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCloudSupportSupportEventSubscription to import
-  * @param importFromId The id of the existing GoogleCloudSupportSupportEventSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCloudSupportSupportEventSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCloudSupportSupportEventSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -236,7 +236,7 @@ export class GoogleCloudSupportSupportEventSubscription extends cdktf.TerraformR
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_cloud_support_support_event_subscription google_cloud_support_support_event_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_cloud_support_support_event_subscription google_cloud_support_support_event_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -247,8 +247,8 @@ export class GoogleCloudSupportSupportEventSubscription extends cdktf.TerraformR
       terraformResourceType: 'google_cloud_support_support_event_subscription',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

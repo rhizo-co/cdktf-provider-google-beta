@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,13 +11,13 @@ export interface GoogleAlloydbUserConfig extends cdktf.TerraformMetaArguments {
   * Identifies the alloydb cluster. Must be in the format
   * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#cluster GoogleAlloydbUser#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#cluster GoogleAlloydbUser#cluster}
   */
   readonly cluster: string;
   /**
   * List of database roles this database user has.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#database_roles GoogleAlloydbUser#database_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#database_roles GoogleAlloydbUser#database_roles}
   */
   readonly databaseRoles?: string[];
   /**
@@ -29,11 +29,11 @@ export interface GoogleAlloydbUserConfig extends cdktf.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#deletion_policy GoogleAlloydbUser#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#deletion_policy GoogleAlloydbUser#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#id GoogleAlloydbUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#id GoogleAlloydbUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,54 +42,51 @@ export interface GoogleAlloydbUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Password for this database user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#password GoogleAlloydbUser#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#password GoogleAlloydbUser#password}
   */
   readonly password?: string;
   /**
   * Password for this database user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#password_wo GoogleAlloydbUser#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#password_wo GoogleAlloydbUser#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Triggers update of 'password_wo' write-only. Increment this value when an update to 'password_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#password_wo_version GoogleAlloydbUser#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#password_wo_version GoogleAlloydbUser#password_wo_version}
   */
   readonly passwordWoVersion?: string;
   /**
   * The database role name of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#user_id GoogleAlloydbUser#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#user_id GoogleAlloydbUser#user_id}
   */
   readonly userId: string;
   /**
-  * The type of this user. Note that 'ALLOYDB_IAM_GROUP' is currently only supported by
-  * the google-beta provider (which uses the v1beta alloydb API). Only new or Google-whitelisted
-  * AlloyDB clusters support IAM group authentication. See
-  * https://docs.cloud.google.com/alloydb/docs/database-users/manage-iam-auth for details. Possible values: ["ALLOYDB_BUILT_IN", "ALLOYDB_IAM_USER", "ALLOYDB_IAM_GROUP"]
+  * The type of this user. Possible values: ["ALLOYDB_BUILT_IN", "ALLOYDB_IAM_USER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#user_type GoogleAlloydbUser#user_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#user_type GoogleAlloydbUser#user_type}
   */
   readonly userType: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#timeouts GoogleAlloydbUser#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#timeouts GoogleAlloydbUser#timeouts}
   */
   readonly timeouts?: GoogleAlloydbUserTimeouts;
 }
 export interface GoogleAlloydbUserTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#create GoogleAlloydbUser#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#create GoogleAlloydbUser#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#delete GoogleAlloydbUser#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#delete GoogleAlloydbUser#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#update GoogleAlloydbUser#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#update GoogleAlloydbUser#update}
   */
   readonly update?: string;
 }
@@ -241,7 +238,7 @@ export class GoogleAlloydbUserTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user google_alloydb_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user google_alloydb_user}
 */
 export class GoogleAlloydbUser extends cdktf.TerraformResource {
 
@@ -257,7 +254,7 @@ export class GoogleAlloydbUser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleAlloydbUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleAlloydbUser to import
-  * @param importFromId The id of the existing GoogleAlloydbUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleAlloydbUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleAlloydbUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -269,7 +266,7 @@ export class GoogleAlloydbUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_alloydb_user google_alloydb_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_alloydb_user google_alloydb_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -280,8 +277,8 @@ export class GoogleAlloydbUser extends cdktf.TerraformResource {
       terraformResourceType: 'google_alloydb_user',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

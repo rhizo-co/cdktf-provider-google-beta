@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface GoogleFilestoreSnapshotConfig extends cdktf.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#deletion_policy GoogleFilestoreSnapshot#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#deletion_policy GoogleFilestoreSnapshot#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the snapshot with 2048 characters or less. Requests with longer descriptions will be rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#description GoogleFilestoreSnapshot#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#description GoogleFilestoreSnapshot#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#id GoogleFilestoreSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#id GoogleFilestoreSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,7 +35,7 @@ export interface GoogleFilestoreSnapshotConfig extends cdktf.TerraformMetaArgume
   /**
   * The resource name of the filestore instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#instance GoogleFilestoreSnapshot#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#instance GoogleFilestoreSnapshot#instance}
   */
   readonly instance: string;
   /**
@@ -45,13 +45,13 @@ export interface GoogleFilestoreSnapshotConfig extends cdktf.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#labels GoogleFilestoreSnapshot#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#labels GoogleFilestoreSnapshot#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#location GoogleFilestoreSnapshot#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#location GoogleFilestoreSnapshot#location}
   */
   readonly location: string;
   /**
@@ -64,31 +64,31 @@ export interface GoogleFilestoreSnapshotConfig extends cdktf.TerraformMetaArgume
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#name GoogleFilestoreSnapshot#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#name GoogleFilestoreSnapshot#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#project GoogleFilestoreSnapshot#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#project GoogleFilestoreSnapshot#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#timeouts GoogleFilestoreSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#timeouts GoogleFilestoreSnapshot#timeouts}
   */
   readonly timeouts?: GoogleFilestoreSnapshotTimeouts;
 }
 export interface GoogleFilestoreSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#create GoogleFilestoreSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#create GoogleFilestoreSnapshot#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#delete GoogleFilestoreSnapshot#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#delete GoogleFilestoreSnapshot#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#update GoogleFilestoreSnapshot#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#update GoogleFilestoreSnapshot#update}
   */
   readonly update?: string;
 }
@@ -240,7 +240,7 @@ export class GoogleFilestoreSnapshotTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot google_filestore_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot google_filestore_snapshot}
 */
 export class GoogleFilestoreSnapshot extends cdktf.TerraformResource {
 
@@ -256,7 +256,7 @@ export class GoogleFilestoreSnapshot extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleFilestoreSnapshot resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleFilestoreSnapshot to import
-  * @param importFromId The id of the existing GoogleFilestoreSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleFilestoreSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleFilestoreSnapshot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -268,7 +268,7 @@ export class GoogleFilestoreSnapshot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -279,8 +279,8 @@ export class GoogleFilestoreSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'google_filestore_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,3 +1,3 @@
 # `google_compute_instance_group_manager`
 
-Refer to the Terraform Registry for docs: [`google_compute_instance_group_manager`](https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_compute_instance_group_manager).
+Refer to the Terraform Registry for docs: [`google_compute_instance_group_manager`](https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_compute_instance_group_manager).

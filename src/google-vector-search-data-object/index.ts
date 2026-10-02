@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface GoogleVectorSearchDataObjectConfig extends cdktf.TerraformMetaA
   /**
   * The ID of the parent Collection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#collection_id GoogleVectorSearchDataObject#collection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#collection_id GoogleVectorSearchDataObject#collection_id}
   */
   readonly collectionId: string;
   /**
@@ -18,7 +18,7 @@ export interface GoogleVectorSearchDataObjectConfig extends cdktf.TerraformMetaA
   * names match the fields defined in the parent Collection's
   * 'data_schema'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#data GoogleVectorSearchDataObject#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#data GoogleVectorSearchDataObject#data}
   */
   readonly data?: string;
   /**
@@ -28,7 +28,7 @@ export interface GoogleVectorSearchDataObjectConfig extends cdktf.TerraformMetaA
   * Specifically, it must be 1-63 characters long and match the regular
   * expression '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#data_object_id GoogleVectorSearchDataObject#data_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#data_object_id GoogleVectorSearchDataObject#data_object_id}
   */
   readonly dataObjectId: string;
   /**
@@ -40,18 +40,18 @@ export interface GoogleVectorSearchDataObjectConfig extends cdktf.TerraformMetaA
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#deletion_policy GoogleVectorSearchDataObject#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#deletion_policy GoogleVectorSearchDataObject#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The etag of the DataObject, used for optimistic concurrency
   * control on updates and deletes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#etag GoogleVectorSearchDataObject#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#etag GoogleVectorSearchDataObject#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#id GoogleVectorSearchDataObject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#id GoogleVectorSearchDataObject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,37 +60,37 @@ export interface GoogleVectorSearchDataObjectConfig extends cdktf.TerraformMetaA
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#location GoogleVectorSearchDataObject#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#location GoogleVectorSearchDataObject#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#project GoogleVectorSearchDataObject#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#project GoogleVectorSearchDataObject#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#timeouts GoogleVectorSearchDataObject#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#timeouts GoogleVectorSearchDataObject#timeouts}
   */
   readonly timeouts?: GoogleVectorSearchDataObjectTimeouts;
   /**
   * vectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#vectors GoogleVectorSearchDataObject#vectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#vectors GoogleVectorSearchDataObject#vectors}
   */
   readonly vectors?: GoogleVectorSearchDataObjectVectors[] | cdktf.IResolvable;
 }
 export interface GoogleVectorSearchDataObjectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#create GoogleVectorSearchDataObject#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#create GoogleVectorSearchDataObject#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#delete GoogleVectorSearchDataObject#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#delete GoogleVectorSearchDataObject#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#update GoogleVectorSearchDataObject#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#update GoogleVectorSearchDataObject#update}
   */
   readonly update?: string;
 }
@@ -244,7 +244,7 @@ export interface GoogleVectorSearchDataObjectVectorsDense {
   /**
   * The float values of the dense vector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#values GoogleVectorSearchDataObject#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#values GoogleVectorSearchDataObject#values}
   */
   readonly values: number[];
 }
@@ -328,13 +328,13 @@ export interface GoogleVectorSearchDataObjectVectorsSparse {
   * The indices corresponding to the entries in 'values'. Must
   * have the same length as 'values'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#indices GoogleVectorSearchDataObject#indices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#indices GoogleVectorSearchDataObject#indices}
   */
   readonly indices: number[];
   /**
   * The non-zero float values of the sparse vector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#values GoogleVectorSearchDataObject#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#values GoogleVectorSearchDataObject#values}
   */
   readonly values: number[];
 }
@@ -441,19 +441,19 @@ export class GoogleVectorSearchDataObjectVectorsSparseOutputReference extends cd
 }
 export interface GoogleVectorSearchDataObjectVectors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#field_name GoogleVectorSearchDataObject#field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#field_name GoogleVectorSearchDataObject#field_name}
   */
   readonly fieldName: string;
   /**
   * dense block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#dense GoogleVectorSearchDataObject#dense}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#dense GoogleVectorSearchDataObject#dense}
   */
   readonly dense?: GoogleVectorSearchDataObjectVectorsDense;
   /**
   * sparse block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#sparse GoogleVectorSearchDataObject#sparse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#sparse GoogleVectorSearchDataObject#sparse}
   */
   readonly sparse?: GoogleVectorSearchDataObjectVectorsSparse;
 }
@@ -624,7 +624,7 @@ export class GoogleVectorSearchDataObjectVectorsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object google_vector_search_data_object}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object google_vector_search_data_object}
 */
 export class GoogleVectorSearchDataObject extends cdktf.TerraformResource {
 
@@ -640,7 +640,7 @@ export class GoogleVectorSearchDataObject extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleVectorSearchDataObject resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleVectorSearchDataObject to import
-  * @param importFromId The id of the existing GoogleVectorSearchDataObject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleVectorSearchDataObject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleVectorSearchDataObject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -652,7 +652,7 @@ export class GoogleVectorSearchDataObject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_vector_search_data_object google_vector_search_data_object} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_vector_search_data_object google_vector_search_data_object} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -663,8 +663,8 @@ export class GoogleVectorSearchDataObject extends cdktf.TerraformResource {
       terraformResourceType: 'google_vector_search_data_object',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

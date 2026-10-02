@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,20 +10,20 @@ export interface GoogleBigqueryRoutineConfig extends cdktf.TerraformMetaArgument
   /**
   * If set to DATA_MASKING, the function is validated and made available as a masking function. For more information, see https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask Possible values: ["DATA_MASKING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#data_governance_type GoogleBigqueryRoutine#data_governance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#data_governance_type GoogleBigqueryRoutine#data_governance_type}
   */
   readonly dataGovernanceType?: string;
   /**
   * The ID of the dataset containing this routine
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#dataset_id GoogleBigqueryRoutine#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#dataset_id GoogleBigqueryRoutine#dataset_id}
   */
   readonly datasetId: string;
   /**
   * The body of the routine. For functions, this is the expression in the AS clause.
   * If language=SQL, it is the substring inside (but excluding) the parentheses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#definition_body GoogleBigqueryRoutine#definition_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#definition_body GoogleBigqueryRoutine#definition_body}
   */
   readonly definitionBody: string;
   /**
@@ -35,23 +35,23 @@ export interface GoogleBigqueryRoutineConfig extends cdktf.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#deletion_policy GoogleBigqueryRoutine#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#deletion_policy GoogleBigqueryRoutine#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the routine if defined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#description GoogleBigqueryRoutine#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#description GoogleBigqueryRoutine#description}
   */
   readonly description?: string;
   /**
   * The determinism level of the JavaScript UDF if defined. Possible values: ["DETERMINISM_LEVEL_UNSPECIFIED", "DETERMINISTIC", "NOT_DETERMINISTIC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#determinism_level GoogleBigqueryRoutine#determinism_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#determinism_level GoogleBigqueryRoutine#determinism_level}
   */
   readonly determinismLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#id GoogleBigqueryRoutine#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#id GoogleBigqueryRoutine#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -61,17 +61,17 @@ export interface GoogleBigqueryRoutineConfig extends cdktf.TerraformMetaArgument
   * Optional. If language = "JAVASCRIPT", this field stores the path of the
   * imported JAVASCRIPT libraries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#imported_libraries GoogleBigqueryRoutine#imported_libraries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#imported_libraries GoogleBigqueryRoutine#imported_libraries}
   */
   readonly importedLibraries?: string[];
   /**
   * The language of the routine. Possible values: ["SQL", "JAVASCRIPT", "PYTHON", "JAVA", "SCALA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#language GoogleBigqueryRoutine#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#language GoogleBigqueryRoutine#language}
   */
   readonly language?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#project GoogleBigqueryRoutine#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#project GoogleBigqueryRoutine#project}
   */
   readonly project?: string;
   /**
@@ -81,7 +81,7 @@ export interface GoogleBigqueryRoutineConfig extends cdktf.TerraformMetaArgument
   * that references this routine. If present, then the columns in the evaluated table result will
   * be cast to match the column types specificed in return table type, at query time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#return_table_type GoogleBigqueryRoutine#return_table_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#return_table_type GoogleBigqueryRoutine#return_table_type}
   */
   readonly returnTableType?: string;
   /**
@@ -95,61 +95,61 @@ export interface GoogleBigqueryRoutineConfig extends cdktf.TerraformMetaArgument
   * cannot suppress the recurring diff this causes. As a workaround, we recommend using
   * the schema as returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#return_type GoogleBigqueryRoutine#return_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#return_type GoogleBigqueryRoutine#return_type}
   */
   readonly returnType?: string;
   /**
   * The ID of the the routine. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#routine_id GoogleBigqueryRoutine#routine_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#routine_id GoogleBigqueryRoutine#routine_id}
   */
   readonly routineId: string;
   /**
   * The type of routine. Possible values: ["SCALAR_FUNCTION", "PROCEDURE", "TABLE_VALUED_FUNCTION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#routine_type GoogleBigqueryRoutine#routine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#routine_type GoogleBigqueryRoutine#routine_type}
   */
   readonly routineType: string;
   /**
   * Optional. The security mode of the routine, if defined. If not defined, the security mode is automatically determined from the routine's configuration. Possible values: ["DEFINER", "INVOKER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#security_mode GoogleBigqueryRoutine#security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#security_mode GoogleBigqueryRoutine#security_mode}
   */
   readonly securityMode?: string;
   /**
   * arguments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#arguments GoogleBigqueryRoutine#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#arguments GoogleBigqueryRoutine#arguments}
   */
   readonly arguments?: GoogleBigqueryRoutineArguments[] | cdktf.IResolvable;
   /**
   * external_runtime_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#external_runtime_options GoogleBigqueryRoutine#external_runtime_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#external_runtime_options GoogleBigqueryRoutine#external_runtime_options}
   */
   readonly externalRuntimeOptions?: GoogleBigqueryRoutineExternalRuntimeOptions;
   /**
   * python_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#python_options GoogleBigqueryRoutine#python_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#python_options GoogleBigqueryRoutine#python_options}
   */
   readonly pythonOptions?: GoogleBigqueryRoutinePythonOptions;
   /**
   * remote_function_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#remote_function_options GoogleBigqueryRoutine#remote_function_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#remote_function_options GoogleBigqueryRoutine#remote_function_options}
   */
   readonly remoteFunctionOptions?: GoogleBigqueryRoutineRemoteFunctionOptions;
   /**
   * spark_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#spark_options GoogleBigqueryRoutine#spark_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#spark_options GoogleBigqueryRoutine#spark_options}
   */
   readonly sparkOptions?: GoogleBigqueryRoutineSparkOptions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#timeouts GoogleBigqueryRoutine#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#timeouts GoogleBigqueryRoutine#timeouts}
   */
   readonly timeouts?: GoogleBigqueryRoutineTimeouts;
 }
@@ -157,7 +157,7 @@ export interface GoogleBigqueryRoutineArgumentsTableTypeColumns {
   /**
   * The name of the column.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#name GoogleBigqueryRoutine#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#name GoogleBigqueryRoutine#name}
   */
   readonly name?: string;
   /**
@@ -169,7 +169,7 @@ export interface GoogleBigqueryRoutineArgumentsTableTypeColumns {
   * suppress the recurring diff this causes. As a workaround, we recommend using
   * the schema as returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#type GoogleBigqueryRoutine#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#type GoogleBigqueryRoutine#type}
   */
   readonly type?: string;
 }
@@ -316,7 +316,7 @@ export interface GoogleBigqueryRoutineArgumentsTableType {
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#columns GoogleBigqueryRoutine#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#columns GoogleBigqueryRoutine#columns}
   */
   readonly columns?: GoogleBigqueryRoutineArgumentsTableTypeColumns[] | cdktf.IResolvable;
 }
@@ -402,7 +402,7 @@ export interface GoogleBigqueryRoutineArguments {
   /**
   * Defaults to FIXED_TYPE. Default value: "FIXED_TYPE" Possible values: ["FIXED_TYPE", "ANY_TYPE", "FIXED_TABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#argument_kind GoogleBigqueryRoutine#argument_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#argument_kind GoogleBigqueryRoutine#argument_kind}
   */
   readonly argumentKind?: string;
   /**
@@ -414,25 +414,25 @@ export interface GoogleBigqueryRoutineArguments {
   * suppress the recurring diff this causes. As a workaround, we recommend using
   * the schema as returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#data_type GoogleBigqueryRoutine#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#data_type GoogleBigqueryRoutine#data_type}
   */
   readonly dataType?: string;
   /**
   * Specifies whether the argument is input or output. Can be set for procedures only. Possible values: ["IN", "OUT", "INOUT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#mode GoogleBigqueryRoutine#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#mode GoogleBigqueryRoutine#mode}
   */
   readonly mode?: string;
   /**
   * The name of this argument. Can be absent for function return argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#name GoogleBigqueryRoutine#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#name GoogleBigqueryRoutine#name}
   */
   readonly name?: string;
   /**
   * table_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#table_type GoogleBigqueryRoutine#table_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#table_type GoogleBigqueryRoutine#table_type}
   */
   readonly tableType?: GoogleBigqueryRoutineArgumentsTableType;
 }
@@ -668,7 +668,7 @@ export interface GoogleBigqueryRoutineExternalRuntimeOptions {
   * information, see [Configure container limits for Python
   * UDFs](https://cloud.google.com/bigquery/docs/user-defined-functions-python#configure-container-limits)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#container_cpu GoogleBigqueryRoutine#container_cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#container_cpu GoogleBigqueryRoutine#container_cpu}
   */
   readonly containerCpu?: number;
   /**
@@ -678,7 +678,7 @@ export interface GoogleBigqueryRoutineExternalRuntimeOptions {
   * see [Configure container limits for Python
   * UDFs](https://cloud.google.com/bigquery/docs/user-defined-functions-python#configure-container-limits)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#container_memory GoogleBigqueryRoutine#container_memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#container_memory GoogleBigqueryRoutine#container_memory}
   */
   readonly containerMemory?: string;
   /**
@@ -686,14 +686,14 @@ export interface GoogleBigqueryRoutineExternalRuntimeOptions {
   * information, see [Configure container limits for Python
   * UDFs](https://cloud.google.com/bigquery/docs/user-defined-functions-python#configure-container-limits)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#container_request_concurrency GoogleBigqueryRoutine#container_request_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#container_request_concurrency GoogleBigqueryRoutine#container_request_concurrency}
   */
   readonly containerRequestConcurrency?: string;
   /**
   * Maximum number of rows in each batch sent to the external runtime. If
   * absent or if 0, BigQuery dynamically decides the number of rows in a batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#max_batching_rows GoogleBigqueryRoutine#max_batching_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#max_batching_rows GoogleBigqueryRoutine#max_batching_rows}
   */
   readonly maxBatchingRows?: string;
   /**
@@ -701,13 +701,13 @@ export interface GoogleBigqueryRoutineExternalRuntimeOptions {
   * to execute the code in the container. Format:
   * '"projects/{project_id}/locations/{location_id}/connections/{connection_id}"'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#runtime_connection GoogleBigqueryRoutine#runtime_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#runtime_connection GoogleBigqueryRoutine#runtime_connection}
   */
   readonly runtimeConnection?: string;
   /**
   * Language runtime version. Example: 'python-3.11'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#runtime_version GoogleBigqueryRoutine#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#runtime_version GoogleBigqueryRoutine#runtime_version}
   */
   readonly runtimeVersion?: string;
 }
@@ -939,7 +939,7 @@ export interface GoogleBigqueryRoutinePythonOptions {
   * The name of the function defined in Python code as the entry point when the
   * Python UDF is invoked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#entry_point GoogleBigqueryRoutine#entry_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#entry_point GoogleBigqueryRoutine#entry_point}
   */
   readonly entryPoint: string;
   /**
@@ -948,7 +948,7 @@ export interface GoogleBigqueryRoutinePythonOptions {
   * information, see [Use third-party
   * packages](https://cloud.google.com/bigquery/docs/user-defined-functions-python#third-party-packages).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#packages GoogleBigqueryRoutine#packages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#packages GoogleBigqueryRoutine#packages}
   */
   readonly packages?: string[];
 }
@@ -1062,21 +1062,21 @@ export interface GoogleBigqueryRoutineRemoteFunctionOptions {
   * the authentication information to send requests to the remote service.
   * Format: "projects/{projectId}/locations/{locationId}/connections/{connectionId}"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#connection GoogleBigqueryRoutine#connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#connection GoogleBigqueryRoutine#connection}
   */
   readonly connection?: string;
   /**
   * Endpoint of the user-provided remote service, e.g.
   * 'https://us-east1-my_gcf_project.cloudfunctions.net/remote_add'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#endpoint GoogleBigqueryRoutine#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#endpoint GoogleBigqueryRoutine#endpoint}
   */
   readonly endpoint?: string;
   /**
   * Max number of rows in each batch sent to the remote service. If absent or if 0,
   * BigQuery dynamically decides the number of rows in a batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#max_batching_rows GoogleBigqueryRoutine#max_batching_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#max_batching_rows GoogleBigqueryRoutine#max_batching_rows}
   */
   readonly maxBatchingRows?: string;
   /**
@@ -1087,7 +1087,7 @@ export interface GoogleBigqueryRoutineRemoteFunctionOptions {
   * An object containing a list of "key": value pairs. Example:
   * '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#user_defined_context GoogleBigqueryRoutine#user_defined_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#user_defined_context GoogleBigqueryRoutine#user_defined_context}
   */
   readonly userDefinedContext?: { [key: string]: string };
 }
@@ -1260,39 +1260,39 @@ export interface GoogleBigqueryRoutineSparkOptions {
   /**
   * Archive files to be extracted into the working directory of each executor. For more information about Apache Spark, see Apache Spark.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#archive_uris GoogleBigqueryRoutine#archive_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#archive_uris GoogleBigqueryRoutine#archive_uris}
   */
   readonly archiveUris?: string[];
   /**
   * Fully qualified name of the user-provided Spark connection object.
   * Format: "projects/{projectId}/locations/{locationId}/connections/{connectionId}"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#connection GoogleBigqueryRoutine#connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#connection GoogleBigqueryRoutine#connection}
   */
   readonly connection?: string;
   /**
   * Custom container image for the runtime environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#container_image GoogleBigqueryRoutine#container_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#container_image GoogleBigqueryRoutine#container_image}
   */
   readonly containerImage?: string;
   /**
   * Files to be placed in the working directory of each executor. For more information about Apache Spark, see Apache Spark.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#file_uris GoogleBigqueryRoutine#file_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#file_uris GoogleBigqueryRoutine#file_uris}
   */
   readonly fileUris?: string[];
   /**
   * JARs to include on the driver and executor CLASSPATH. For more information about Apache Spark, see Apache Spark.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#jar_uris GoogleBigqueryRoutine#jar_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#jar_uris GoogleBigqueryRoutine#jar_uris}
   */
   readonly jarUris?: string[];
   /**
   * The fully qualified name of a class in jarUris, for example, com.example.wordcount.
   * Exactly one of mainClass and main_jar_uri field should be set for Java/Scala language type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#main_class GoogleBigqueryRoutine#main_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#main_class GoogleBigqueryRoutine#main_class}
   */
   readonly mainClass?: string;
   /**
@@ -1300,7 +1300,7 @@ export interface GoogleBigqueryRoutineSparkOptions {
   * Exactly one of the definitionBody field and the mainFileUri field must be set for Python.
   * Exactly one of mainClass and mainFileUri field should be set for Java/Scala language type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#main_file_uri GoogleBigqueryRoutine#main_file_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#main_file_uri GoogleBigqueryRoutine#main_file_uri}
   */
   readonly mainFileUri?: string;
   /**
@@ -1308,19 +1308,19 @@ export interface GoogleBigqueryRoutineSparkOptions {
   * For more information, see Apache Spark and the procedure option list.
   * An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#properties GoogleBigqueryRoutine#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#properties GoogleBigqueryRoutine#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
   * Python files to be placed on the PYTHONPATH for PySpark application. Supported file types: .py, .egg, and .zip. For more information about Apache Spark, see Apache Spark.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#py_file_uris GoogleBigqueryRoutine#py_file_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#py_file_uris GoogleBigqueryRoutine#py_file_uris}
   */
   readonly pyFileUris?: string[];
   /**
   * Runtime version. If not specified, the default runtime version is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#runtime_version GoogleBigqueryRoutine#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#runtime_version GoogleBigqueryRoutine#runtime_version}
   */
   readonly runtimeVersion?: string;
 }
@@ -1665,15 +1665,15 @@ export class GoogleBigqueryRoutineSparkOptionsOutputReference extends cdktf.Comp
 }
 export interface GoogleBigqueryRoutineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#create GoogleBigqueryRoutine#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#create GoogleBigqueryRoutine#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#delete GoogleBigqueryRoutine#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#delete GoogleBigqueryRoutine#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#update GoogleBigqueryRoutine#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#update GoogleBigqueryRoutine#update}
   */
   readonly update?: string;
 }
@@ -1825,7 +1825,7 @@ export class GoogleBigqueryRoutineTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine google_bigquery_routine}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine google_bigquery_routine}
 */
 export class GoogleBigqueryRoutine extends cdktf.TerraformResource {
 
@@ -1841,7 +1841,7 @@ export class GoogleBigqueryRoutine extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleBigqueryRoutine resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBigqueryRoutine to import
-  * @param importFromId The id of the existing GoogleBigqueryRoutine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBigqueryRoutine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBigqueryRoutine to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1853,7 +1853,7 @@ export class GoogleBigqueryRoutine extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_bigquery_routine google_bigquery_routine} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1864,8 +1864,8 @@ export class GoogleBigqueryRoutine extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_routine',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

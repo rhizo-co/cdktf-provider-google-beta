@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface GoogleStorageManagedFolderConfig extends cdktf.TerraformMetaArg
   /**
   * The name of the bucket that contains the managed folder.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#bucket GoogleStorageManagedFolder#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#bucket GoogleStorageManagedFolder#bucket}
   */
   readonly bucket: string;
   /**
@@ -22,7 +22,7 @@ export interface GoogleStorageManagedFolderConfig extends cdktf.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#deletion_policy GoogleStorageManagedFolder#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#deletion_policy GoogleStorageManagedFolder#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -31,11 +31,11 @@ export interface GoogleStorageManagedFolderConfig extends cdktf.TerraformMetaArg
   * within the folder will remain in a simulated folder with the
   * same name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#force_destroy GoogleStorageManagedFolder#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#force_destroy GoogleStorageManagedFolder#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#id GoogleStorageManagedFolder#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#id GoogleStorageManagedFolder#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,27 +45,27 @@ export interface GoogleStorageManagedFolderConfig extends cdktf.TerraformMetaArg
   * The name of the managed folder expressed as a path. Must include
   * trailing '/'. For example, 'example_dir/example_dir2/'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#name GoogleStorageManagedFolder#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#name GoogleStorageManagedFolder#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#timeouts GoogleStorageManagedFolder#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#timeouts GoogleStorageManagedFolder#timeouts}
   */
   readonly timeouts?: GoogleStorageManagedFolderTimeouts;
 }
 export interface GoogleStorageManagedFolderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#create GoogleStorageManagedFolder#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#create GoogleStorageManagedFolder#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#delete GoogleStorageManagedFolder#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#delete GoogleStorageManagedFolder#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#update GoogleStorageManagedFolder#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#update GoogleStorageManagedFolder#update}
   */
   readonly update?: string;
 }
@@ -217,7 +217,7 @@ export class GoogleStorageManagedFolderTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder google_storage_managed_folder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder google_storage_managed_folder}
 */
 export class GoogleStorageManagedFolder extends cdktf.TerraformResource {
 
@@ -233,7 +233,7 @@ export class GoogleStorageManagedFolder extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleStorageManagedFolder resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleStorageManagedFolder to import
-  * @param importFromId The id of the existing GoogleStorageManagedFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleStorageManagedFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleStorageManagedFolder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -245,7 +245,7 @@ export class GoogleStorageManagedFolder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_storage_managed_folder google_storage_managed_folder} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_storage_managed_folder google_storage_managed_folder} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -256,8 +256,8 @@ export class GoogleStorageManagedFolder extends cdktf.TerraformResource {
       terraformResourceType: 'google_storage_managed_folder',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface GoogleBiglakeHiveCatalogConfig extends cdktf.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#deletion_policy GoogleBiglakeHiveCatalog#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#deletion_policy GoogleBiglakeHiveCatalog#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the Hive catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#description GoogleBiglakeHiveCatalog#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#description GoogleBiglakeHiveCatalog#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#id GoogleBiglakeHiveCatalog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#id GoogleBiglakeHiveCatalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,13 +35,13 @@ export interface GoogleBiglakeHiveCatalogConfig extends cdktf.TerraformMetaArgum
   /**
   * Cloud Storage location path where the catalog data will be stored. Format: gs://bucket/path/to/catalog
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#location_uri GoogleBiglakeHiveCatalog#location_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#location_uri GoogleBiglakeHiveCatalog#location_uri}
   */
   readonly locationUri: string;
   /**
   * Name of the Hive Catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#name GoogleBiglakeHiveCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#name GoogleBiglakeHiveCatalog#name}
   */
   readonly name: string;
   /**
@@ -49,17 +49,17 @@ export interface GoogleBiglakeHiveCatalogConfig extends cdktf.TerraformMetaArgum
   * a BigLake-supported location, and it should be proximate to the remote
   * catalog's location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#primary_location GoogleBiglakeHiveCatalog#primary_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#primary_location GoogleBiglakeHiveCatalog#primary_location}
   */
   readonly primaryLocation: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#project GoogleBiglakeHiveCatalog#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#project GoogleBiglakeHiveCatalog#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#timeouts GoogleBiglakeHiveCatalog#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#timeouts GoogleBiglakeHiveCatalog#timeouts}
   */
   readonly timeouts?: GoogleBiglakeHiveCatalogTimeouts;
 }
@@ -145,15 +145,15 @@ export class GoogleBiglakeHiveCatalogReplicasList extends cdktf.ComplexList {
 }
 export interface GoogleBiglakeHiveCatalogTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#create GoogleBiglakeHiveCatalog#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#create GoogleBiglakeHiveCatalog#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#delete GoogleBiglakeHiveCatalog#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#delete GoogleBiglakeHiveCatalog#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#update GoogleBiglakeHiveCatalog#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#update GoogleBiglakeHiveCatalog#update}
   */
   readonly update?: string;
 }
@@ -305,7 +305,7 @@ export class GoogleBiglakeHiveCatalogTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog google_biglake_hive_catalog}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog google_biglake_hive_catalog}
 */
 export class GoogleBiglakeHiveCatalog extends cdktf.TerraformResource {
 
@@ -321,7 +321,7 @@ export class GoogleBiglakeHiveCatalog extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleBiglakeHiveCatalog resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBiglakeHiveCatalog to import
-  * @param importFromId The id of the existing GoogleBiglakeHiveCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBiglakeHiveCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBiglakeHiveCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -333,7 +333,7 @@ export class GoogleBiglakeHiveCatalog extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_biglake_hive_catalog google_biglake_hive_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_biglake_hive_catalog google_biglake_hive_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -344,8 +344,8 @@ export class GoogleBiglakeHiveCatalog extends cdktf.TerraformResource {
       terraformResourceType: 'google_biglake_hive_catalog',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,11 +12,11 @@ export interface GoogleApphubBoundaryConfig extends cdktf.TerraformMetaArguments
   * boundary.
   * Format: 'projects/{project-number}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary#crm_node GoogleApphubBoundary#crm_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary#crm_node GoogleApphubBoundary#crm_node}
   */
   readonly crmNode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary#id GoogleApphubBoundary#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary#id GoogleApphubBoundary#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -25,31 +25,31 @@ export interface GoogleApphubBoundaryConfig extends cdktf.TerraformMetaArguments
   /**
   * The location for the Boundary resource. Must be global.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary#location GoogleApphubBoundary#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary#location GoogleApphubBoundary#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary#project GoogleApphubBoundary#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary#project GoogleApphubBoundary#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary#timeouts GoogleApphubBoundary#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary#timeouts GoogleApphubBoundary#timeouts}
   */
   readonly timeouts?: GoogleApphubBoundaryTimeouts;
 }
 export interface GoogleApphubBoundaryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary#create GoogleApphubBoundary#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary#create GoogleApphubBoundary#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary#delete GoogleApphubBoundary#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary#delete GoogleApphubBoundary#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary#update GoogleApphubBoundary#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary#update GoogleApphubBoundary#update}
   */
   readonly update?: string;
 }
@@ -201,7 +201,7 @@ export class GoogleApphubBoundaryTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary google_apphub_boundary}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary google_apphub_boundary}
 */
 export class GoogleApphubBoundary extends cdktf.TerraformResource {
 
@@ -217,7 +217,7 @@ export class GoogleApphubBoundary extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApphubBoundary resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApphubBoundary to import
-  * @param importFromId The id of the existing GoogleApphubBoundary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApphubBoundary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApphubBoundary to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -229,7 +229,7 @@ export class GoogleApphubBoundary extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_apphub_boundary google_apphub_boundary} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_apphub_boundary google_apphub_boundary} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -240,8 +240,8 @@ export class GoogleApphubBoundary extends cdktf.TerraformResource {
       terraformResourceType: 'google_apphub_boundary',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

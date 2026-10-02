@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface GoogleSqlDatabaseInstanceConfig extends cdktf.TerraformMetaArgu
   /**
   * The name of the BackupDR backup to restore from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#backupdr_backup GoogleSqlDatabaseInstance#backupdr_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#backupdr_backup GoogleSqlDatabaseInstance#backupdr_backup}
   */
   readonly backupdrBackup?: string;
   /**
   * The MySQL, PostgreSQL or SQL Server version to use. Supported values include MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, MYSQL_8_4, POSTGRES_9_6, POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17, POSTGRES_18, SQLSERVER_2022_STANDARD, SQLSERVER_2022_ENTERPRISE, SQLSERVER_2022_EXPRESS, SQLSERVER_2022_WEB, SQLSERVER_2025_STANDARD, SQLSERVER_2025_ENTERPRISE, SQLSERVER_2025_EXPRESS, SQLSERVER_2025_WEB. Database Version Policies includes an up-to-date reference of supported versions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#database_version GoogleSqlDatabaseInstance#database_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#database_version GoogleSqlDatabaseInstance#database_version}
   */
   readonly databaseVersion: string;
   /**
@@ -28,33 +28,33 @@ export interface GoogleSqlDatabaseInstanceConfig extends cdktf.TerraformMetaArgu
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#deletion_policy GoogleSqlDatabaseInstance#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#deletion_policy GoogleSqlDatabaseInstance#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Used to block Terraform from deleting a SQL Instance. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#deletion_protection GoogleSqlDatabaseInstance#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#deletion_protection GoogleSqlDatabaseInstance#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#encryption_key_name GoogleSqlDatabaseInstance#encryption_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#encryption_key_name GoogleSqlDatabaseInstance#encryption_key_name}
   */
   readonly encryptionKeyName?: string;
   /**
   * Whether to enforce the new SQL network architecture.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enforce_new_sql_network_architecture GoogleSqlDatabaseInstance#enforce_new_sql_network_architecture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enforce_new_sql_network_architecture GoogleSqlDatabaseInstance#enforce_new_sql_network_architecture}
   */
   readonly enforceNewSqlNetworkArchitecture?: boolean | cdktf.IResolvable;
   /**
   * The description of final backup if instance enable create final backup during instance deletion. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#final_backup_description GoogleSqlDatabaseInstance#final_backup_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#final_backup_description GoogleSqlDatabaseInstance#final_backup_description}
   */
   readonly finalBackupDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#id GoogleSqlDatabaseInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#id GoogleSqlDatabaseInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -63,122 +63,122 @@ export interface GoogleSqlDatabaseInstanceConfig extends cdktf.TerraformMetaArgu
   /**
   * When this parameter is set to true, Cloud SQL instances can perform in-place major version upgrades of read replicas along with the primary instance when 'database_version' is updated. This is an input-only field that is not persisted in the API and only takes effect during a major version upgrade.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#include_replicas_for_major_version_upgrade GoogleSqlDatabaseInstance#include_replicas_for_major_version_upgrade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#include_replicas_for_major_version_upgrade GoogleSqlDatabaseInstance#include_replicas_for_major_version_upgrade}
   */
   readonly includeReplicasForMajorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * The type of the instance. See https://cloud.google.com/sql/docs/mysql/admin-api/rest/v1/instances#SqlInstanceType for supported values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#instance_type GoogleSqlDatabaseInstance#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#instance_type GoogleSqlDatabaseInstance#instance_type}
   */
   readonly instanceType?: string;
   /**
   * Maintenance version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#maintenance_version GoogleSqlDatabaseInstance#maintenance_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#maintenance_version GoogleSqlDatabaseInstance#maintenance_version}
   */
   readonly maintenanceVersion?: string;
   /**
   * The name of the instance that will act as the master in the replication setup. Note, this requires the master to have binary_log_enabled set, as well as existing backups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#master_instance_name GoogleSqlDatabaseInstance#master_instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#master_instance_name GoogleSqlDatabaseInstance#master_instance_name}
   */
   readonly masterInstanceName?: string;
   /**
   * The name of the instance. If the name is left blank, Terraform will randomly generate one when the instance is first created. This is done because after a name is used, it cannot be reused for up to one week.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
   */
   readonly name?: string;
   /**
   * For a read pool instance, the number of nodes in the read pool. For read pools with auto scaling enabled, this field is read only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#node_count GoogleSqlDatabaseInstance#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#node_count GoogleSqlDatabaseInstance#node_count}
   */
   readonly nodeCount?: number;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
   */
   readonly project?: string;
   /**
   * The region the instance will sit in. Note, Cloud SQL is not available in all regions. A valid region must be provided to use this resource. If a region is not provided in the resource definition, the provider region will be used instead, but this will be an apply-time error for instances if the provider region is not supported with Cloud SQL. If you choose not to provide the region argument for this resource, make sure you understand this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#region GoogleSqlDatabaseInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#region GoogleSqlDatabaseInstance#region}
   */
   readonly region?: string;
   /**
   * The replicas of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#replica_names GoogleSqlDatabaseInstance#replica_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#replica_names GoogleSqlDatabaseInstance#replica_names}
   */
   readonly replicaNames?: string[];
   /**
   * Initial root password. Required for MS SQL Server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#root_password GoogleSqlDatabaseInstance#root_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#root_password GoogleSqlDatabaseInstance#root_password}
   */
   readonly rootPassword?: string;
   /**
   * Initial root password. Required for MS SQL Server.
   * 				Note: This property is write-only and will not be read from the API. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#root_password_wo GoogleSqlDatabaseInstance#root_password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#root_password_wo GoogleSqlDatabaseInstance#root_password_wo}
   */
   readonly rootPasswordWo?: string;
   /**
   * Triggers update of root_password_wo write-only. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#root_password_wo_version GoogleSqlDatabaseInstance#root_password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#root_password_wo_version GoogleSqlDatabaseInstance#root_password_wo_version}
   */
   readonly rootPasswordWoVersion?: string;
   /**
   * When set to true, Cloud SQL instances can switch storing point-in-time recovery transaction logs from a data disk to Cloud Storage, freeing up data disk space and enabling longer retention windows. This is an input-only field that is not persisted in the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#switch_transaction_logs_to_cloud_storage_enabled GoogleSqlDatabaseInstance#switch_transaction_logs_to_cloud_storage_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#switch_transaction_logs_to_cloud_storage_enabled GoogleSqlDatabaseInstance#switch_transaction_logs_to_cloud_storage_enabled}
   */
   readonly switchTransactionLogsToCloudStorageEnabled?: boolean | cdktf.IResolvable;
   /**
   * clone block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#clone GoogleSqlDatabaseInstance#clone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#clone GoogleSqlDatabaseInstance#clone}
   */
   readonly clone?: GoogleSqlDatabaseInstanceClone;
   /**
   * point_in_time_restore_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#point_in_time_restore_context GoogleSqlDatabaseInstance#point_in_time_restore_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#point_in_time_restore_context GoogleSqlDatabaseInstance#point_in_time_restore_context}
   */
   readonly pointInTimeRestoreContext?: GoogleSqlDatabaseInstancePointInTimeRestoreContext;
   /**
   * replica_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#replica_configuration GoogleSqlDatabaseInstance#replica_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#replica_configuration GoogleSqlDatabaseInstance#replica_configuration}
   */
   readonly replicaConfiguration?: GoogleSqlDatabaseInstanceReplicaConfiguration;
   /**
   * replication_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#replication_cluster GoogleSqlDatabaseInstance#replication_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#replication_cluster GoogleSqlDatabaseInstance#replication_cluster}
   */
   readonly replicationCluster?: GoogleSqlDatabaseInstanceReplicationCluster;
   /**
   * restore_backup_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#restore_backup_context GoogleSqlDatabaseInstance#restore_backup_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#restore_backup_context GoogleSqlDatabaseInstance#restore_backup_context}
   */
   readonly restoreBackupContext?: GoogleSqlDatabaseInstanceRestoreBackupContext;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#settings GoogleSqlDatabaseInstance#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#settings GoogleSqlDatabaseInstance#settings}
   */
   readonly settings?: GoogleSqlDatabaseInstanceSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#timeouts GoogleSqlDatabaseInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#timeouts GoogleSqlDatabaseInstance#timeouts}
   */
   readonly timeouts?: GoogleSqlDatabaseInstanceTimeouts;
 }
@@ -451,43 +451,43 @@ export interface GoogleSqlDatabaseInstanceClone {
   /**
   * The name of the allocated ip range for the private ip CloudSQL instance. For example: "google-managed-services-default". If set, the cloned instance ip will be created in the allocated range. The range name must comply with [RFC 1035](https://tools.ietf.org/html/rfc1035). Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
   */
   readonly allocatedIpRange?: string;
   /**
   * (SQL Server only, use with point_in_time) clone only the specified databases from the source instance. Clone all databases if empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#database_names GoogleSqlDatabaseInstance#database_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#database_names GoogleSqlDatabaseInstance#database_names}
   */
   readonly databaseNames?: string[];
   /**
   * The timestamp of the point in time that should be restored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#point_in_time GoogleSqlDatabaseInstance#point_in_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#point_in_time GoogleSqlDatabaseInstance#point_in_time}
   */
   readonly pointInTime?: string;
   /**
   * (Point-in-time recovery for PostgreSQL only) Clone to an instance in the specified zone. If no zone is specified, clone to the same zone as the source instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#preferred_zone GoogleSqlDatabaseInstance#preferred_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#preferred_zone GoogleSqlDatabaseInstance#preferred_zone}
   */
   readonly preferredZone?: string;
   /**
   * The timestamp of when the source instance was deleted for a clone from a deleted instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#source_instance_deletion_time GoogleSqlDatabaseInstance#source_instance_deletion_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#source_instance_deletion_time GoogleSqlDatabaseInstance#source_instance_deletion_time}
   */
   readonly sourceInstanceDeletionTime?: string;
   /**
   * The name of the instance from which the point in time should be restored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#source_instance_name GoogleSqlDatabaseInstance#source_instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#source_instance_name GoogleSqlDatabaseInstance#source_instance_name}
   */
   readonly sourceInstanceName: string;
   /**
   * The project ID of the source project
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#source_project GoogleSqlDatabaseInstance#source_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#source_project GoogleSqlDatabaseInstance#source_project}
   */
   readonly sourceProject?: string;
 }
@@ -744,37 +744,37 @@ export interface GoogleSqlDatabaseInstancePointInTimeRestoreContext {
   /**
   * The name of the allocated IP range for the internal IP Cloud SQL instance. For example: "google-managed-services-default". If you set this, then Cloud SQL creates the IP address for the cloned instance in the allocated range. This range must comply with [RFC 1035](https://tools.ietf.org/html/rfc1035) standards. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
   */
   readonly allocatedIpRange?: string;
   /**
   * The Google Cloud Backup and Disaster Recovery Datasource URI. For example: "projects/my-project/locations/us-central1/datasources/my-datasource".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#datasource GoogleSqlDatabaseInstance#datasource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#datasource GoogleSqlDatabaseInstance#datasource}
   */
   readonly datasource: string;
   /**
   * The date and time to which you want to restore the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#point_in_time GoogleSqlDatabaseInstance#point_in_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#point_in_time GoogleSqlDatabaseInstance#point_in_time}
   */
   readonly pointInTime?: string;
   /**
   * Point-in-time recovery of an instance to the specified zone. If no zone is specified, then clone to the same primary zone as the source instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#preferred_zone GoogleSqlDatabaseInstance#preferred_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#preferred_zone GoogleSqlDatabaseInstance#preferred_zone}
   */
   readonly preferredZone?: string;
   /**
   * The region of the target instance to restore to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#region GoogleSqlDatabaseInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#region GoogleSqlDatabaseInstance#region}
   */
   readonly region?: string;
   /**
   * The name of the target instance to restore to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#target_instance GoogleSqlDatabaseInstance#target_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#target_instance GoogleSqlDatabaseInstance#target_instance}
   */
   readonly targetInstance?: string;
 }
@@ -1002,73 +1002,73 @@ export interface GoogleSqlDatabaseInstanceReplicaConfiguration {
   /**
   * PEM representation of the trusted CA's x509 certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#ca_certificate GoogleSqlDatabaseInstance#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#ca_certificate GoogleSqlDatabaseInstance#ca_certificate}
   */
   readonly caCertificate?: string;
   /**
   * Specifies if a SQL Server replica is a cascadable replica. A cascadable replica is a SQL Server cross region replica that supports replica(s) under it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#cascadable_replica GoogleSqlDatabaseInstance#cascadable_replica}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#cascadable_replica GoogleSqlDatabaseInstance#cascadable_replica}
   */
   readonly cascadableReplica?: boolean | cdktf.IResolvable;
   /**
   * PEM representation of the replica's x509 certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#client_certificate GoogleSqlDatabaseInstance#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#client_certificate GoogleSqlDatabaseInstance#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * PEM representation of the replica's private key. The corresponding public key in encoded in the client_certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#client_key GoogleSqlDatabaseInstance#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#client_key GoogleSqlDatabaseInstance#client_key}
   */
   readonly clientKey?: string;
   /**
   * The number of seconds between connect retries. MySQL's default is 60 seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#connect_retry_interval GoogleSqlDatabaseInstance#connect_retry_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#connect_retry_interval GoogleSqlDatabaseInstance#connect_retry_interval}
   */
   readonly connectRetryInterval?: number;
   /**
   * Path to a SQL file in Google Cloud Storage from which replica instances are created. Format is gs://bucket/filename.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#dump_file_path GoogleSqlDatabaseInstance#dump_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#dump_file_path GoogleSqlDatabaseInstance#dump_file_path}
   */
   readonly dumpFilePath?: string;
   /**
   * Specifies if the replica is the failover target. If the field is set to true the replica will be designated as a failover replica. If the master instance fails, the replica instance will be promoted as the new master instance. Not supported for Postgres
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#failover_target GoogleSqlDatabaseInstance#failover_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#failover_target GoogleSqlDatabaseInstance#failover_target}
   */
   readonly failoverTarget?: boolean | cdktf.IResolvable;
   /**
   * Time in ms between replication heartbeats.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#master_heartbeat_period GoogleSqlDatabaseInstance#master_heartbeat_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#master_heartbeat_period GoogleSqlDatabaseInstance#master_heartbeat_period}
   */
   readonly masterHeartbeatPeriod?: number;
   /**
   * Password for the replication connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#password GoogleSqlDatabaseInstance#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#password GoogleSqlDatabaseInstance#password}
   */
   readonly password?: string;
   /**
   * Permissible ciphers for use in SSL encryption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#ssl_cipher GoogleSqlDatabaseInstance#ssl_cipher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#ssl_cipher GoogleSqlDatabaseInstance#ssl_cipher}
   */
   readonly sslCipher?: string;
   /**
   * Username for replication connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#username GoogleSqlDatabaseInstance#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#username GoogleSqlDatabaseInstance#username}
   */
   readonly username?: string;
   /**
   * True if the master's common name value is checked during the SSL handshake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#verify_server_certificate GoogleSqlDatabaseInstance#verify_server_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#verify_server_certificate GoogleSqlDatabaseInstance#verify_server_certificate}
   */
   readonly verifyServerCertificate?: boolean | cdktf.IResolvable;
 }
@@ -1473,13 +1473,13 @@ export interface GoogleSqlDatabaseInstanceReplicationCluster {
   /**
   * If the instance is a primary instance, then this field identifies the disaster recovery (DR) replica. The standard format of this field is "your-project:your-instance". You can also set this field to "your-instance", but cloud SQL backend will convert it to the aforementioned standard format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#failover_dr_replica_name GoogleSqlDatabaseInstance#failover_dr_replica_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#failover_dr_replica_name GoogleSqlDatabaseInstance#failover_dr_replica_name}
   */
   readonly failoverDrReplicaName?: string;
   /**
   * If set, this field indicates this instance has a private service access (PSA) DNS endpoint that is pointing to the primary instance of the cluster. If this instance is the primary, then the DNS endpoint points to this instance. After a switchover or replica failover operation, this DNS endpoint points to the promoted instance. This is a read-only field, returned to the user as information. This field can exist even if a standalone instance doesn't have a DR replica yet or the DR replica is deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#psa_write_endpoint GoogleSqlDatabaseInstance#psa_write_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#psa_write_endpoint GoogleSqlDatabaseInstance#psa_write_endpoint}
   */
   readonly psaWriteEndpoint?: string;
 }
@@ -1599,19 +1599,19 @@ export interface GoogleSqlDatabaseInstanceRestoreBackupContext {
   /**
   * The ID of the backup run to restore from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#backup_run_id GoogleSqlDatabaseInstance#backup_run_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#backup_run_id GoogleSqlDatabaseInstance#backup_run_id}
   */
   readonly backupRunId: number;
   /**
   * The ID of the instance that the backup was taken from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#instance_id GoogleSqlDatabaseInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#instance_id GoogleSqlDatabaseInstance#instance_id}
   */
   readonly instanceId?: string;
   /**
   * The full project ID of the source instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
   */
   readonly project?: string;
 }
@@ -1752,31 +1752,31 @@ export interface GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig {
   /**
   * The secret manager key storing the administrator credential. (e.g., projects/{project}/secrets/{secret}).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#admin_credential_secret_name GoogleSqlDatabaseInstance#admin_credential_secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#admin_credential_secret_name GoogleSqlDatabaseInstance#admin_credential_secret_name}
   */
   readonly adminCredentialSecretName?: string;
   /**
   * Domain controller IPv4 addresses used to bootstrap Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#dns_servers GoogleSqlDatabaseInstance#dns_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#dns_servers GoogleSqlDatabaseInstance#dns_servers}
   */
   readonly dnsServers?: string[];
   /**
   * Domain name of the Active Directory for SQL Server (e.g., mydomain.com).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#domain GoogleSqlDatabaseInstance#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#domain GoogleSqlDatabaseInstance#domain}
   */
   readonly domain: string;
   /**
   * The mode of the Active Directory configuration. Can be MANAGED_ACTIVE_DIRECTORY or CUSTOMER_MANAGED_ACTIVE_DIRECTORY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#mode GoogleSqlDatabaseInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#mode GoogleSqlDatabaseInstance#mode}
   */
   readonly mode?: string;
   /**
   * The organizational unit distinguished name. This is the full hierarchical path to the organizational unit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#organizational_unit GoogleSqlDatabaseInstance#organizational_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#organizational_unit GoogleSqlDatabaseInstance#organizational_unit}
   */
   readonly organizationalUnit?: string;
 }
@@ -1975,7 +1975,7 @@ export interface GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures {
   /**
   * The number of threads per physical core. Can be 1 or 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#threads_per_core GoogleSqlDatabaseInstance#threads_per_core}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#threads_per_core GoogleSqlDatabaseInstance#threads_per_core}
   */
   readonly threadsPerCore?: number;
 }
@@ -2061,13 +2061,13 @@ export interface GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupReten
   /**
   * Number of backups to retain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#retained_backups GoogleSqlDatabaseInstance#retained_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#retained_backups GoogleSqlDatabaseInstance#retained_backups}
   */
   readonly retainedBackups: number;
   /**
   * The unit that 'retainedBackups' represents. Defaults to COUNT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#retention_unit GoogleSqlDatabaseInstance#retention_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#retention_unit GoogleSqlDatabaseInstance#retention_unit}
   */
   readonly retentionUnit?: string;
 }
@@ -2179,43 +2179,43 @@ export interface GoogleSqlDatabaseInstanceSettingsBackupConfiguration {
   /**
   * True if binary logging is enabled. If settings.backup_configuration.enabled is false, this must be as well. Can only be used with MySQL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#binary_log_enabled GoogleSqlDatabaseInstance#binary_log_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#binary_log_enabled GoogleSqlDatabaseInstance#binary_log_enabled}
   */
   readonly binaryLogEnabled?: boolean | cdktf.IResolvable;
   /**
   * True if backup configuration is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Location of the backup configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#location GoogleSqlDatabaseInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#location GoogleSqlDatabaseInstance#location}
   */
   readonly location?: string;
   /**
   * True if Point-in-time recovery is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#point_in_time_recovery_enabled GoogleSqlDatabaseInstance#point_in_time_recovery_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#point_in_time_recovery_enabled GoogleSqlDatabaseInstance#point_in_time_recovery_enabled}
   */
   readonly pointInTimeRecoveryEnabled?: boolean | cdktf.IResolvable;
   /**
   * HH:MM format time indicating when backup configuration starts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#start_time GoogleSqlDatabaseInstance#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#start_time GoogleSqlDatabaseInstance#start_time}
   */
   readonly startTime?: string;
   /**
   * The number of days of transaction logs we retain for point in time restore, from 1-7. (For PostgreSQL Enterprise Plus instances, from 1 to 35.)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#transaction_log_retention_days GoogleSqlDatabaseInstance#transaction_log_retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#transaction_log_retention_days GoogleSqlDatabaseInstance#transaction_log_retention_days}
   */
   readonly transactionLogRetentionDays?: number;
   /**
   * backup_retention_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#backup_retention_settings GoogleSqlDatabaseInstance#backup_retention_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#backup_retention_settings GoogleSqlDatabaseInstance#backup_retention_settings}
   */
   readonly backupRetentionSettings?: GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings;
 }
@@ -2480,13 +2480,13 @@ export interface GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlags {
   /**
   * Name of the flag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
   */
   readonly name: string;
   /**
   * Value of the flag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
   */
   readonly value: string;
 }
@@ -2627,13 +2627,13 @@ export interface GoogleSqlDatabaseInstanceSettingsConnectionPoolConfig {
   /**
   * Whether Managed Connection Pool is enabled for this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#connection_pooling_enabled GoogleSqlDatabaseInstance#connection_pooling_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#connection_pooling_enabled GoogleSqlDatabaseInstance#connection_pooling_enabled}
   */
   readonly connectionPoolingEnabled?: boolean | cdktf.IResolvable;
   /**
   * flags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#flags GoogleSqlDatabaseInstance#flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#flags GoogleSqlDatabaseInstance#flags}
   */
   readonly flags?: GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlags[] | cdktf.IResolvable;
 }
@@ -2780,7 +2780,7 @@ export interface GoogleSqlDatabaseInstanceSettingsDataCacheConfig {
   /**
   * Whether data cache is enabled for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#data_cache_enabled GoogleSqlDatabaseInstance#data_cache_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#data_cache_enabled GoogleSqlDatabaseInstance#data_cache_enabled}
   */
   readonly dataCacheEnabled?: boolean | cdktf.IResolvable;
 }
@@ -2866,13 +2866,13 @@ export interface GoogleSqlDatabaseInstanceSettingsDatabaseFlags {
   /**
   * Name of the flag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
   */
   readonly name: string;
   /**
   * Value of the flag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
   */
   readonly value: string;
 }
@@ -3013,19 +3013,19 @@ export interface GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod {
   /**
   * End date before which maintenance will not take place. The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#end_date GoogleSqlDatabaseInstance#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#end_date GoogleSqlDatabaseInstance#end_date}
   */
   readonly endDate: string;
   /**
   * Start date after which maintenance will not take place. The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#start_date GoogleSqlDatabaseInstance#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#start_date GoogleSqlDatabaseInstance#start_date}
   */
   readonly startDate: string;
   /**
   * Time in UTC when the "deny maintenance period" starts on start_date and ends on end_date. The time is in format: HH:mm:SS, i.e., 00:00:00
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#time GoogleSqlDatabaseInstance#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#time GoogleSqlDatabaseInstance#time}
   */
   readonly time: string;
 }
@@ -3160,13 +3160,13 @@ export interface GoogleSqlDatabaseInstanceSettingsEntraidConfig {
   /**
   * The application ID for the Entra ID configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#application_id GoogleSqlDatabaseInstance#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#application_id GoogleSqlDatabaseInstance#application_id}
   */
   readonly applicationId?: string;
   /**
   * The tenant ID for the Entra ID configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#tenant_id GoogleSqlDatabaseInstance#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#tenant_id GoogleSqlDatabaseInstance#tenant_id}
   */
   readonly tenantId?: string;
 }
@@ -3281,13 +3281,13 @@ export interface GoogleSqlDatabaseInstanceSettingsFinalBackupConfig {
   /**
   * When this parameter is set to true, the final backup is enabled for the instance
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The number of days to retain the final backup after the instance deletion. The valid range is between 1 and 365. For instances managed by BackupDR, the valid range is between 1 day and 99 years. The final backup will be purged at (time_of_instance_deletion + retention_days).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#retention_days GoogleSqlDatabaseInstance#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#retention_days GoogleSqlDatabaseInstance#retention_days}
   */
   readonly retentionDays?: number;
 }
@@ -3402,37 +3402,37 @@ export interface GoogleSqlDatabaseInstanceSettingsInsightsConfig {
   /**
   * True if Enhanced Query Insights feature is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enhanced_query_insights_enabled GoogleSqlDatabaseInstance#enhanced_query_insights_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enhanced_query_insights_enabled GoogleSqlDatabaseInstance#enhanced_query_insights_enabled}
   */
   readonly enhancedQueryInsightsEnabled?: boolean | cdktf.IResolvable;
   /**
   * True if Query Insights feature is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#query_insights_enabled GoogleSqlDatabaseInstance#query_insights_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#query_insights_enabled GoogleSqlDatabaseInstance#query_insights_enabled}
   */
   readonly queryInsightsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Number of query execution plans captured by Insights per minute for all queries combined. Between 0 and 20. Default to 5. For Enterprise Plus instances, from 0 to 200.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#query_plans_per_minute GoogleSqlDatabaseInstance#query_plans_per_minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#query_plans_per_minute GoogleSqlDatabaseInstance#query_plans_per_minute}
   */
   readonly queryPlansPerMinute?: number;
   /**
   * Maximum query length stored in bytes. Between 256 and 4500. Default to 1024. For Enterprise Plus instances, from 1024 to 100000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#query_string_length GoogleSqlDatabaseInstance#query_string_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#query_string_length GoogleSqlDatabaseInstance#query_string_length}
   */
   readonly queryStringLength?: number;
   /**
   * True if Query Insights will record application tags from query when enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#record_application_tags GoogleSqlDatabaseInstance#record_application_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#record_application_tags GoogleSqlDatabaseInstance#record_application_tags}
   */
   readonly recordApplicationTags?: boolean | cdktf.IResolvable;
   /**
   * True if Query Insights will record client address when enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#record_client_address GoogleSqlDatabaseInstance#record_client_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#record_client_address GoogleSqlDatabaseInstance#record_client_address}
   */
   readonly recordClientAddress?: boolean | cdktf.IResolvable;
 }
@@ -3661,15 +3661,15 @@ export class GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference exte
 }
 export interface GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#expiration_time GoogleSqlDatabaseInstance#expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#expiration_time GoogleSqlDatabaseInstance#expiration_time}
   */
   readonly expirationTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
   */
   readonly value: string;
 }
@@ -3842,13 +3842,13 @@ export interface GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAut
   /**
   * The consumer network of this consumer endpoint. This must be a resource path that includes both the host project and the network name. The consumer host project of this network might be different from the consumer service project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#consumer_network GoogleSqlDatabaseInstance#consumer_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#consumer_network GoogleSqlDatabaseInstance#consumer_network}
   */
   readonly consumerNetwork: string;
   /**
   * The project ID of consumer service project of this consumer endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#consumer_service_project_id GoogleSqlDatabaseInstance#consumer_service_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#consumer_service_project_id GoogleSqlDatabaseInstance#consumer_service_project_id}
   */
   readonly consumerServiceProjectId?: string;
 }
@@ -4027,43 +4027,43 @@ export interface GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig {
   /**
   * List of consumer projects that are allow-listed for PSC connections to this instance. This instance can be connected to with PSC from any network in these projects. Each consumer project in this list may be represented by a project number (numeric) or by a project id (alphanumeric).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#allowed_consumer_projects GoogleSqlDatabaseInstance#allowed_consumer_projects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#allowed_consumer_projects GoogleSqlDatabaseInstance#allowed_consumer_projects}
   */
   readonly allowedConsumerProjects?: string[];
   /**
   * Name of network attachment resource used to authorize a producer service to connect a PSC interface to the consumer's VPC. For example: "projects/myProject/regions/myRegion/networkAttachments/myNetworkAttachment". This is required to enable outbound connection on a PSC instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#network_attachment_uri GoogleSqlDatabaseInstance#network_attachment_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#network_attachment_uri GoogleSqlDatabaseInstance#network_attachment_uri}
   */
   readonly networkAttachmentUri?: string;
   /**
   * Whether a service connection policy is created for the auto connections configured for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#psc_auto_connection_policy_enabled GoogleSqlDatabaseInstance#psc_auto_connection_policy_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#psc_auto_connection_policy_enabled GoogleSqlDatabaseInstance#psc_auto_connection_policy_enabled}
   */
   readonly pscAutoConnectionPolicyEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether PSC auto DNS is enabled for this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#psc_auto_dns_enabled GoogleSqlDatabaseInstance#psc_auto_dns_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#psc_auto_dns_enabled GoogleSqlDatabaseInstance#psc_auto_dns_enabled}
   */
   readonly pscAutoDnsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether PSC connectivity is enabled for this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#psc_enabled GoogleSqlDatabaseInstance#psc_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#psc_enabled GoogleSqlDatabaseInstance#psc_enabled}
   */
   readonly pscEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether PSC write endpoint DNS is enabled for this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#psc_write_endpoint_dns_enabled GoogleSqlDatabaseInstance#psc_write_endpoint_dns_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#psc_write_endpoint_dns_enabled GoogleSqlDatabaseInstance#psc_write_endpoint_dns_enabled}
   */
   readonly pscWriteEndpointDnsEnabled?: boolean | cdktf.IResolvable;
   /**
   * psc_auto_connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#psc_auto_connections GoogleSqlDatabaseInstance#psc_auto_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#psc_auto_connections GoogleSqlDatabaseInstance#psc_auto_connections}
   */
   readonly pscAutoConnections?: GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections[] | cdktf.IResolvable;
 }
@@ -4355,67 +4355,67 @@ export interface GoogleSqlDatabaseInstanceSettingsIpConfiguration {
   /**
   * The name of the allocated ip range for the private ip CloudSQL instance. For example: "google-managed-services-default". If set, the instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
   */
   readonly allocatedIpRange?: string;
   /**
   * The custom subject alternative names for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#custom_subject_alternative_names GoogleSqlDatabaseInstance#custom_subject_alternative_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#custom_subject_alternative_names GoogleSqlDatabaseInstance#custom_subject_alternative_names}
   */
   readonly customSubjectAlternativeNames?: string[];
   /**
   * Whether Google Cloud services such as BigQuery are allowed to access data in this Cloud SQL instance over a private IP connection. SQLSERVER database type is not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enable_private_path_for_google_cloud_services GoogleSqlDatabaseInstance#enable_private_path_for_google_cloud_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enable_private_path_for_google_cloud_services GoogleSqlDatabaseInstance#enable_private_path_for_google_cloud_services}
   */
   readonly enablePrivatePathForGoogleCloudServices?: boolean | cdktf.IResolvable;
   /**
   * Whether this Cloud SQL instance should be assigned a public IPV4 address. At least ipv4_enabled must be enabled or a private_network must be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#ipv4_enabled GoogleSqlDatabaseInstance#ipv4_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#ipv4_enabled GoogleSqlDatabaseInstance#ipv4_enabled}
   */
   readonly ipv4Enabled?: boolean | cdktf.IResolvable;
   /**
   * The VPC network from which the Cloud SQL instance is accessible for private IP. For example, projects/myProject/global/networks/default. Specifying a network enables private IP. At least ipv4_enabled must be enabled or a private_network must be configured. This setting can be updated, but it cannot be removed after it is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#private_network GoogleSqlDatabaseInstance#private_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#private_network GoogleSqlDatabaseInstance#private_network}
   */
   readonly privateNetwork?: string;
   /**
   * Specify how the server certificate's Certificate Authority is hosted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#server_ca_mode GoogleSqlDatabaseInstance#server_ca_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#server_ca_mode GoogleSqlDatabaseInstance#server_ca_mode}
   */
   readonly serverCaMode?: string;
   /**
   * The resource name of the server CA pool for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#server_ca_pool GoogleSqlDatabaseInstance#server_ca_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#server_ca_pool GoogleSqlDatabaseInstance#server_ca_pool}
   */
   readonly serverCaPool?: string;
   /**
   * Settings for how the server certificate gets rotated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#server_certificate_rotation_mode GoogleSqlDatabaseInstance#server_certificate_rotation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#server_certificate_rotation_mode GoogleSqlDatabaseInstance#server_certificate_rotation_mode}
   */
   readonly serverCertificateRotationMode?: string;
   /**
   * Specify how SSL connection should be enforced in DB connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#ssl_mode GoogleSqlDatabaseInstance#ssl_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#ssl_mode GoogleSqlDatabaseInstance#ssl_mode}
   */
   readonly sslMode?: string;
   /**
   * authorized_networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#authorized_networks GoogleSqlDatabaseInstance#authorized_networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#authorized_networks GoogleSqlDatabaseInstance#authorized_networks}
   */
   readonly authorizedNetworks?: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[] | cdktf.IResolvable;
   /**
   * psc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#psc_config GoogleSqlDatabaseInstance#psc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#psc_config GoogleSqlDatabaseInstance#psc_config}
   */
   readonly pscConfig?: GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig[] | cdktf.IResolvable;
 }
@@ -4791,19 +4791,19 @@ export interface GoogleSqlDatabaseInstanceSettingsLocationPreference {
   /**
   * A Google App Engine application whose zone to remain in. Must be in the same region as this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#follow_gae_application GoogleSqlDatabaseInstance#follow_gae_application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#follow_gae_application GoogleSqlDatabaseInstance#follow_gae_application}
   */
   readonly followGaeApplication?: string;
   /**
   * The preferred Compute Engine zone for the secondary/failover
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#secondary_zone GoogleSqlDatabaseInstance#secondary_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#secondary_zone GoogleSqlDatabaseInstance#secondary_zone}
   */
   readonly secondaryZone?: string;
   /**
   * The preferred compute engine zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#zone GoogleSqlDatabaseInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#zone GoogleSqlDatabaseInstance#zone}
   */
   readonly zone?: string;
 }
@@ -4947,19 +4947,19 @@ export interface GoogleSqlDatabaseInstanceSettingsMaintenanceWindow {
   /**
   * Day of week (1-7), starting on Monday
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#day GoogleSqlDatabaseInstance#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#day GoogleSqlDatabaseInstance#day}
   */
   readonly day?: number;
   /**
   * Hour of day (0-23), ignored if day not set
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#hour GoogleSqlDatabaseInstance#hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#hour GoogleSqlDatabaseInstance#hour}
   */
   readonly hour?: number;
   /**
   * Receive updates after one week (canary) or after two weeks (stable) or after five weeks (week5) of notification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#update_track GoogleSqlDatabaseInstance#update_track}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#update_track GoogleSqlDatabaseInstance#update_track}
   */
   readonly updateTrack?: string;
 }
@@ -5103,37 +5103,37 @@ export interface GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy {
   /**
   * Password complexity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#complexity GoogleSqlDatabaseInstance#complexity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#complexity GoogleSqlDatabaseInstance#complexity}
   */
   readonly complexity?: string;
   /**
   * Disallow username as a part of the password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#disallow_username_substring GoogleSqlDatabaseInstance#disallow_username_substring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#disallow_username_substring GoogleSqlDatabaseInstance#disallow_username_substring}
   */
   readonly disallowUsernameSubstring?: boolean | cdktf.IResolvable;
   /**
   * Whether the password policy is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enable_password_policy GoogleSqlDatabaseInstance#enable_password_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enable_password_policy GoogleSqlDatabaseInstance#enable_password_policy}
   */
   readonly enablePasswordPolicy: boolean | cdktf.IResolvable;
   /**
   * Minimum number of characters allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#min_length GoogleSqlDatabaseInstance#min_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#min_length GoogleSqlDatabaseInstance#min_length}
   */
   readonly minLength?: number;
   /**
   * Minimum interval after which the password can be changed. This flag is only supported for PostgresSQL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#password_change_interval GoogleSqlDatabaseInstance#password_change_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#password_change_interval GoogleSqlDatabaseInstance#password_change_interval}
   */
   readonly passwordChangeInterval?: string;
   /**
   * Number of previous passwords that cannot be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#reuse_interval GoogleSqlDatabaseInstance#reuse_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#reuse_interval GoogleSqlDatabaseInstance#reuse_interval}
   */
   readonly reuseInterval?: number;
 }
@@ -5361,85 +5361,85 @@ export interface GoogleSqlDatabaseInstanceSettingsPerformanceCaptureConfig {
   /**
   * The minimum percentage of CPU utilization that triggers the performance capture. Valid range is 10 to 99. 0 disables the check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#cpu_utilization_threshold_percent GoogleSqlDatabaseInstance#cpu_utilization_threshold_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#cpu_utilization_threshold_percent GoogleSqlDatabaseInstance#cpu_utilization_threshold_percent}
   */
   readonly cpuUtilizationThresholdPercent?: number;
   /**
   * Enable or disable the Performance Capture.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The minimum number of undo log entries in the history list length that triggers the performance capture. Valid range is 10000 to 10000000. 0 disables the check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#history_list_length_threshold_count GoogleSqlDatabaseInstance#history_list_length_threshold_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#history_list_length_threshold_count GoogleSqlDatabaseInstance#history_list_length_threshold_count}
   */
   readonly historyListLengthThresholdCount?: number;
   /**
   * The minimum percentage of memory usage that triggers the performance capture. Valid range is 10 to 99. 0 disables the check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#memory_usage_threshold_percent GoogleSqlDatabaseInstance#memory_usage_threshold_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#memory_usage_threshold_percent GoogleSqlDatabaseInstance#memory_usage_threshold_percent}
   */
   readonly memoryUsageThresholdPercent?: number;
   /**
   * The minimum number of consecutive readings above threshold that triggers instance state capture.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#probe_threshold GoogleSqlDatabaseInstance#probe_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#probe_threshold GoogleSqlDatabaseInstance#probe_threshold}
   */
   readonly probeThreshold?: number;
   /**
   * The time interval in seconds between any two probes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#probing_interval_seconds GoogleSqlDatabaseInstance#probing_interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#probing_interval_seconds GoogleSqlDatabaseInstance#probing_interval_seconds}
   */
   readonly probingIntervalSeconds?: number;
   /**
   * The minimum number of server threads running to trigger the capture on primary.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#running_threads_threshold GoogleSqlDatabaseInstance#running_threads_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#running_threads_threshold GoogleSqlDatabaseInstance#running_threads_threshold}
   */
   readonly runningThreadsThreshold?: number;
   /**
   * The minimum number of seconds replica must be lagging behind primary to trigger capture on replica.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#seconds_behind_source_threshold GoogleSqlDatabaseInstance#seconds_behind_source_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#seconds_behind_source_threshold GoogleSqlDatabaseInstance#seconds_behind_source_threshold}
   */
   readonly secondsBehindSourceThreshold?: number;
   /**
   * The minimum number of semaphore waits that triggers the performance capture. Valid range is 10 to 10000. 0 disables the check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#semaphore_wait_threshold_count GoogleSqlDatabaseInstance#semaphore_wait_threshold_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#semaphore_wait_threshold_count GoogleSqlDatabaseInstance#semaphore_wait_threshold_count}
   */
   readonly semaphoreWaitThresholdCount?: number;
   /**
   * The amount of time in seconds that a transaction needs to have been open before getting recorded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#transaction_duration_threshold GoogleSqlDatabaseInstance#transaction_duration_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#transaction_duration_threshold GoogleSqlDatabaseInstance#transaction_duration_threshold}
   */
   readonly transactionDurationThreshold?: number;
   /**
   * A list of users to exclude from transaction termination. Entries can be in the format 'user@host' or just 'user'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#transaction_kill_excluded_user_hosts GoogleSqlDatabaseInstance#transaction_kill_excluded_user_hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#transaction_kill_excluded_user_hosts GoogleSqlDatabaseInstance#transaction_kill_excluded_user_hosts}
   */
   readonly transactionKillExcludedUserHosts?: string[];
   /**
   * The amount of time in seconds that a transaction needs to have been open before the watcher starts terminating it. Valid range is 60 to 604800. 0 disables termination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#transaction_kill_threshold_seconds GoogleSqlDatabaseInstance#transaction_kill_threshold_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#transaction_kill_threshold_seconds GoogleSqlDatabaseInstance#transaction_kill_threshold_seconds}
   */
   readonly transactionKillThresholdSeconds?: number;
   /**
   * Determines which transactions are allowed to be terminated when they exceed transaction_kill_threshold_seconds. Possible values are: "TRANSACTION_KILL_TYPE_UNSPECIFIED", "READ_ONLY_TRANSACTIONS", "ALL_TRANSACTIONS".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#transaction_kill_type GoogleSqlDatabaseInstance#transaction_kill_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#transaction_kill_type GoogleSqlDatabaseInstance#transaction_kill_type}
   */
   readonly transactionKillType?: string;
   /**
   * The minimum number of transactions in lock wait state that triggers the performance capture. Valid range is 10 to 10000. 0 disables the check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#transaction_lock_wait_threshold_count GoogleSqlDatabaseInstance#transaction_lock_wait_threshold_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#transaction_lock_wait_threshold_count GoogleSqlDatabaseInstance#transaction_lock_wait_threshold_count}
   */
   readonly transactionLockWaitThresholdCount?: number;
 }
@@ -5902,13 +5902,13 @@ export interface GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetM
   /**
   * Metric name for Read Pool Auto Scale.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#metric GoogleSqlDatabaseInstance#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#metric GoogleSqlDatabaseInstance#metric}
   */
   readonly metric?: string;
   /**
   * Target value for Read Pool Auto Scale.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#target_value GoogleSqlDatabaseInstance#target_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#target_value GoogleSqlDatabaseInstance#target_value}
   */
   readonly targetValue?: number;
 }
@@ -6055,43 +6055,43 @@ export interface GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfig {
   /**
   * True if auto scale in is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#disable_scale_in GoogleSqlDatabaseInstance#disable_scale_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#disable_scale_in GoogleSqlDatabaseInstance#disable_scale_in}
   */
   readonly disableScaleIn?: boolean | cdktf.IResolvable;
   /**
   * True if Read Pool Auto Scale is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Maximum number of nodes in the read pool. If set to lower than current node count, node count will be updated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#max_node_count GoogleSqlDatabaseInstance#max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#max_node_count GoogleSqlDatabaseInstance#max_node_count}
   */
   readonly maxNodeCount?: number;
   /**
   * Minimum number of nodes in the read pool. If set to higher than current node count, node count will be updated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#min_node_count GoogleSqlDatabaseInstance#min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#min_node_count GoogleSqlDatabaseInstance#min_node_count}
   */
   readonly minNodeCount?: number;
   /**
   * The cooldown period for scale in operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#scale_in_cooldown_seconds GoogleSqlDatabaseInstance#scale_in_cooldown_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#scale_in_cooldown_seconds GoogleSqlDatabaseInstance#scale_in_cooldown_seconds}
   */
   readonly scaleInCooldownSeconds?: number;
   /**
   * The cooldown period for scale out operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#scale_out_cooldown_seconds GoogleSqlDatabaseInstance#scale_out_cooldown_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#scale_out_cooldown_seconds GoogleSqlDatabaseInstance#scale_out_cooldown_seconds}
   */
   readonly scaleOutCooldownSeconds?: number;
   /**
   * target_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#target_metrics GoogleSqlDatabaseInstance#target_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#target_metrics GoogleSqlDatabaseInstance#target_metrics}
   */
   readonly targetMetrics?: GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics[] | cdktf.IResolvable;
 }
@@ -6351,19 +6351,19 @@ export interface GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig {
   /**
   * The name of the destination bucket (e.g., gs://mybucket).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#bucket GoogleSqlDatabaseInstance#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#bucket GoogleSqlDatabaseInstance#bucket}
   */
   readonly bucket?: string;
   /**
   * How long to keep generated audit files. A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"..
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#retention_interval GoogleSqlDatabaseInstance#retention_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#retention_interval GoogleSqlDatabaseInstance#retention_interval}
   */
   readonly retentionInterval?: string;
   /**
   * How often to upload generated audit files. A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#upload_interval GoogleSqlDatabaseInstance#upload_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#upload_interval GoogleSqlDatabaseInstance#upload_interval}
   */
   readonly uploadInterval?: string;
 }
@@ -6507,13 +6507,13 @@ export interface GoogleSqlDatabaseInstanceSettings {
   /**
   * This specifies when the instance should be active. Can be either ALWAYS, NEVER or ON_DEMAND.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#activation_policy GoogleSqlDatabaseInstance#activation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#activation_policy GoogleSqlDatabaseInstance#activation_policy}
   */
   readonly activationPolicy?: string;
   /**
   * Enables Automatic Version Upgrade feature. Can be used with MySQL only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#auto_upgrade_enabled GoogleSqlDatabaseInstance#auto_upgrade_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#auto_upgrade_enabled GoogleSqlDatabaseInstance#auto_upgrade_enabled}
   */
   readonly autoUpgradeEnabled?: boolean | cdktf.IResolvable;
   /**
@@ -6526,223 +6526,223 @@ export interface GoogleSqlDatabaseInstanceSettings {
   * For read pool instances, this field is read-only. The availability type is changed by specifying
   * the number of nodes (node_count).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#availability_type GoogleSqlDatabaseInstance#availability_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#availability_type GoogleSqlDatabaseInstance#availability_type}
   */
   readonly availabilityType?: string;
   /**
   * The name of server instance collation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#collation GoogleSqlDatabaseInstance#collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#collation GoogleSqlDatabaseInstance#collation}
   */
   readonly collation?: string;
   /**
   * Enables the enforcement of Cloud SQL Auth Proxy or Cloud SQL connectors for all the connections. If enabled, all the direct connections are rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#connector_enforcement GoogleSqlDatabaseInstance#connector_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#connector_enforcement GoogleSqlDatabaseInstance#connector_enforcement}
   */
   readonly connectorEnforcement?: string;
   /**
   * Allows using ExecuteSql API to connect to the instance. Disallowed when unspecified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#data_api_access GoogleSqlDatabaseInstance#data_api_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#data_api_access GoogleSqlDatabaseInstance#data_api_access}
   */
   readonly dataApiAccess?: string;
   /**
   * Provisioned number of I/O operations per second for the data disk. This field is only used for HYPERDISK_BALANCED disk types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#data_disk_provisioned_iops GoogleSqlDatabaseInstance#data_disk_provisioned_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#data_disk_provisioned_iops GoogleSqlDatabaseInstance#data_disk_provisioned_iops}
   */
   readonly dataDiskProvisionedIops?: number;
   /**
   * Provisioned throughput measured in MiB per second for the data disk. This field is only used for HYPERDISK_BALANCED disk types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#data_disk_provisioned_throughput GoogleSqlDatabaseInstance#data_disk_provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#data_disk_provisioned_throughput GoogleSqlDatabaseInstance#data_disk_provisioned_throughput}
   */
   readonly dataDiskProvisionedThroughput?: number;
   /**
   * Configuration to protect against accidental instance deletion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#deletion_protection_enabled GoogleSqlDatabaseInstance#deletion_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#deletion_protection_enabled GoogleSqlDatabaseInstance#deletion_protection_enabled}
   */
   readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Enables auto-resizing of the storage size. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#disk_autoresize GoogleSqlDatabaseInstance#disk_autoresize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#disk_autoresize GoogleSqlDatabaseInstance#disk_autoresize}
   */
   readonly diskAutoresize?: boolean | cdktf.IResolvable;
   /**
   * The maximum size, in GB, to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#disk_autoresize_limit GoogleSqlDatabaseInstance#disk_autoresize_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#disk_autoresize_limit GoogleSqlDatabaseInstance#disk_autoresize_limit}
   */
   readonly diskAutoresizeLimit?: number;
   /**
   * The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased. The minimum value is 10GB for PD_SSD, PD_HDD and 20GB for HYPERDISK_BALANCED.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#disk_size GoogleSqlDatabaseInstance#disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#disk_size GoogleSqlDatabaseInstance#disk_size}
   */
   readonly diskSize?: number;
   /**
   * The type of supported data disk is tier dependent and can be PD_SSD or PD_HDD or HYPERDISK_BALANCED.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#disk_type GoogleSqlDatabaseInstance#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#disk_type GoogleSqlDatabaseInstance#disk_type}
   */
   readonly diskType?: string;
   /**
   * The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#edition GoogleSqlDatabaseInstance#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#edition GoogleSqlDatabaseInstance#edition}
   */
   readonly edition?: string;
   /**
   * Enables Dataplex Integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enable_dataplex_integration GoogleSqlDatabaseInstance#enable_dataplex_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enable_dataplex_integration GoogleSqlDatabaseInstance#enable_dataplex_integration}
   */
   readonly enableDataplexIntegration?: boolean | cdktf.IResolvable;
   /**
   * Enables Vertex AI Integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#enable_google_ml_integration GoogleSqlDatabaseInstance#enable_google_ml_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#enable_google_ml_integration GoogleSqlDatabaseInstance#enable_google_ml_integration}
   */
   readonly enableGoogleMlIntegration?: boolean | cdktf.IResolvable;
   /**
   * Pricing plan for this instance, can only be PER_USE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#pricing_plan GoogleSqlDatabaseInstance#pricing_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#pricing_plan GoogleSqlDatabaseInstance#pricing_plan}
   */
   readonly pricingPlan?: string;
   /**
   * The acceptable replication lag, in seconds, after which a read replica recreates itself. The lag must persist for at least five minutes before recreation is triggered. This is a replica level field, and must be between 300 seconds (five minutes) and 31536000 seconds (one year).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#replication_lag_max_seconds GoogleSqlDatabaseInstance#replication_lag_max_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#replication_lag_max_seconds GoogleSqlDatabaseInstance#replication_lag_max_seconds}
   */
   readonly replicationLagMaxSeconds?: number;
   /**
   * When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#retain_backups_on_delete GoogleSqlDatabaseInstance#retain_backups_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#retain_backups_on_delete GoogleSqlDatabaseInstance#retain_backups_on_delete}
   */
   readonly retainBackupsOnDelete?: boolean | cdktf.IResolvable;
   /**
   * The machine type to use. See tiers for more details and supported versions. Postgres supports only shared-core machine types, and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#tier GoogleSqlDatabaseInstance#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#tier GoogleSqlDatabaseInstance#tier}
   */
   readonly tier: string;
   /**
   * The time_zone to be used by the database engine (supported only for SQL Server), in SQL Server timezone format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#time_zone GoogleSqlDatabaseInstance#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#time_zone GoogleSqlDatabaseInstance#time_zone}
   */
   readonly timeZone?: string;
   /**
   * A set of key/value user label pairs to assign to the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#user_labels GoogleSqlDatabaseInstance#user_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#user_labels GoogleSqlDatabaseInstance#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
   /**
   * active_directory_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#active_directory_config GoogleSqlDatabaseInstance#active_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#active_directory_config GoogleSqlDatabaseInstance#active_directory_config}
   */
   readonly activeDirectoryConfig?: GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig;
   /**
   * advanced_machine_features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#advanced_machine_features GoogleSqlDatabaseInstance#advanced_machine_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#advanced_machine_features GoogleSqlDatabaseInstance#advanced_machine_features}
   */
   readonly advancedMachineFeatures?: GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures;
   /**
   * backup_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#backup_configuration GoogleSqlDatabaseInstance#backup_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#backup_configuration GoogleSqlDatabaseInstance#backup_configuration}
   */
   readonly backupConfiguration?: GoogleSqlDatabaseInstanceSettingsBackupConfiguration;
   /**
   * connection_pool_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#connection_pool_config GoogleSqlDatabaseInstance#connection_pool_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#connection_pool_config GoogleSqlDatabaseInstance#connection_pool_config}
   */
   readonly connectionPoolConfig?: GoogleSqlDatabaseInstanceSettingsConnectionPoolConfig[] | cdktf.IResolvable;
   /**
   * data_cache_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#data_cache_config GoogleSqlDatabaseInstance#data_cache_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#data_cache_config GoogleSqlDatabaseInstance#data_cache_config}
   */
   readonly dataCacheConfig?: GoogleSqlDatabaseInstanceSettingsDataCacheConfig;
   /**
   * database_flags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#database_flags GoogleSqlDatabaseInstance#database_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#database_flags GoogleSqlDatabaseInstance#database_flags}
   */
   readonly databaseFlags?: GoogleSqlDatabaseInstanceSettingsDatabaseFlags[] | cdktf.IResolvable;
   /**
   * deny_maintenance_period block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#deny_maintenance_period GoogleSqlDatabaseInstance#deny_maintenance_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#deny_maintenance_period GoogleSqlDatabaseInstance#deny_maintenance_period}
   */
   readonly denyMaintenancePeriod?: GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod;
   /**
   * entraid_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#entraid_config GoogleSqlDatabaseInstance#entraid_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#entraid_config GoogleSqlDatabaseInstance#entraid_config}
   */
   readonly entraidConfig?: GoogleSqlDatabaseInstanceSettingsEntraidConfig;
   /**
   * final_backup_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#final_backup_config GoogleSqlDatabaseInstance#final_backup_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#final_backup_config GoogleSqlDatabaseInstance#final_backup_config}
   */
   readonly finalBackupConfig?: GoogleSqlDatabaseInstanceSettingsFinalBackupConfig;
   /**
   * insights_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#insights_config GoogleSqlDatabaseInstance#insights_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#insights_config GoogleSqlDatabaseInstance#insights_config}
   */
   readonly insightsConfig?: GoogleSqlDatabaseInstanceSettingsInsightsConfig;
   /**
   * ip_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#ip_configuration GoogleSqlDatabaseInstance#ip_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#ip_configuration GoogleSqlDatabaseInstance#ip_configuration}
   */
   readonly ipConfiguration?: GoogleSqlDatabaseInstanceSettingsIpConfiguration;
   /**
   * location_preference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#location_preference GoogleSqlDatabaseInstance#location_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#location_preference GoogleSqlDatabaseInstance#location_preference}
   */
   readonly locationPreference?: GoogleSqlDatabaseInstanceSettingsLocationPreference;
   /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#maintenance_window GoogleSqlDatabaseInstance#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#maintenance_window GoogleSqlDatabaseInstance#maintenance_window}
   */
   readonly maintenanceWindow?: GoogleSqlDatabaseInstanceSettingsMaintenanceWindow;
   /**
   * password_validation_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#password_validation_policy GoogleSqlDatabaseInstance#password_validation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#password_validation_policy GoogleSqlDatabaseInstance#password_validation_policy}
   */
   readonly passwordValidationPolicy?: GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy;
   /**
   * performance_capture_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#performance_capture_config GoogleSqlDatabaseInstance#performance_capture_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#performance_capture_config GoogleSqlDatabaseInstance#performance_capture_config}
   */
   readonly performanceCaptureConfig?: GoogleSqlDatabaseInstanceSettingsPerformanceCaptureConfig;
   /**
   * read_pool_auto_scale_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#read_pool_auto_scale_config GoogleSqlDatabaseInstance#read_pool_auto_scale_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#read_pool_auto_scale_config GoogleSqlDatabaseInstance#read_pool_auto_scale_config}
   */
   readonly readPoolAutoScaleConfig?: GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfig;
   /**
   * sql_server_audit_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#sql_server_audit_config GoogleSqlDatabaseInstance#sql_server_audit_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#sql_server_audit_config GoogleSqlDatabaseInstance#sql_server_audit_config}
   */
   readonly sqlServerAuditConfig?: GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig;
 }
@@ -7935,15 +7935,15 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
 }
 export interface GoogleSqlDatabaseInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#create GoogleSqlDatabaseInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#create GoogleSqlDatabaseInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#delete GoogleSqlDatabaseInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#delete GoogleSqlDatabaseInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#update GoogleSqlDatabaseInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#update GoogleSqlDatabaseInstance#update}
   */
   readonly update?: string;
 }
@@ -8095,7 +8095,7 @@ export class GoogleSqlDatabaseInstanceTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance google_sql_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance google_sql_database_instance}
 */
 export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
 
@@ -8111,7 +8111,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSqlDatabaseInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSqlDatabaseInstance to import
-  * @param importFromId The id of the existing GoogleSqlDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSqlDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSqlDatabaseInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -8123,7 +8123,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_sql_database_instance google_sql_database_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_sql_database_instance google_sql_database_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -8134,8 +8134,8 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_sql_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

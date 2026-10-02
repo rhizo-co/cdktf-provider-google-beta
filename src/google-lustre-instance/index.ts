@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,7 +14,7 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * capacities](https://cloud.google.com/managed-lustre/docs/create-instance#performance-tiers)
   * for specific minimums, maximums, and step sizes for each performance tier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#capacity_gib GoogleLustreInstance#capacity_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#capacity_gib GoogleLustreInstance#capacity_gib}
   */
   readonly capacityGib: string;
   /**
@@ -26,13 +26,13 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#deletion_policy GoogleLustreInstance#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#deletion_policy GoogleLustreInstance#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A user-readable description of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#description GoogleLustreInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#description GoogleLustreInstance#description}
   */
   readonly description?: string;
   /**
@@ -40,18 +40,18 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * tools, including when mounting the instance. Must be eight characters or
   * less and can only contain letters and numbers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#filesystem GoogleLustreInstance#filesystem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#filesystem GoogleLustreInstance#filesystem}
   */
   readonly filesystem: string;
   /**
   * Indicates whether you want to enable support for GKE clients. By default,
   * GKE clients are not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#gke_support_enabled GoogleLustreInstance#gke_support_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#gke_support_enabled GoogleLustreInstance#gke_support_enabled}
   */
   readonly gkeSupportEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#id GoogleLustreInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#id GoogleLustreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -65,7 +65,7 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * * Must be between 1-63 characters.
   * * Must end with a number or a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#instance_id GoogleLustreInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#instance_id GoogleLustreInstance#instance_id}
   */
   readonly instanceId: string;
   /**
@@ -76,7 +76,7 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * The key format is:
   * projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{key}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#kms_key GoogleLustreInstance#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#kms_key GoogleLustreInstance#kms_key}
   */
   readonly kmsKey?: string;
   /**
@@ -85,13 +85,13 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#labels GoogleLustreInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#labels GoogleLustreInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#location GoogleLustreInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#location GoogleLustreInstance#location}
   */
   readonly location: string;
   /**
@@ -99,7 +99,7 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * Must be in the format
   * 'projects/{project_id}/global/networks/{network_name}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#network GoogleLustreInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#network GoogleLustreInstance#network}
   */
   readonly network: string;
   /**
@@ -112,42 +112,42 @@ export interface GoogleLustreInstanceConfig extends cdktf.TerraformMetaArguments
   * If the instance is using the Dynamic tier, this field must not be set or
   * must be set to zero.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#per_unit_storage_throughput GoogleLustreInstance#per_unit_storage_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#per_unit_storage_throughput GoogleLustreInstance#per_unit_storage_throughput}
   */
   readonly perUnitStorageThroughput?: string;
   /**
   * The placement policy name for the instance in the format of
   * projects/{project}/locations/{location}/resourcePolicies/{resource_policy}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#placement_policy GoogleLustreInstance#placement_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#placement_policy GoogleLustreInstance#placement_policy}
   */
   readonly placementPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#project GoogleLustreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#project GoogleLustreInstance#project}
   */
   readonly project?: string;
   /**
   * access_rules_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#access_rules_options GoogleLustreInstance#access_rules_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#access_rules_options GoogleLustreInstance#access_rules_options}
   */
   readonly accessRulesOptions?: GoogleLustreInstanceAccessRulesOptions;
   /**
   * dynamic_tier_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#dynamic_tier_options GoogleLustreInstance#dynamic_tier_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#dynamic_tier_options GoogleLustreInstance#dynamic_tier_options}
   */
   readonly dynamicTierOptions?: GoogleLustreInstanceDynamicTierOptions;
   /**
   * maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#maintenance_policy GoogleLustreInstance#maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#maintenance_policy GoogleLustreInstance#maintenance_policy}
   */
   readonly maintenancePolicy?: GoogleLustreInstanceMaintenancePolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#timeouts GoogleLustreInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#timeouts GoogleLustreInstance#timeouts}
   */
   readonly timeouts?: GoogleLustreInstanceTimeouts;
 }
@@ -237,7 +237,7 @@ export interface GoogleLustreInstanceAccessRulesOptionsAccessRules {
   * non-overlapping CIDR ranges (e.g., '192.168.1.0/24') and IP addresses
   * (e.g., '192.168.1.0').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#ip_address_ranges GoogleLustreInstance#ip_address_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#ip_address_ranges GoogleLustreInstance#ip_address_ranges}
   */
   readonly ipAddressRanges: string[];
   /**
@@ -245,7 +245,7 @@ export interface GoogleLustreInstanceAccessRulesOptionsAccessRules {
   * Must be 16 characters or less and include only alphanumeric characters
   * or '_'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#name GoogleLustreInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#name GoogleLustreInstance#name}
   */
   readonly name: string;
   /**
@@ -254,7 +254,7 @@ export interface GoogleLustreInstanceAccessRulesOptionsAccessRules {
   * NO_SQUASH
   * ROOT_SQUASH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#squash_mode GoogleLustreInstance#squash_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#squash_mode GoogleLustreInstance#squash_mode}
   */
   readonly squashMode: string;
 }
@@ -424,7 +424,7 @@ export interface GoogleLustreInstanceAccessRulesOptions {
   * that are not matched by any of the access rules. If not set, the default
   * is 0 (no GID squash).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#default_squash_gid GoogleLustreInstance#default_squash_gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#default_squash_gid GoogleLustreInstance#default_squash_gid}
   */
   readonly defaultSquashGid?: number;
   /**
@@ -433,7 +433,7 @@ export interface GoogleLustreInstanceAccessRulesOptions {
   * NO_SQUASH
   * ROOT_SQUASH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#default_squash_mode GoogleLustreInstance#default_squash_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#default_squash_mode GoogleLustreInstance#default_squash_mode}
   */
   readonly defaultSquashMode: string;
   /**
@@ -442,13 +442,13 @@ export interface GoogleLustreInstanceAccessRulesOptions {
   * that are not matched by any of the access rules. If not set, the default
   * is 0 (no UID squash).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#default_squash_uid GoogleLustreInstance#default_squash_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#default_squash_uid GoogleLustreInstance#default_squash_uid}
   */
   readonly defaultSquashUid?: number;
   /**
   * access_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#access_rules GoogleLustreInstance#access_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#access_rules GoogleLustreInstance#access_rules}
   */
   readonly accessRules?: GoogleLustreInstanceAccessRulesOptionsAccessRules[] | cdktf.IResolvable;
 }
@@ -621,7 +621,7 @@ export interface GoogleLustreInstanceDynamicTierOptions {
   * DISABLED
   * DEFAULT_CACHE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#mode GoogleLustreInstance#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#mode GoogleLustreInstance#mode}
   */
   readonly mode: string;
 }
@@ -706,21 +706,21 @@ export interface GoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindow
   * to specify a year by itself or a year and month where the day isn't
   * significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#day GoogleLustreInstance#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#day GoogleLustreInstance#day}
   */
   readonly day?: number;
   /**
   * Month of a year. Must be from 1 to 12, or 0 to specify a year without a
   * month and day.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#month GoogleLustreInstance#month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#month GoogleLustreInstance#month}
   */
   readonly month?: number;
   /**
   * Year of the date. Must be from 1 to 9999, or 0 to specify a date without
   * a year.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#year GoogleLustreInstance#year}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#year GoogleLustreInstance#year}
   */
   readonly year?: number;
 }
@@ -866,21 +866,21 @@ export interface GoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindow
   * to specify a year by itself or a year and month where the day isn't
   * significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#day GoogleLustreInstance#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#day GoogleLustreInstance#day}
   */
   readonly day?: number;
   /**
   * Month of a year. Must be from 1 to 12, or 0 to specify a year without a
   * month and day.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#month GoogleLustreInstance#month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#month GoogleLustreInstance#month}
   */
   readonly month?: number;
   /**
   * Year of the date. Must be from 1 to 9999, or 0 to specify a date without
   * a year.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#year GoogleLustreInstance#year}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#year GoogleLustreInstance#year}
   */
   readonly year?: number;
 }
@@ -1026,21 +1026,21 @@ export interface GoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindow
   * typically must be less than or equal to 23. An API may choose to allow the
   * value "24:00:00" for scenarios like business closing time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#hours GoogleLustreInstance#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#hours GoogleLustreInstance#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of an hour. Must be greater than or equal to 0 and less than or
   * equal to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#minutes GoogleLustreInstance#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#minutes GoogleLustreInstance#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds, in nanoseconds. Must be greater than or equal to 0
   * and less than or equal to 999,999,999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#nanos GoogleLustreInstance#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#nanos GoogleLustreInstance#nanos}
   */
   readonly nanos?: number;
   /**
@@ -1048,7 +1048,7 @@ export interface GoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindow
   * be less than or equal to 59. An API may allow the value 60 if it allows
   * leap-seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#seconds GoogleLustreInstance#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#seconds GoogleLustreInstance#seconds}
   */
   readonly seconds?: number;
 }
@@ -1221,19 +1221,19 @@ export interface GoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindow
   /**
   * end_date block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#end_date GoogleLustreInstance#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#end_date GoogleLustreInstance#end_date}
   */
   readonly endDate: GoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate;
   /**
   * start_date block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#start_date GoogleLustreInstance#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#start_date GoogleLustreInstance#start_date}
   */
   readonly startDate: GoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate;
   /**
   * time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#time GoogleLustreInstance#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#time GoogleLustreInstance#time}
   */
   readonly time: GoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime;
 }
@@ -1370,21 +1370,21 @@ export interface GoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsSt
   * typically must be less than or equal to 23. An API may choose to allow the
   * value "24:00:00" for scenarios like business closing time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#hours GoogleLustreInstance#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#hours GoogleLustreInstance#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of an hour. Must be greater than or equal to 0 and less than or
   * equal to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#minutes GoogleLustreInstance#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#minutes GoogleLustreInstance#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds, in nanoseconds. Must be greater than or equal to 0
   * and less than or equal to 999,999,999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#nanos GoogleLustreInstance#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#nanos GoogleLustreInstance#nanos}
   */
   readonly nanos?: number;
   /**
@@ -1392,7 +1392,7 @@ export interface GoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsSt
   * be less than or equal to 59. An API may allow the value 60 if it allows
   * leap-seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#seconds GoogleLustreInstance#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#seconds GoogleLustreInstance#seconds}
   */
   readonly seconds?: number;
 }
@@ -1572,13 +1572,13 @@ export interface GoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindows {
   * SATURDAY
   * SUNDAY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#day_of_week GoogleLustreInstance#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#day_of_week GoogleLustreInstance#day_of_week}
   */
   readonly dayOfWeek: string;
   /**
   * start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#start_time GoogleLustreInstance#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#start_time GoogleLustreInstance#start_time}
   */
   readonly startTime: GoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime;
 }
@@ -1687,13 +1687,13 @@ export interface GoogleLustreInstanceMaintenancePolicy {
   /**
   * maintenance_exclusion_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#maintenance_exclusion_window GoogleLustreInstance#maintenance_exclusion_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#maintenance_exclusion_window GoogleLustreInstance#maintenance_exclusion_window}
   */
   readonly maintenanceExclusionWindow?: GoogleLustreInstanceMaintenancePolicyMaintenanceExclusionWindow;
   /**
   * weekly_maintenance_windows block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#weekly_maintenance_windows GoogleLustreInstance#weekly_maintenance_windows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#weekly_maintenance_windows GoogleLustreInstance#weekly_maintenance_windows}
   */
   readonly weeklyMaintenanceWindows: GoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindows;
 }
@@ -1803,15 +1803,15 @@ export class GoogleLustreInstanceMaintenancePolicyOutputReference extends cdktf.
 }
 export interface GoogleLustreInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#create GoogleLustreInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#create GoogleLustreInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#delete GoogleLustreInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#delete GoogleLustreInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#update GoogleLustreInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#update GoogleLustreInstance#update}
   */
   readonly update?: string;
 }
@@ -1963,7 +1963,7 @@ export class GoogleLustreInstanceTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance google_lustre_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance google_lustre_instance}
 */
 export class GoogleLustreInstance extends cdktf.TerraformResource {
 
@@ -1979,7 +1979,7 @@ export class GoogleLustreInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleLustreInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleLustreInstance to import
-  * @param importFromId The id of the existing GoogleLustreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleLustreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleLustreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1991,7 +1991,7 @@ export class GoogleLustreInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_lustre_instance google_lustre_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_lustre_instance google_lustre_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2002,8 +2002,8 @@ export class GoogleLustreInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_lustre_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

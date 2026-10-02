@@ -9,7 +9,7 @@ const project = new CdktfProviderProject({
   packageName: 'rhizo-co-terraform-provider-google-beta',
   githubNamespace: 'rhizo-co',
   useCustomGithubRunner: false,
-  terraformProvider: "hashicorp/google-beta@~> 8.3.0",
+  terraformProvider: "hashicorp/google-beta@~> 7.46.0",
   cdktfVersion: "0.20.12",
   constructsVersion: "10.4.2",
   minNodeVersion: "20.17.0",

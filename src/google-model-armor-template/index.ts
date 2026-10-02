@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,11 @@ export interface GoogleModelArmorTemplateConfig extends cdktf.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#deletion_policy GoogleModelArmorTemplate#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#deletion_policy GoogleModelArmorTemplate#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#id GoogleModelArmorTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#id GoogleModelArmorTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,17 +32,17 @@ export interface GoogleModelArmorTemplateConfig extends cdktf.TerraformMetaArgum
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#labels GoogleModelArmorTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#labels GoogleModelArmorTemplate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#location GoogleModelArmorTemplate#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#location GoogleModelArmorTemplate#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#project GoogleModelArmorTemplate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#project GoogleModelArmorTemplate#project}
   */
   readonly project?: string;
   /**
@@ -50,25 +50,25 @@ export interface GoogleModelArmorTemplateConfig extends cdktf.TerraformMetaArgum
   * If auto-generating Id server-side, remove this field and
   * template_id from the method_signature of Create RPC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#template_id GoogleModelArmorTemplate#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#template_id GoogleModelArmorTemplate#template_id}
   */
   readonly templateId: string;
   /**
   * filter_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#filter_config GoogleModelArmorTemplate#filter_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#filter_config GoogleModelArmorTemplate#filter_config}
   */
   readonly filterConfig: GoogleModelArmorTemplateFilterConfig;
   /**
   * template_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#template_metadata GoogleModelArmorTemplate#template_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#template_metadata GoogleModelArmorTemplate#template_metadata}
   */
   readonly templateMetadata?: GoogleModelArmorTemplateTemplateMetadata;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#timeouts GoogleModelArmorTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#timeouts GoogleModelArmorTemplate#timeouts}
   */
   readonly timeouts?: GoogleModelArmorTemplateTimeouts;
 }
@@ -79,7 +79,7 @@ export interface GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettings 
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#filter_enforcement GoogleModelArmorTemplate#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#filter_enforcement GoogleModelArmorTemplate#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -168,7 +168,7 @@ export interface GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSetting
   * MEDIUM_AND_ABOVE
   * HIGH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#confidence_level GoogleModelArmorTemplate#confidence_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#confidence_level GoogleModelArmorTemplate#confidence_level}
   */
   readonly confidenceLevel?: string;
   /**
@@ -178,7 +178,7 @@ export interface GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSetting
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#filter_enforcement GoogleModelArmorTemplate#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#filter_enforcement GoogleModelArmorTemplate#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -296,7 +296,7 @@ export interface GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFilters {
   * MEDIUM_AND_ABOVE
   * HIGH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#confidence_level GoogleModelArmorTemplate#confidence_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#confidence_level GoogleModelArmorTemplate#confidence_level}
   */
   readonly confidenceLevel?: string;
   /**
@@ -306,7 +306,7 @@ export interface GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFilters {
   * HARASSMENT
   * DANGEROUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#filter_type GoogleModelArmorTemplate#filter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#filter_type GoogleModelArmorTemplate#filter_type}
   */
   readonly filterType: string;
 }
@@ -450,7 +450,7 @@ export interface GoogleModelArmorTemplateFilterConfigRaiSettings {
   /**
   * rai_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#rai_filters GoogleModelArmorTemplate#rai_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#rai_filters GoogleModelArmorTemplate#rai_filters}
   */
   readonly raiFilters: GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFilters[] | cdktf.IResolvable;
 }
@@ -540,7 +540,7 @@ export interface GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig {
   * e.g.
   * 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#deidentify_template GoogleModelArmorTemplate#deidentify_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#deidentify_template GoogleModelArmorTemplate#deidentify_template}
   */
   readonly deidentifyTemplate?: string;
   /**
@@ -552,7 +552,7 @@ export interface GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig {
   * e.g:-
   * 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#inspect_template GoogleModelArmorTemplate#inspect_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#inspect_template GoogleModelArmorTemplate#inspect_template}
   */
   readonly inspectTemplate?: string;
 }
@@ -671,7 +671,7 @@ export interface GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfig {
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#filter_enforcement GoogleModelArmorTemplate#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#filter_enforcement GoogleModelArmorTemplate#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -757,13 +757,13 @@ export interface GoogleModelArmorTemplateFilterConfigSdpSettings {
   /**
   * advanced_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#advanced_config GoogleModelArmorTemplate#advanced_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#advanced_config GoogleModelArmorTemplate#advanced_config}
   */
   readonly advancedConfig?: GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig;
   /**
   * basic_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#basic_config GoogleModelArmorTemplate#basic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#basic_config GoogleModelArmorTemplate#basic_config}
   */
   readonly basicConfig?: GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfig;
 }
@@ -878,25 +878,25 @@ export interface GoogleModelArmorTemplateFilterConfig {
   /**
   * malicious_uri_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#malicious_uri_filter_settings GoogleModelArmorTemplate#malicious_uri_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#malicious_uri_filter_settings GoogleModelArmorTemplate#malicious_uri_filter_settings}
   */
   readonly maliciousUriFilterSettings?: GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettings;
   /**
   * pi_and_jailbreak_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#pi_and_jailbreak_filter_settings GoogleModelArmorTemplate#pi_and_jailbreak_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#pi_and_jailbreak_filter_settings GoogleModelArmorTemplate#pi_and_jailbreak_filter_settings}
   */
   readonly piAndJailbreakFilterSettings?: GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings;
   /**
   * rai_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#rai_settings GoogleModelArmorTemplate#rai_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#rai_settings GoogleModelArmorTemplate#rai_settings}
   */
   readonly raiSettings?: GoogleModelArmorTemplateFilterConfigRaiSettings;
   /**
   * sdp_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#sdp_settings GoogleModelArmorTemplate#sdp_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#sdp_settings GoogleModelArmorTemplate#sdp_settings}
   */
   readonly sdpSettings?: GoogleModelArmorTemplateFilterConfigSdpSettings;
 }
@@ -1073,14 +1073,14 @@ export interface GoogleModelArmorTemplateTemplateMetadataFilterVersionSelector {
   * FILTER_VERSION_ALIAS_STABLE
   * FILTER_VERSION_ALIAS_LATEST
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#alias GoogleModelArmorTemplate#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#alias GoogleModelArmorTemplate#alias}
   */
   readonly alias?: string;
   /**
   * Pins the template to a specific, immutable filter version. Expected
   * format is a case-sensitive string such as 'v1' or 'v2'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#version GoogleModelArmorTemplate#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#version GoogleModelArmorTemplate#version}
   */
   readonly version?: string;
 }
@@ -1195,7 +1195,7 @@ export interface GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetection 
   /**
   * If true, multi language detection will be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#enable_multi_language_detection GoogleModelArmorTemplate#enable_multi_language_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#enable_multi_language_detection GoogleModelArmorTemplate#enable_multi_language_detection}
   */
   readonly enableMultiLanguageDetection: boolean | cdktf.IResolvable;
 }
@@ -1279,28 +1279,28 @@ export interface GoogleModelArmorTemplateTemplateMetadata {
   * Indicates the custom error code set by the user to be returned to the end
   * user if the LLM response trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#custom_llm_response_safety_error_code GoogleModelArmorTemplate#custom_llm_response_safety_error_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#custom_llm_response_safety_error_code GoogleModelArmorTemplate#custom_llm_response_safety_error_code}
   */
   readonly customLlmResponseSafetyErrorCode?: number;
   /**
   * Indicates the custom error message set by the user to be returned to the
   * end user if the LLM response trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#custom_llm_response_safety_error_message GoogleModelArmorTemplate#custom_llm_response_safety_error_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#custom_llm_response_safety_error_message GoogleModelArmorTemplate#custom_llm_response_safety_error_message}
   */
   readonly customLlmResponseSafetyErrorMessage?: string;
   /**
   * Indicates the custom error code set by the user to be returned to the end
   * user by the service extension if the prompt trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#custom_prompt_safety_error_code GoogleModelArmorTemplate#custom_prompt_safety_error_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#custom_prompt_safety_error_code GoogleModelArmorTemplate#custom_prompt_safety_error_code}
   */
   readonly customPromptSafetyErrorCode?: number;
   /**
   * Indicates the custom error message set by the user to be returned to the
   * end user if the prompt trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#custom_prompt_safety_error_message GoogleModelArmorTemplate#custom_prompt_safety_error_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#custom_prompt_safety_error_message GoogleModelArmorTemplate#custom_prompt_safety_error_message}
   */
   readonly customPromptSafetyErrorMessage?: string;
   /**
@@ -1308,37 +1308,37 @@ export interface GoogleModelArmorTemplateTemplateMetadata {
   * INSPECT_ONLY
   * INSPECT_AND_BLOCK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#enforcement_type GoogleModelArmorTemplate#enforcement_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#enforcement_type GoogleModelArmorTemplate#enforcement_type}
   */
   readonly enforcementType?: string;
   /**
   * If true, partial detector failures should be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#ignore_partial_invocation_failures GoogleModelArmorTemplate#ignore_partial_invocation_failures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#ignore_partial_invocation_failures GoogleModelArmorTemplate#ignore_partial_invocation_failures}
   */
   readonly ignorePartialInvocationFailures?: boolean | cdktf.IResolvable;
   /**
   * If true, log sanitize operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#log_sanitize_operations GoogleModelArmorTemplate#log_sanitize_operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#log_sanitize_operations GoogleModelArmorTemplate#log_sanitize_operations}
   */
   readonly logSanitizeOperations?: boolean | cdktf.IResolvable;
   /**
   * If true, log template crud operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#log_template_operations GoogleModelArmorTemplate#log_template_operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#log_template_operations GoogleModelArmorTemplate#log_template_operations}
   */
   readonly logTemplateOperations?: boolean | cdktf.IResolvable;
   /**
   * filter_version_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#filter_version_selector GoogleModelArmorTemplate#filter_version_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#filter_version_selector GoogleModelArmorTemplate#filter_version_selector}
   */
   readonly filterVersionSelector?: GoogleModelArmorTemplateTemplateMetadataFilterVersionSelector;
   /**
   * multi_language_detection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#multi_language_detection GoogleModelArmorTemplate#multi_language_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#multi_language_detection GoogleModelArmorTemplate#multi_language_detection}
   */
   readonly multiLanguageDetection?: GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetection;
 }
@@ -1683,15 +1683,15 @@ export class GoogleModelArmorTemplateTemplateMetadataOutputReference extends cdk
 }
 export interface GoogleModelArmorTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#create GoogleModelArmorTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#create GoogleModelArmorTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#delete GoogleModelArmorTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#delete GoogleModelArmorTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#update GoogleModelArmorTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#update GoogleModelArmorTemplate#update}
   */
   readonly update?: string;
 }
@@ -1843,7 +1843,7 @@ export class GoogleModelArmorTemplateTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template google_model_armor_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template google_model_armor_template}
 */
 export class GoogleModelArmorTemplate extends cdktf.TerraformResource {
 
@@ -1859,7 +1859,7 @@ export class GoogleModelArmorTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleModelArmorTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleModelArmorTemplate to import
-  * @param importFromId The id of the existing GoogleModelArmorTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleModelArmorTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleModelArmorTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1871,7 +1871,7 @@ export class GoogleModelArmorTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_model_armor_template google_model_armor_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_model_armor_template google_model_armor_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1882,8 +1882,8 @@ export class GoogleModelArmorTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_model_armor_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

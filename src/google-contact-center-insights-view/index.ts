@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface GoogleContactCenterInsightsViewConfig extends cdktf.TerraformMe
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#deletion_policy GoogleContactCenterInsightsView#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#deletion_policy GoogleContactCenterInsightsView#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The human-readable display name of the view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#display_name GoogleContactCenterInsightsView#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#display_name GoogleContactCenterInsightsView#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#id GoogleContactCenterInsightsView#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#id GoogleContactCenterInsightsView#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,11 +35,11 @@ export interface GoogleContactCenterInsightsViewConfig extends cdktf.TerraformMe
   /**
   * Location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#location GoogleContactCenterInsightsView#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#location GoogleContactCenterInsightsView#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#project GoogleContactCenterInsightsView#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#project GoogleContactCenterInsightsView#project}
   */
   readonly project?: string;
   /**
@@ -47,27 +47,27 @@ export interface GoogleContactCenterInsightsViewConfig extends cdktf.TerraformMe
   * Refer to https://cloud.google.com/contact-center/insights/docs/filtering
   * for details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#value GoogleContactCenterInsightsView#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#value GoogleContactCenterInsightsView#value}
   */
   readonly value?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#timeouts GoogleContactCenterInsightsView#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#timeouts GoogleContactCenterInsightsView#timeouts}
   */
   readonly timeouts?: GoogleContactCenterInsightsViewTimeouts;
 }
 export interface GoogleContactCenterInsightsViewTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#create GoogleContactCenterInsightsView#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#create GoogleContactCenterInsightsView#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#delete GoogleContactCenterInsightsView#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#delete GoogleContactCenterInsightsView#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#update GoogleContactCenterInsightsView#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#update GoogleContactCenterInsightsView#update}
   */
   readonly update?: string;
 }
@@ -219,7 +219,7 @@ export class GoogleContactCenterInsightsViewTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view google_contact_center_insights_view}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view google_contact_center_insights_view}
 */
 export class GoogleContactCenterInsightsView extends cdktf.TerraformResource {
 
@@ -235,7 +235,7 @@ export class GoogleContactCenterInsightsView extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleContactCenterInsightsView resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleContactCenterInsightsView to import
-  * @param importFromId The id of the existing GoogleContactCenterInsightsView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleContactCenterInsightsView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleContactCenterInsightsView to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -247,7 +247,7 @@ export class GoogleContactCenterInsightsView extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_contact_center_insights_view google_contact_center_insights_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_contact_center_insights_view google_contact_center_insights_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -258,8 +258,8 @@ export class GoogleContactCenterInsightsView extends cdktf.TerraformResource {
       terraformResourceType: 'google_contact_center_insights_view',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

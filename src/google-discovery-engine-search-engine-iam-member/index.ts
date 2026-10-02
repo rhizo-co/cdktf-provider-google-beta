@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,54 +8,54 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleDiscoveryEngineSearchEngineIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#collection_id GoogleDiscoveryEngineSearchEngineIamMember#collection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#collection_id GoogleDiscoveryEngineSearchEngineIamMember#collection_id}
   */
   readonly collectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#engine_id GoogleDiscoveryEngineSearchEngineIamMember#engine_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#engine_id GoogleDiscoveryEngineSearchEngineIamMember#engine_id}
   */
   readonly engineId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#id GoogleDiscoveryEngineSearchEngineIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#id GoogleDiscoveryEngineSearchEngineIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#location GoogleDiscoveryEngineSearchEngineIamMember#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#location GoogleDiscoveryEngineSearchEngineIamMember#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#member GoogleDiscoveryEngineSearchEngineIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#member GoogleDiscoveryEngineSearchEngineIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#project GoogleDiscoveryEngineSearchEngineIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#project GoogleDiscoveryEngineSearchEngineIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#role GoogleDiscoveryEngineSearchEngineIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#role GoogleDiscoveryEngineSearchEngineIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#condition GoogleDiscoveryEngineSearchEngineIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#condition GoogleDiscoveryEngineSearchEngineIamMember#condition}
   */
   readonly condition?: GoogleDiscoveryEngineSearchEngineIamMemberCondition;
 }
 export interface GoogleDiscoveryEngineSearchEngineIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#description GoogleDiscoveryEngineSearchEngineIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#description GoogleDiscoveryEngineSearchEngineIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#expression GoogleDiscoveryEngineSearchEngineIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#expression GoogleDiscoveryEngineSearchEngineIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#title GoogleDiscoveryEngineSearchEngineIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#title GoogleDiscoveryEngineSearchEngineIamMember#title}
   */
   readonly title: string;
 }
@@ -191,7 +191,7 @@ export class GoogleDiscoveryEngineSearchEngineIamMemberConditionOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member google_discovery_engine_search_engine_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member google_discovery_engine_search_engine_iam_member}
 */
 export class GoogleDiscoveryEngineSearchEngineIamMember extends cdktf.TerraformResource {
 
@@ -207,7 +207,7 @@ export class GoogleDiscoveryEngineSearchEngineIamMember extends cdktf.TerraformR
   * Generates CDKTF code for importing a GoogleDiscoveryEngineSearchEngineIamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDiscoveryEngineSearchEngineIamMember to import
-  * @param importFromId The id of the existing GoogleDiscoveryEngineSearchEngineIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDiscoveryEngineSearchEngineIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDiscoveryEngineSearchEngineIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -219,7 +219,7 @@ export class GoogleDiscoveryEngineSearchEngineIamMember extends cdktf.TerraformR
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_discovery_engine_search_engine_iam_member google_discovery_engine_search_engine_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_discovery_engine_search_engine_iam_member google_discovery_engine_search_engine_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -230,8 +230,8 @@ export class GoogleDiscoveryEngineSearchEngineIamMember extends cdktf.TerraformR
       terraformResourceType: 'google_discovery_engine_search_engine_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

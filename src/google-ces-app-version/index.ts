@@ -12,7 +12,7 @@ export interface GoogleCesAppVersionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#app GoogleCesAppVersion#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#app GoogleCesAppVersion#app}
   */
   readonly app: string;
   /**
@@ -20,7 +20,7 @@ export interface GoogleCesAppVersionConfig extends cdktf.TerraformMetaArguments 
   * of the app version's resource name. If not provided, a unique ID will be
   * automatically assigned for the app version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#app_version_id GoogleCesAppVersion#app_version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#app_version_id GoogleCesAppVersion#app_version_id}
   */
   readonly appVersionId: string;
   /**
@@ -32,23 +32,23 @@ export interface GoogleCesAppVersionConfig extends cdktf.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#deletion_policy GoogleCesAppVersion#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#deletion_policy GoogleCesAppVersion#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the app version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#description GoogleCesAppVersion#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#description GoogleCesAppVersion#description}
   */
   readonly description?: string;
   /**
   * The display name of the app version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#display_name GoogleCesAppVersion#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#display_name GoogleCesAppVersion#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#id GoogleCesAppVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#id GoogleCesAppVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,23 +57,23 @@ export interface GoogleCesAppVersionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#location GoogleCesAppVersion#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#location GoogleCesAppVersion#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#project GoogleCesAppVersion#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#project GoogleCesAppVersion#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#timeouts GoogleCesAppVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#timeouts GoogleCesAppVersion#timeouts}
   */
   readonly timeouts?: GoogleCesAppVersionTimeouts;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version google_ces_app_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version google_ces_app_version}
 */
 export class GoogleCesAppVersion extends cdktf.TerraformResource {
 
@@ -89,7 +89,7 @@ export class GoogleCesAppVersion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleCesAppVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCesAppVersion to import
-  * @param importFromId The id of the existing GoogleCesAppVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCesAppVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCesAppVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -101,7 +101,7 @@ export class GoogleCesAppVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_ces_app_version google_ces_app_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_ces_app_version google_ces_app_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -112,8 +112,8 @@ export class GoogleCesAppVersion extends cdktf.TerraformResource {
       terraformResourceType: 'google_ces_app_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

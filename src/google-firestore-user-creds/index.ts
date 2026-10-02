@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface GoogleFirestoreUserCredsConfig extends cdktf.TerraformMetaArgum
   /**
   * The Firestore database ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds#database GoogleFirestoreUserCreds#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds#database GoogleFirestoreUserCreds#database}
   */
   readonly database: string;
   /**
@@ -22,11 +22,11 @@ export interface GoogleFirestoreUserCredsConfig extends cdktf.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds#deletion_policy GoogleFirestoreUserCreds#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds#deletion_policy GoogleFirestoreUserCreds#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds#id GoogleFirestoreUserCreds#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds#id GoogleFirestoreUserCreds#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,17 +40,17 @@ export interface GoogleFirestoreUserCredsConfig extends cdktf.TerraformMetaArgum
   * with first character a letter and the last a letter or a number. Must not
   * be UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds#name GoogleFirestoreUserCreds#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds#name GoogleFirestoreUserCreds#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds#project GoogleFirestoreUserCreds#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds#project GoogleFirestoreUserCreds#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds#timeouts GoogleFirestoreUserCreds#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds#timeouts GoogleFirestoreUserCreds#timeouts}
   */
   readonly timeouts?: GoogleFirestoreUserCredsTimeouts;
 }
@@ -131,11 +131,11 @@ export class GoogleFirestoreUserCredsResourceIdentityList extends cdktf.ComplexL
 }
 export interface GoogleFirestoreUserCredsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds#create GoogleFirestoreUserCreds#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds#create GoogleFirestoreUserCreds#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds#delete GoogleFirestoreUserCreds#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds#delete GoogleFirestoreUserCreds#delete}
   */
   readonly delete?: string;
 }
@@ -258,7 +258,7 @@ export class GoogleFirestoreUserCredsTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds google_firestore_user_creds}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds google_firestore_user_creds}
 */
 export class GoogleFirestoreUserCreds extends cdktf.TerraformResource {
 
@@ -274,7 +274,7 @@ export class GoogleFirestoreUserCreds extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleFirestoreUserCreds resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleFirestoreUserCreds to import
-  * @param importFromId The id of the existing GoogleFirestoreUserCreds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleFirestoreUserCreds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleFirestoreUserCreds to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -286,7 +286,7 @@ export class GoogleFirestoreUserCreds extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_firestore_user_creds google_firestore_user_creds} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_firestore_user_creds google_firestore_user_creds} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -297,8 +297,8 @@ export class GoogleFirestoreUserCreds extends cdktf.TerraformResource {
       terraformResourceType: 'google_firestore_user_creds',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

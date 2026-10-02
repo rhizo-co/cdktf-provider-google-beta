@@ -731,11 +731,6 @@ export class GoogleCesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReferen
     return this._inputVariableMapping;
   }
 
-  // language_code_variable - computed: true, optional: false, required: false
-  public get languageCodeVariable() {
-    return this.getStringAttribute('language_code_variable');
-  }
-
   // output_variable_mapping - computed: true, optional: false, required: false
   private _outputVariableMapping = new cdktf.StringMap(this, "output_variable_mapping");
   public get outputVariableMapping() {
@@ -839,481 +834,6 @@ export class GoogleCesAppVersionSnapshotAgentsToolsetsList extends cdktf.Complex
   */
   public get(index: number): GoogleCesAppVersionSnapshotAgentsToolsetsOutputReference {
     return new GoogleCesAppVersionSnapshotAgentsToolsetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition {
-}
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionToTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionToHclTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // expression - computed: true, optional: false, required: false
-  public get expression() {
-    return this.getStringAttribute('expression');
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference {
-    return new GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition {
-}
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionToTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionToHclTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // python_code - computed: true, optional: false, required: false
-  public get pythonCode() {
-    return this.getStringAttribute('python_code');
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference {
-    return new GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer {
-}
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferToTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferToHclTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // expression_condition - computed: true, optional: false, required: false
-  private _expressionCondition = new GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList(this, "expression_condition", false);
-  public get expressionCondition() {
-    return this._expressionCondition;
-  }
-
-  // python_code_condition - computed: true, optional: false, required: false
-  private _pythonCodeCondition = new GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList(this, "python_code_condition", false);
-  public get pythonCodeCondition() {
-    return this._pythonCodeCondition;
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference {
-    return new GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition {
-}
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionToTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionToHclTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // expression - computed: true, optional: false, required: false
-  public get expression() {
-    return this.getStringAttribute('expression');
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference {
-    return new GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer {
-}
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferToTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferToHclTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // expression_condition - computed: true, optional: false, required: false
-  private _expressionCondition = new GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList(this, "expression_condition", false);
-  public get expressionCondition() {
-    return this._expressionCondition;
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference {
-    return new GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAgentsTransferRules {
-}
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesToTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAgentsTransferRulesToHclTerraform(struct?: GoogleCesAppVersionSnapshotAgentsTransferRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAgentsTransferRules | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAgentsTransferRules | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // child_agent - computed: true, optional: false, required: false
-  public get childAgent() {
-    return this.getStringAttribute('child_agent');
-  }
-
-  // deterministic_transfer - computed: true, optional: false, required: false
-  private _deterministicTransfer = new GoogleCesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList(this, "deterministic_transfer", false);
-  public get deterministicTransfer() {
-    return this._deterministicTransfer;
-  }
-
-  // direction - computed: true, optional: false, required: false
-  public get direction() {
-    return this.getStringAttribute('direction');
-  }
-
-  // disable_planner_transfer - computed: true, optional: false, required: false
-  private _disablePlannerTransfer = new GoogleCesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList(this, "disable_planner_transfer", false);
-  public get disablePlannerTransfer() {
-    return this._disablePlannerTransfer;
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAgentsTransferRulesList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAgentsTransferRulesOutputReference {
-    return new GoogleCesAppVersionSnapshotAgentsTransferRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface GoogleCesAppVersionSnapshotAgents {
@@ -1475,12 +995,6 @@ export class GoogleCesAppVersionSnapshotAgentsOutputReference extends cdktf.Comp
   private _toolsets = new GoogleCesAppVersionSnapshotAgentsToolsetsList(this, "toolsets", false);
   public get toolsets() {
     return this._toolsets;
-  }
-
-  // transfer_rules - computed: true, optional: false, required: false
-  private _transferRules = new GoogleCesAppVersionSnapshotAgentsTransferRulesList(this, "transfer_rules", false);
-  public get transferRules() {
-    return this._transferRules;
   }
 
   // update_time - computed: true, optional: false, required: false
@@ -2246,106 +1760,6 @@ export class GoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigL
     return new GoogleCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig {
-}
-
-export function googleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigToTerraform(struct?: GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
-  }
-
-  // display_name - computed: true, optional: false, required: false
-  public get displayName() {
-    return this.getStringAttribute('display_name');
-  }
-
-  // phone_number - computed: true, optional: false, required: false
-  public get phoneNumber() {
-    return this.getStringAttribute('phone_number');
-  }
-
-  // phone_number_id - computed: true, optional: false, required: false
-  public get phoneNumberId() {
-    return this.getStringAttribute('phone_number_id');
-  }
-
-  // thumbnail_url - computed: true, optional: false, required: false
-  public get thumbnailUrl() {
-    return this.getStringAttribute('thumbnail_url');
-  }
-
-  // waba_id - computed: true, optional: false, required: false
-  public get wabaId() {
-    return this.getStringAttribute('waba_id');
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference {
-    return new GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface GoogleCesAppVersionSnapshotAppDefaultChannelProfile {
 }
 
@@ -2428,12 +1842,6 @@ export class GoogleCesAppVersionSnapshotAppDefaultChannelProfileOutputReference 
   public get webWidgetConfig() {
     return this._webWidgetConfig;
   }
-
-  // whatsapp_config - computed: true, optional: false, required: false
-  private _whatsappConfig = new GoogleCesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList(this, "whatsapp_config", false);
-  public get whatsappConfig() {
-    return this._whatsappConfig;
-  }
 }
 
 export class GoogleCesAppVersionSnapshotAppDefaultChannelProfileList extends cdktf.ComplexList {
@@ -2452,249 +1860,6 @@ export class GoogleCesAppVersionSnapshotAppDefaultChannelProfileList extends cdk
   */
   public get(index: number): GoogleCesAppVersionSnapshotAppDefaultChannelProfileOutputReference {
     return new GoogleCesAppVersionSnapshotAppDefaultChannelProfileOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig {
-}
-
-export function googleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigToTerraform(struct?: GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // escalate_session - computed: true, optional: false, required: false
-  public get escalateSession() {
-    return this.getBooleanAttribute('escalate_session');
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference {
-    return new GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig {
-}
-
-export function googleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigToTerraform(struct?: GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // custom_fallback_messages - computed: true, optional: false, required: false
-  private _customFallbackMessages = new cdktf.StringMap(this, "custom_fallback_messages");
-  public get customFallbackMessages() {
-    return this._customFallbackMessages;
-  }
-
-  // max_fallback_attempts - computed: true, optional: false, required: false
-  public get maxFallbackAttempts() {
-    return this.getNumberAttribute('max_fallback_attempts');
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference {
-    return new GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAppErrorHandlingSettings {
-}
-
-export function googleCesAppVersionSnapshotAppErrorHandlingSettingsToTerraform(struct?: GoogleCesAppVersionSnapshotAppErrorHandlingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAppErrorHandlingSettingsToHclTerraform(struct?: GoogleCesAppVersionSnapshotAppErrorHandlingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAppErrorHandlingSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAppErrorHandlingSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAppErrorHandlingSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // end_session_config - computed: true, optional: false, required: false
-  private _endSessionConfig = new GoogleCesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList(this, "end_session_config", false);
-  public get endSessionConfig() {
-    return this._endSessionConfig;
-  }
-
-  // error_handling_strategy - computed: true, optional: false, required: false
-  public get errorHandlingStrategy() {
-    return this.getStringAttribute('error_handling_strategy');
-  }
-
-  // fallback_response_config - computed: true, optional: false, required: false
-  private _fallbackResponseConfig = new GoogleCesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList(this, "fallback_response_config", false);
-  public get fallbackResponseConfig() {
-    return this._fallbackResponseConfig;
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAppErrorHandlingSettingsList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAppErrorHandlingSettingsOutputReference {
-    return new GoogleCesAppVersionSnapshotAppErrorHandlingSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds {
@@ -2772,81 +1937,6 @@ export class GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEval
     return new GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings {
-}
-
-export function googleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsToTerraform(struct?: GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsToHclTerraform(struct?: GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // extra_tool_call_behavior - computed: true, optional: false, required: false
-  public get extraToolCallBehavior() {
-    return this.getStringAttribute('extra_tool_call_behavior');
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference {
-    return new GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds {
 }
 
@@ -2901,11 +1991,6 @@ export class GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEval
   // overall_tool_invocation_correctness_threshold - computed: true, optional: false, required: false
   public get overallToolInvocationCorrectnessThreshold() {
     return this.getNumberAttribute('overall_tool_invocation_correctness_threshold');
-  }
-
-  // semantic_similarity_channel - computed: true, optional: false, required: false
-  public get semanticSimilarityChannel() {
-    return this.getStringAttribute('semantic_similarity_channel');
   }
 
   // semantic_similarity_success_threshold - computed: true, optional: false, required: false
@@ -2989,12 +2074,6 @@ export class GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEval
     return this._expectationLevelMetricsThresholds;
   }
 
-  // tool_matching_settings - computed: true, optional: false, required: false
-  private _toolMatchingSettings = new GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList(this, "tool_matching_settings", false);
-  public get toolMatchingSettings() {
-    return this._toolMatchingSettings;
-  }
-
   // turn_level_metrics_thresholds - computed: true, optional: false, required: false
   private _turnLevelMetricsThresholds = new GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsList(this, "turn_level_metrics_thresholds", false);
   public get turnLevelMetricsThresholds() {
@@ -3075,16 +2154,6 @@ export class GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputRefe
   private _goldenEvaluationMetricsThresholds = new GoogleCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList(this, "golden_evaluation_metrics_thresholds", false);
   public get goldenEvaluationMetricsThresholds() {
     return this._goldenEvaluationMetricsThresholds;
-  }
-
-  // golden_hallucination_metric_behavior - computed: true, optional: false, required: false
-  public get goldenHallucinationMetricBehavior() {
-    return this.getStringAttribute('golden_hallucination_metric_behavior');
-  }
-
-  // scenario_hallucination_metric_behavior - computed: true, optional: false, required: false
-  public get scenarioHallucinationMetricBehavior() {
-    return this.getStringAttribute('scenario_hallucination_metric_behavior');
   }
 }
 
@@ -3491,11 +2560,6 @@ export class GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSet
   public get disableConversationLogging() {
     return this.getBooleanAttribute('disable_conversation_logging');
   }
-
-  // retention_window - computed: true, optional: false, required: false
-  public get retentionWindow() {
-    return this.getStringAttribute('retention_window');
-  }
 }
 
 export class GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList extends cdktf.ComplexList {
@@ -3514,81 +2578,6 @@ export class GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSet
   */
   public get(index: number): GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference {
     return new GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings {
-}
-
-export function googleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsToTerraform(struct?: GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsToHclTerraform(struct?: GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // llm_metrics_opted_out - computed: true, optional: false, required: false
-  public get llmMetricsOptedOut() {
-    return this.getBooleanAttribute('llm_metrics_opted_out');
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference {
-    return new GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface GoogleCesAppVersionSnapshotAppLoggingSettingsRedactionConfig {
@@ -3749,12 +2738,6 @@ export class GoogleCesAppVersionSnapshotAppLoggingSettingsOutputReference extend
   private _conversationLoggingSettings = new GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList(this, "conversation_logging_settings", false);
   public get conversationLoggingSettings() {
     return this._conversationLoggingSettings;
-  }
-
-  // metric_analysis_settings - computed: true, optional: false, required: false
-  private _metricAnalysisSettings = new GoogleCesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList(this, "metric_analysis_settings", false);
-  public get metricAnalysisSettings() {
-    return this._metricAnalysisSettings;
   }
 
   // redaction_config - computed: true, optional: false, required: false
@@ -4163,81 +3146,6 @@ export class GoogleCesAppVersionSnapshotAppVariableDeclarationsList extends cdkt
     return new GoogleCesAppVersionSnapshotAppVariableDeclarationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface GoogleCesAppVersionSnapshotAppVpcScSettings {
-}
-
-export function googleCesAppVersionSnapshotAppVpcScSettingsToTerraform(struct?: GoogleCesAppVersionSnapshotAppVpcScSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function googleCesAppVersionSnapshotAppVpcScSettingsToHclTerraform(struct?: GoogleCesAppVersionSnapshotAppVpcScSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class GoogleCesAppVersionSnapshotAppVpcScSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleCesAppVersionSnapshotAppVpcScSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleCesAppVersionSnapshotAppVpcScSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // allowed_origins - computed: true, optional: false, required: false
-  public get allowedOrigins() {
-    return this.getListAttribute('allowed_origins');
-  }
-}
-
-export class GoogleCesAppVersionSnapshotAppVpcScSettingsList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleCesAppVersionSnapshotAppVpcScSettingsOutputReference {
-    return new GoogleCesAppVersionSnapshotAppVpcScSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface GoogleCesAppVersionSnapshotApp {
 }
 
@@ -4333,12 +3241,6 @@ export class GoogleCesAppVersionSnapshotAppOutputReference extends cdktf.Complex
     return this.getStringAttribute('display_name');
   }
 
-  // error_handling_settings - computed: true, optional: false, required: false
-  private _errorHandlingSettings = new GoogleCesAppVersionSnapshotAppErrorHandlingSettingsList(this, "error_handling_settings", false);
-  public get errorHandlingSettings() {
-    return this._errorHandlingSettings;
-  }
-
   // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
@@ -4409,12 +3311,6 @@ export class GoogleCesAppVersionSnapshotAppOutputReference extends cdktf.Complex
   private _variableDeclarations = new GoogleCesAppVersionSnapshotAppVariableDeclarationsList(this, "variable_declarations", false);
   public get variableDeclarations() {
     return this._variableDeclarations;
-  }
-
-  // vpc_sc_settings - computed: true, optional: false, required: false
-  private _vpcScSettings = new GoogleCesAppVersionSnapshotAppVpcScSettingsList(this, "vpc_sc_settings", false);
-  public get vpcScSettings() {
-    return this._vpcScSettings;
   }
 }
 
@@ -8898,5 +7794,1149 @@ export class GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyC
   */
   public get(index: number): GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigOutputReference {
     return new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig {
+}
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigToTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // client_id - computed: true, optional: false, required: false
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+
+  // client_secret_version - computed: true, optional: false, required: false
+  public get clientSecretVersion() {
+    return this.getStringAttribute('client_secret_version');
+  }
+
+  // oauth_grant_type - computed: true, optional: false, required: false
+  public get oauthGrantType() {
+    return this.getStringAttribute('oauth_grant_type');
+  }
+
+  // scopes - computed: true, optional: false, required: false
+  public get scopes() {
+    return this.getListAttribute('scopes');
+  }
+
+  // token_endpoint - computed: true, optional: false, required: false
+  public get tokenEndpoint() {
+    return this.getStringAttribute('token_endpoint');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig {
+}
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigToTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // service_account - computed: true, optional: false, required: false
+  public get serviceAccount() {
+    return this.getStringAttribute('service_account');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig {
+}
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigToTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthentication {
+}
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationToTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthentication | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthentication | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // api_key_config - computed: true, optional: false, required: false
+  private _apiKeyConfig = new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigList(this, "api_key_config", false);
+  public get apiKeyConfig() {
+    return this._apiKeyConfig;
+  }
+
+  // oauth_config - computed: true, optional: false, required: false
+  private _oauthConfig = new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigList(this, "oauth_config", false);
+  public get oauthConfig() {
+    return this._oauthConfig;
+  }
+
+  // service_account_auth_config - computed: true, optional: false, required: false
+  private _serviceAccountAuthConfig = new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigList(this, "service_account_auth_config", false);
+  public get serviceAccountAuthConfig() {
+    return this._serviceAccountAuthConfig;
+  }
+
+  // service_agent_id_token_auth_config - computed: true, optional: false, required: false
+  private _serviceAgentIdTokenAuthConfig = new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList(this, "service_agent_id_token_auth_config", false);
+  public get serviceAgentIdTokenAuthConfig() {
+    return this._serviceAgentIdTokenAuthConfig;
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig {
+}
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigToTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // service - computed: true, optional: false, required: false
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts {
+}
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsToTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cert - computed: true, optional: false, required: false
+  public get cert() {
+    return this.getStringAttribute('cert');
+  }
+
+  // display_name - computed: true, optional: false, required: false
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfig {
+}
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolTlsConfigToTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolTlsConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ca_certs - computed: true, optional: false, required: false
+  private _caCerts = new GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsList(this, "ca_certs", false);
+  public get caCerts() {
+    return this._caCerts;
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsOpenApiTool {
+}
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolToTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiTool): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsOpenApiToolToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsOpenApiTool): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsOpenApiTool | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsOpenApiTool | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // api_authentication - computed: true, optional: false, required: false
+  private _apiAuthentication = new GoogleCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationList(this, "api_authentication", false);
+  public get apiAuthentication() {
+    return this._apiAuthentication;
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // ignore_unknown_fields - computed: true, optional: false, required: false
+  public get ignoreUnknownFields() {
+    return this.getBooleanAttribute('ignore_unknown_fields');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // open_api_schema - computed: true, optional: false, required: false
+  public get openApiSchema() {
+    return this.getStringAttribute('open_api_schema');
+  }
+
+  // service_directory_config - computed: true, optional: false, required: false
+  private _serviceDirectoryConfig = new GoogleCesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigList(this, "service_directory_config", false);
+  public get serviceDirectoryConfig() {
+    return this._serviceDirectoryConfig;
+  }
+
+  // tls_config - computed: true, optional: false, required: false
+  private _tlsConfig = new GoogleCesAppVersionSnapshotToolsOpenApiToolTlsConfigList(this, "tls_config", false);
+  public get tlsConfig() {
+    return this._tlsConfig;
+  }
+
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsOpenApiToolList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsOpenApiToolOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsOpenApiToolOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsPythonFunction {
+}
+
+export function googleCesAppVersionSnapshotToolsPythonFunctionToTerraform(struct?: GoogleCesAppVersionSnapshotToolsPythonFunction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsPythonFunctionToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsPythonFunction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsPythonFunctionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsPythonFunction | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsPythonFunction | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // python_code - computed: true, optional: false, required: false
+  public get pythonCode() {
+    return this.getStringAttribute('python_code');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsPythonFunctionList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsPythonFunctionOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsPythonFunctionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsSystemTool {
+}
+
+export function googleCesAppVersionSnapshotToolsSystemToolToTerraform(struct?: GoogleCesAppVersionSnapshotToolsSystemTool): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsSystemToolToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsSystemTool): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsSystemToolOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsSystemTool | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsSystemTool | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsSystemToolList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsSystemToolOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsSystemToolOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotTools {
+}
+
+export function googleCesAppVersionSnapshotToolsToTerraform(struct?: GoogleCesAppVersionSnapshotTools): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsToHclTerraform(struct?: GoogleCesAppVersionSnapshotTools): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotTools | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotTools | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // client_function - computed: true, optional: false, required: false
+  private _clientFunction = new GoogleCesAppVersionSnapshotToolsClientFunctionList(this, "client_function", false);
+  public get clientFunction() {
+    return this._clientFunction;
+  }
+
+  // create_time - computed: true, optional: false, required: false
+  public get createTime() {
+    return this.getStringAttribute('create_time');
+  }
+
+  // data_store_tool - computed: true, optional: false, required: false
+  private _dataStoreTool = new GoogleCesAppVersionSnapshotToolsDataStoreToolList(this, "data_store_tool", false);
+  public get dataStoreTool() {
+    return this._dataStoreTool;
+  }
+
+  // display_name - computed: true, optional: false, required: false
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+
+  // etag - computed: true, optional: false, required: false
+  public get etag() {
+    return this.getStringAttribute('etag');
+  }
+
+  // execution_type - computed: true, optional: false, required: false
+  public get executionType() {
+    return this.getStringAttribute('execution_type');
+  }
+
+  // generated_summary - computed: true, optional: false, required: false
+  public get generatedSummary() {
+    return this.getStringAttribute('generated_summary');
+  }
+
+  // google_search_tool - computed: true, optional: false, required: false
+  private _googleSearchTool = new GoogleCesAppVersionSnapshotToolsGoogleSearchToolList(this, "google_search_tool", false);
+  public get googleSearchTool() {
+    return this._googleSearchTool;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // open_api_tool - computed: true, optional: false, required: false
+  private _openApiTool = new GoogleCesAppVersionSnapshotToolsOpenApiToolList(this, "open_api_tool", false);
+  public get openApiTool() {
+    return this._openApiTool;
+  }
+
+  // python_function - computed: true, optional: false, required: false
+  private _pythonFunction = new GoogleCesAppVersionSnapshotToolsPythonFunctionList(this, "python_function", false);
+  public get pythonFunction() {
+    return this._pythonFunction;
+  }
+
+  // system_tool - computed: true, optional: false, required: false
+  private _systemTool = new GoogleCesAppVersionSnapshotToolsSystemToolList(this, "system_tool", false);
+  public get systemTool() {
+    return this._systemTool;
+  }
+
+  // update_time - computed: true, optional: false, required: false
+  public get updateTime() {
+    return this.getStringAttribute('update_time');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig {
+}
+
+export function googleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigToTerraform(struct?: GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // api_key_secret_version - computed: true, optional: false, required: false
+  public get apiKeySecretVersion() {
+    return this.getStringAttribute('api_key_secret_version');
+  }
+
+  // key_name - computed: true, optional: false, required: false
+  public get keyName() {
+    return this.getStringAttribute('key_name');
+  }
+
+  // request_location - computed: true, optional: false, required: false
+  public get requestLocation() {
+    return this.getStringAttribute('request_location');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig {
+}
+
+export function googleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigToTerraform(struct?: GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigToHclTerraform(struct?: GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // token - computed: true, optional: false, required: false
+  public get token() {
+    return this.getStringAttribute('token');
+  }
+}
+
+export class GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference {
+    return new GoogleCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface GoogleAgentRegistryBindingConfig extends cdktf.TerraformMetaArg
   /**
   * The name of the Binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#binding_id GoogleAgentRegistryBinding#binding_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#binding_id GoogleAgentRegistryBinding#binding_id}
   */
   readonly bindingId: string;
   /**
@@ -22,23 +22,23 @@ export interface GoogleAgentRegistryBindingConfig extends cdktf.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#deletion_policy GoogleAgentRegistryBinding#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#deletion_policy GoogleAgentRegistryBinding#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the Binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#description GoogleAgentRegistryBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#description GoogleAgentRegistryBinding#description}
   */
   readonly description?: string;
   /**
   * User-defined display name for the Binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#display_name GoogleAgentRegistryBinding#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#display_name GoogleAgentRegistryBinding#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#id GoogleAgentRegistryBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#id GoogleAgentRegistryBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,35 +47,35 @@ export interface GoogleAgentRegistryBindingConfig extends cdktf.TerraformMetaArg
   /**
   * The location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#location GoogleAgentRegistryBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#location GoogleAgentRegistryBinding#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#project GoogleAgentRegistryBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#project GoogleAgentRegistryBinding#project}
   */
   readonly project?: string;
   /**
   * auth_provider_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#auth_provider_binding GoogleAgentRegistryBinding#auth_provider_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#auth_provider_binding GoogleAgentRegistryBinding#auth_provider_binding}
   */
   readonly authProviderBinding: GoogleAgentRegistryBindingAuthProviderBinding;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#source GoogleAgentRegistryBinding#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#source GoogleAgentRegistryBinding#source}
   */
   readonly source: GoogleAgentRegistryBindingSource;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#target GoogleAgentRegistryBinding#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#target GoogleAgentRegistryBinding#target}
   */
   readonly target: GoogleAgentRegistryBindingTarget;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#timeouts GoogleAgentRegistryBinding#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#timeouts GoogleAgentRegistryBinding#timeouts}
   */
   readonly timeouts?: GoogleAgentRegistryBindingTimeouts;
 }
@@ -83,19 +83,19 @@ export interface GoogleAgentRegistryBindingAuthProviderBinding {
   /**
   * The resource name of the target auth provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#auth_provider GoogleAgentRegistryBinding#auth_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#auth_provider GoogleAgentRegistryBinding#auth_provider}
   */
   readonly authProvider: string;
   /**
   * The continue URI of the auth provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#continue_uri GoogleAgentRegistryBinding#continue_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#continue_uri GoogleAgentRegistryBinding#continue_uri}
   */
   readonly continueUri?: string;
   /**
   * The list of OAuth2 scopes of the auth provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#scopes GoogleAgentRegistryBinding#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#scopes GoogleAgentRegistryBinding#scopes}
   */
   readonly scopes?: string[];
 }
@@ -236,7 +236,7 @@ export interface GoogleAgentRegistryBindingSource {
   /**
   * The identifier of the source Agent. Format: 'urn:agent:{publisher}:{namespace}:{name}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#identifier GoogleAgentRegistryBinding#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#identifier GoogleAgentRegistryBinding#identifier}
   */
   readonly identifier: string;
 }
@@ -322,7 +322,7 @@ export interface GoogleAgentRegistryBindingTarget {
   * * 'urn:mcp:{publisher}:{namespace}:{name}'
   * * 'urn:endpoint:{publisher}:{namespace}:{name}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#identifier GoogleAgentRegistryBinding#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#identifier GoogleAgentRegistryBinding#identifier}
   */
   readonly identifier: string;
 }
@@ -403,15 +403,15 @@ export class GoogleAgentRegistryBindingTargetOutputReference extends cdktf.Compl
 }
 export interface GoogleAgentRegistryBindingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#create GoogleAgentRegistryBinding#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#create GoogleAgentRegistryBinding#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#delete GoogleAgentRegistryBinding#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#delete GoogleAgentRegistryBinding#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#update GoogleAgentRegistryBinding#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#update GoogleAgentRegistryBinding#update}
   */
   readonly update?: string;
 }
@@ -563,7 +563,7 @@ export class GoogleAgentRegistryBindingTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding google_agent_registry_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding google_agent_registry_binding}
 */
 export class GoogleAgentRegistryBinding extends cdktf.TerraformResource {
 
@@ -579,7 +579,7 @@ export class GoogleAgentRegistryBinding extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleAgentRegistryBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleAgentRegistryBinding to import
-  * @param importFromId The id of the existing GoogleAgentRegistryBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleAgentRegistryBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleAgentRegistryBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -591,7 +591,7 @@ export class GoogleAgentRegistryBinding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_agent_registry_binding google_agent_registry_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_agent_registry_binding google_agent_registry_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -602,8 +602,8 @@ export class GoogleAgentRegistryBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_agent_registry_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource
+// https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,11 @@ export interface GoogleSiteVerificationWebResourceConfig extends cdktf.Terraform
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#deletion_policy GoogleSiteVerificationWebResource#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#deletion_policy GoogleSiteVerificationWebResource#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#id GoogleSiteVerificationWebResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#id GoogleSiteVerificationWebResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,19 +30,19 @@ export interface GoogleSiteVerificationWebResourceConfig extends cdktf.Terraform
   * The verification method for the Site Verification system to use to verify
   * this site or domain. Possible values: ["ANALYTICS", "DNS_CNAME", "DNS_TXT", "FILE", "META", "TAG_MANAGER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#verification_method GoogleSiteVerificationWebResource#verification_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#verification_method GoogleSiteVerificationWebResource#verification_method}
   */
   readonly verificationMethod: string;
   /**
   * site block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#site GoogleSiteVerificationWebResource#site}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#site GoogleSiteVerificationWebResource#site}
   */
   readonly site: GoogleSiteVerificationWebResourceSite;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#timeouts GoogleSiteVerificationWebResource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#timeouts GoogleSiteVerificationWebResource#timeouts}
   */
   readonly timeouts?: GoogleSiteVerificationWebResourceTimeouts;
 }
@@ -51,13 +51,13 @@ export interface GoogleSiteVerificationWebResourceSite {
   * The site identifier. If the type is set to SITE, the identifier is a URL. If the type is
   * set to INET_DOMAIN, the identifier is a domain name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#identifier GoogleSiteVerificationWebResource#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#identifier GoogleSiteVerificationWebResource#identifier}
   */
   readonly identifier: string;
   /**
   * The type of resource to be verified. Possible values: ["INET_DOMAIN", "SITE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#type GoogleSiteVerificationWebResource#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#type GoogleSiteVerificationWebResource#type}
   */
   readonly type: string;
 }
@@ -164,11 +164,11 @@ export class GoogleSiteVerificationWebResourceSiteOutputReference extends cdktf.
 }
 export interface GoogleSiteVerificationWebResourceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#create GoogleSiteVerificationWebResource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#create GoogleSiteVerificationWebResource#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#delete GoogleSiteVerificationWebResource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#delete GoogleSiteVerificationWebResource#delete}
   */
   readonly delete?: string;
 }
@@ -291,7 +291,7 @@ export class GoogleSiteVerificationWebResourceTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource google_site_verification_web_resource}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource google_site_verification_web_resource}
 */
 export class GoogleSiteVerificationWebResource extends cdktf.TerraformResource {
 
@@ -307,7 +307,7 @@ export class GoogleSiteVerificationWebResource extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSiteVerificationWebResource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSiteVerificationWebResource to import
-  * @param importFromId The id of the existing GoogleSiteVerificationWebResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSiteVerificationWebResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSiteVerificationWebResource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -319,7 +319,7 @@ export class GoogleSiteVerificationWebResource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/8.3.0/docs/resources/google_site_verification_web_resource google_site_verification_web_resource} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.46.1/docs/resources/google_site_verification_web_resource google_site_verification_web_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -330,8 +330,8 @@ export class GoogleSiteVerificationWebResource extends cdktf.TerraformResource {
       terraformResourceType: 'google_site_verification_web_resource',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
